@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */; };
+		139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
 		CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBB028479684001A2F87 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewController.swift; sourceTree = "<group>"; };
+		139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterScreen1ViewController.xib; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				CF9ACBBA28479684001A2F87 /* Info.plist */,
 				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
 				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
+				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
+				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
 			);
 			path = FourBank;
 			sourceTree = "<group>";
@@ -135,6 +141,7 @@
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
 				CF9ACBB428479684001A2F87 /* Main.storyboard in Resources */,
 				CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */,
+				139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
 				CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */,
 				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
 				CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */,

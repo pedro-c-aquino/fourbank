@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterScreen1ViewController" customModule="FourBank" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1p-Lr-YCV">
+                    <rect key="frame" x="20" y="79" width="374" height="44"/>
+                    <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precisamos de alguns dados seus para dar início ao cadastro." textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOg-Vt-qWW">
+                    <rect key="frame" x="103.5" y="163" width="207" height="55"/>
+                    <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="6v0-ai-mHS">
+                    <rect key="frame" x="41.5" y="443" width="331" height="269"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GjV-DW-O7d">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="51"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sobrenome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7G-6z-Mzx">
+                            <rect key="frame" x="0.0" y="73" width="331" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BdK-gi-mZP">
+                            <rect key="frame" x="0.0" y="145.5" width="331" height="51"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HFL-wk-5HL">
+                            <rect key="frame" x="0.0" y="218.5" width="331" height="50.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p5-ma-tek">
+                    <rect key="frame" x="154.5" y="752" width="105" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1cl-xh-zGe"/>
+                        <constraint firstAttribute="width" constant="105" id="QDd-Yi-Ft6"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Prosseguir">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseBackgroundColor" red="0.22352941176470587" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ6-FJ-uP4">
+                    <rect key="frame" x="154.5" y="802" width="105" height="40"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Cancelar">
+                                <attributes>
+                                    <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <color key="baseBackgroundColor" red="0.22352941176470587" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6v0-ai-mHS" secondAttribute="bottom" constant="150" id="6SJ-xD-8fv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YJ6-FJ-uP4" secondAttribute="bottom" constant="20" id="Aii-cM-QD0"/>
+                <constraint firstItem="S1p-Lr-YCV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="NDK-vO-Ddg"/>
+                <constraint firstItem="YJ6-FJ-uP4" firstAttribute="leading" secondItem="7p5-ma-tek" secondAttribute="leading" id="QWD-eH-EJF"/>
+                <constraint firstItem="YJ6-FJ-uP4" firstAttribute="top" secondItem="7p5-ma-tek" secondAttribute="bottom" constant="10" id="Trs-lv-ouR"/>
+                <constraint firstItem="6v0-ai-mHS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="Xes-yP-R3x"/>
+                <constraint firstItem="6v0-ai-mHS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a4N-1O-aRr"/>
+                <constraint firstItem="S1p-Lr-YCV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bXl-pX-HCA"/>
+                <constraint firstItem="GOg-Vt-qWW" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="czt-V1-5HG"/>
+                <constraint firstItem="7p5-ma-tek" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hoQ-wl-2BK"/>
+                <constraint firstItem="YJ6-FJ-uP4" firstAttribute="height" secondItem="7p5-ma-tek" secondAttribute="height" id="maV-Gd-SXI"/>
+                <constraint firstItem="GOg-Vt-qWW" firstAttribute="top" secondItem="S1p-Lr-YCV" secondAttribute="bottom" constant="40" id="pud-pm-D97"/>
+                <constraint firstItem="YJ6-FJ-uP4" firstAttribute="width" secondItem="7p5-ma-tek" secondAttribute="width" id="stl-Am-zNl"/>
+                <constraint firstItem="GOg-Vt-qWW" firstAttribute="centerX" secondItem="S1p-Lr-YCV" secondAttribute="centerX" id="vtm-Jh-jg4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S1p-Lr-YCV" secondAttribute="trailing" constant="20" id="xII-LB-G0H"/>
+                <constraint firstItem="6v0-ai-mHS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="ye1-Bj-06a"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </view>
+    </objects>
+</document>
