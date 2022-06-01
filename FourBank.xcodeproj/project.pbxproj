@@ -13,6 +13,20 @@
 		139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */; };
 		CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */; };
 		CF06698F2847EA5300C3FB50 /* RegisterScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */; };
+		CF0669922847EB0B00C3FB50 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669902847EB0B00C3FB50 /* Home.swift */; };
+		CF0669932847EB0B00C3FB50 /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669912847EB0B00C3FB50 /* Home.xib */; };
+		CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669942847EBAB00C3FB50 /* StatementScreen.swift */; };
+		CF0669972847EBAB00C3FB50 /* StatementScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669952847EBAB00C3FB50 /* StatementScreen.xib */; };
+		CF06699A2847EBD200C3FB50 /* TransferScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669982847EBD200C3FB50 /* TransferScreen1.swift */; };
+		CF06699B2847EBD200C3FB50 /* TransferScreen1.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669992847EBD200C3FB50 /* TransferScreen1.xib */; };
+		CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */; };
+		CF06699F2847EC0800C3FB50 /* TransferScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */; };
+		CF0669A22847EC1D00C3FB50 /* TransferScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */; };
+		CF0669A32847EC1D00C3FB50 /* TransferScreen3.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */; };
+		CF0669A62847EC2D00C3FB50 /* TransferScreen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */; };
+		CF0669A72847EC2D00C3FB50 /* TransferScreen4.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */; };
+		CF0669AA2847EC5500C3FB50 /* TransferScreen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */; };
+		CF0669AB2847EC5500C3FB50 /* TransferScreen5.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
 		CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBB028479684001A2F87 /* ViewController.swift */; };
@@ -29,6 +43,20 @@
 		139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterScreen1ViewController.xib; sourceTree = "<group>"; };
 		CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3.swift; sourceTree = "<group>"; };
 		CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterScreen3.xib; sourceTree = "<group>"; };
+		CF0669902847EB0B00C3FB50 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CF0669912847EB0B00C3FB50 /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		CF0669942847EBAB00C3FB50 /* StatementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreen.swift; sourceTree = "<group>"; };
+		CF0669952847EBAB00C3FB50 /* StatementScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementScreen.xib; sourceTree = "<group>"; };
+		CF0669982847EBD200C3FB50 /* TransferScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1.swift; sourceTree = "<group>"; };
+		CF0669992847EBD200C3FB50 /* TransferScreen1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen1.xib; sourceTree = "<group>"; };
+		CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2.swift; sourceTree = "<group>"; };
+		CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen2.xib; sourceTree = "<group>"; };
+		CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3.swift; sourceTree = "<group>"; };
+		CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen3.xib; sourceTree = "<group>"; };
+		CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen4.swift; sourceTree = "<group>"; };
+		CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen4.xib; sourceTree = "<group>"; };
+		CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen5.swift; sourceTree = "<group>"; };
+		CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen5.xib; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +112,20 @@
 				CF9ACBBA28479684001A2F87 /* Info.plist */,
 				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
 				CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */,
+				CF0669902847EB0B00C3FB50 /* Home.swift */,
+				CF0669912847EB0B00C3FB50 /* Home.xib */,
+				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
+				CF0669952847EBAB00C3FB50 /* StatementScreen.xib */,
+				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
+				CF0669992847EBD200C3FB50 /* TransferScreen1.xib */,
+				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
+				CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */,
+				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
+				CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */,
+				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
+				CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */,
+				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
+				CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */,
 			);
 			path = FourBank;
 			sourceTree = "<group>";
@@ -147,11 +189,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */,
+				CF0669AB2847EC5500C3FB50 /* TransferScreen5.xib in Resources */,
+				CF0669972847EBAB00C3FB50 /* StatementScreen.xib in Resources */,
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
+				CF0669932847EB0B00C3FB50 /* Home.xib in Resources */,
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
 				CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */,
+				CF06699B2847EBD200C3FB50 /* TransferScreen1.xib in Resources */,
 				CF06698F2847EA5300C3FB50 /* RegisterScreen3.xib in Resources */,
 				139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */,
+				CF0669A72847EC2D00C3FB50 /* TransferScreen4.xib in Resources */,
+				CF0669A32847EC1D00C3FB50 /* TransferScreen3.xib in Resources */,
+				CF06699F2847EC0800C3FB50 /* TransferScreen2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,13 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0669AA2847EC5500C3FB50 /* TransferScreen5.swift in Sources */,
+				CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */,
 				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
 				CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */,
 				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
+				CF0669A22847EC1D00C3FB50 /* TransferScreen3.swift in Sources */,
+				CF0669A62847EC2D00C3FB50 /* TransferScreen4.swift in Sources */,
 				CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */,
 				098372142847E5B500A4FAC1 /* Login.swift in Sources */,
 				CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */,
+				CF0669922847EB0B00C3FB50 /* Home.swift in Sources */,
+				CF06699A2847EBD200C3FB50 /* TransferScreen1.swift in Sources */,
 				CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */,
+				CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
