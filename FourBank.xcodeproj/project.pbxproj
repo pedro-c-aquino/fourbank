@@ -7,29 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		091211C428469C5400DDEA8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091211C328469C5400DDEA8E /* AppDelegate.swift */; };
-		091211C628469C5400DDEA8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091211C528469C5400DDEA8E /* SceneDelegate.swift */; };
-		091211C828469C5400DDEA8E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091211C728469C5400DDEA8E /* Login.swift */; };
-		091211CB28469C5400DDEA8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091211C928469C5400DDEA8E /* Main.storyboard */; };
-		091211CE28469C5400DDEA8E /* FourBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 091211CC28469C5400DDEA8E /* FourBank.xcdatamodeld */; };
-		091211D028469C5400DDEA8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 091211CF28469C5400DDEA8E /* Assets.xcassets */; };
-		091211D328469C5400DDEA8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 091211D128469C5400DDEA8E /* LaunchScreen.storyboard */; };
+		098372122847E57700A4FAC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098372112847E57700A4FAC1 /* Main.storyboard */; };
+		098372142847E5B500A4FAC1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098372132847E5B500A4FAC1 /* Login.swift */; };
+		139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */; };
+		139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */; };
+		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
+		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
+		CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBB028479684001A2F87 /* ViewController.swift */; };
+		CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB528479684001A2F87 /* Assets.xcassets */; };
+		CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */; };
+		CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */; };
+		CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		091211C028469C5400DDEA8E /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		091211C328469C5400DDEA8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		091211C528469C5400DDEA8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		091211C728469C5400DDEA8E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		091211CA28469C5400DDEA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		091211CD28469C5400DDEA8E /* FourBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FourBank.xcdatamodel; sourceTree = "<group>"; };
-		091211CF28469C5400DDEA8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		091211D228469C5400DDEA8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		091211D428469C5400DDEA8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098372112847E57700A4FAC1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		098372132847E5B500A4FAC1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewController.swift; sourceTree = "<group>"; };
+		139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterScreen1ViewController.xib; sourceTree = "<group>"; };
+		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF9ACBB028479684001A2F87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF9ACBB528479684001A2F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9ACBB828479684001A2F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF9ACBBA28479684001A2F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen2.swift; sourceTree = "<group>"; };
+		CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterScreen2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		091211BD28469C5400DDEA8E /* Frameworks */ = {
+		CF9ACBA628479684001A2F87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,71 +47,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		091211B728469C5400DDEA8E = {
+		CF9ACBA028479684001A2F87 = {
 			isa = PBXGroup;
 			children = (
-				091211C228469C5400DDEA8E /* FourBank */,
-				091211C128469C5400DDEA8E /* Products */,
+				CF9ACBAB28479684001A2F87 /* FourBank */,
+				CF9ACBAA28479684001A2F87 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		091211C128469C5400DDEA8E /* Products */ = {
+		CF9ACBAA28479684001A2F87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				091211C028469C5400DDEA8E /* FourBank.app */,
+				CF9ACBA928479684001A2F87 /* FourBank.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		091211C228469C5400DDEA8E /* FourBank */ = {
+		CF9ACBAB28479684001A2F87 /* FourBank */ = {
 			isa = PBXGroup;
 			children = (
-				091211DC28469C8700DDEA8E /* Model */,
-				091211DB28469C7F00DDEA8E /* View */,
-				091211DA28469C6A00DDEA8E /* ViewModel */,
-				091211C328469C5400DDEA8E /* AppDelegate.swift */,
-				091211C528469C5400DDEA8E /* SceneDelegate.swift */,
-				091211C728469C5400DDEA8E /* Login.swift */,
-				091211C928469C5400DDEA8E /* Main.storyboard */,
-				091211D128469C5400DDEA8E /* LaunchScreen.storyboard */,
-				091211CF28469C5400DDEA8E /* Assets.xcassets */,
-				091211D428469C5400DDEA8E /* Info.plist */,
-				091211CC28469C5400DDEA8E /* FourBank.xcdatamodeld */,
+				CF9ACBAC28479684001A2F87 /* AppDelegate.swift */,
+				CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */,
+				CF9ACBB028479684001A2F87 /* ViewController.swift */,
+				CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */,
+				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
+				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
+				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
+				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
+				098372112847E57700A4FAC1 /* Main.storyboard */,
+				098372132847E5B500A4FAC1 /* Login.swift */,
+				CF9ACBB528479684001A2F87 /* Assets.xcassets */,
+				CF9ACBBA28479684001A2F87 /* Info.plist */,
 			);
 			path = FourBank;
-			sourceTree = "<group>";
-		};
-		091211DA28469C6A00DDEA8E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		091211DB28469C7F00DDEA8E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		091211DC28469C8700DDEA8E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		091211BF28469C5400DDEA8E /* FourBank */ = {
+		CF9ACBA828479684001A2F87 /* FourBank */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 091211D728469C5400DDEA8E /* Build configuration list for PBXNativeTarget "FourBank" */;
+			buildConfigurationList = CF9ACBBD28479684001A2F87 /* Build configuration list for PBXNativeTarget "FourBank" */;
 			buildPhases = (
-				091211BC28469C5400DDEA8E /* Sources */,
-				091211BD28469C5400DDEA8E /* Frameworks */,
-				091211BE28469C5400DDEA8E /* Resources */,
+				CF9ACBA528479684001A2F87 /* Sources */,
+				CF9ACBA628479684001A2F87 /* Frameworks */,
+				CF9ACBA728479684001A2F87 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -111,25 +99,25 @@
 			);
 			name = FourBank;
 			productName = FourBank;
-			productReference = 091211C028469C5400DDEA8E /* FourBank.app */;
+			productReference = CF9ACBA928479684001A2F87 /* FourBank.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		091211B828469C5400DDEA8E /* Project object */ = {
+		CF9ACBA128479684001A2F87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					091211BF28469C5400DDEA8E = {
+					CF9ACBA828479684001A2F87 = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
 			};
-			buildConfigurationList = 091211BB28469C5400DDEA8E /* Build configuration list for PBXProject "FourBank" */;
+			buildConfigurationList = CF9ACBA428479684001A2F87 /* Build configuration list for PBXProject "FourBank" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,56 +125,52 @@
 				en,
 				Base,
 			);
-			mainGroup = 091211B728469C5400DDEA8E;
-			productRefGroup = 091211C128469C5400DDEA8E /* Products */;
+			mainGroup = CF9ACBA028479684001A2F87;
+			productRefGroup = CF9ACBAA28479684001A2F87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				091211BF28469C5400DDEA8E /* FourBank */,
+				CF9ACBA828479684001A2F87 /* FourBank */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		091211BE28469C5400DDEA8E /* Resources */ = {
+		CF9ACBA728479684001A2F87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091211D328469C5400DDEA8E /* LaunchScreen.storyboard in Resources */,
-				091211D028469C5400DDEA8E /* Assets.xcassets in Resources */,
-				091211CB28469C5400DDEA8E /* Main.storyboard in Resources */,
+				CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */,
+				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
+				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
+				CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */,
+				139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		091211BC28469C5400DDEA8E /* Sources */ = {
+		CF9ACBA528479684001A2F87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091211C828469C5400DDEA8E /* Login.swift in Sources */,
-				091211CE28469C5400DDEA8E /* FourBank.xcdatamodeld in Sources */,
-				091211C428469C5400DDEA8E /* AppDelegate.swift in Sources */,
-				091211C628469C5400DDEA8E /* SceneDelegate.swift in Sources */,
+				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
+				CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */,
+				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
+				098372142847E5B500A4FAC1 /* Login.swift in Sources */,
+				CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */,
+				CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		091211C928469C5400DDEA8E /* Main.storyboard */ = {
+		CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				091211CA28469C5400DDEA8E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		091211D128469C5400DDEA8E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				091211D228469C5400DDEA8E /* Base */,
+				CF9ACBB828479684001A2F87 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -194,7 +178,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		091211D528469C5400DDEA8E /* Debug */ = {
+		CF9ACBBB28479684001A2F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		091211D628469C5400DDEA8E /* Release */ = {
+		CF9ACBBC28479684001A2F87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,7 +292,7 @@
 			};
 			name = Release;
 		};
-		091211D828469C5400DDEA8E /* Debug */ = {
+		CF9ACBBE28479684001A2F87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -327,15 +311,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Henrique-Rodrigues.FourBank";
+				PRODUCT_BUNDLE_IDENTIFIER = kauekaj.FourBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		091211D928469C5400DDEA8E /* Release */ = {
+		CF9ACBBF28479684001A2F87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -354,49 +338,36 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Henrique-Rodrigues.FourBank";
+				PRODUCT_BUNDLE_IDENTIFIER = kauekaj.FourBank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		091211BB28469C5400DDEA8E /* Build configuration list for PBXProject "FourBank" */ = {
+		CF9ACBA428479684001A2F87 /* Build configuration list for PBXProject "FourBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				091211D528469C5400DDEA8E /* Debug */,
-				091211D628469C5400DDEA8E /* Release */,
+				CF9ACBBB28479684001A2F87 /* Debug */,
+				CF9ACBBC28479684001A2F87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		091211D728469C5400DDEA8E /* Build configuration list for PBXNativeTarget "FourBank" */ = {
+		CF9ACBBD28479684001A2F87 /* Build configuration list for PBXNativeTarget "FourBank" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				091211D828469C5400DDEA8E /* Debug */,
-				091211D928469C5400DDEA8E /* Release */,
+				CF9ACBBE28479684001A2F87 /* Debug */,
+				CF9ACBBF28479684001A2F87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		091211CC28469C5400DDEA8E /* FourBank.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				091211CD28469C5400DDEA8E /* FourBank.xcdatamodel */,
-			);
-			currentVersion = 091211CD28469C5400DDEA8E /* FourBank.xcdatamodel */;
-			path = FourBank.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 091211B828469C5400DDEA8E /* Project object */;
+	rootObject = CF9ACBA128479684001A2F87 /* Project object */;
 }
