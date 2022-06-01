@@ -79,6 +79,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139ED2C92847ED0B00F2C59C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CF9ACBB028479684001A2F87 /* ViewController.swift */,
+				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
+				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
+				098372132847E5B500A4FAC1 /* Login.swift */,
+				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
+				CF0669902847EB0B00C3FB50 /* Home.swift */,
+				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
+				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
+				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
+				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
+				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
+				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		139ED2CA2847ED2600F2C59C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */,
+				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
+				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
+				098372112847E57700A4FAC1 /* Main.storyboard */,
+				CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */,
+				CF0669912847EB0B00C3FB50 /* Home.xib */,
+				CF0669952847EBAB00C3FB50 /* StatementScreen.xib */,
+				CF0669992847EBD200C3FB50 /* TransferScreen1.xib */,
+				CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */,
+				CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */,
+				CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */,
+				CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		139ED2CB2847ED3300F2C59C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CF9ACBA028479684001A2F87 = {
 			isa = PBXGroup;
 			children = (
@@ -98,34 +143,13 @@
 		CF9ACBAB28479684001A2F87 /* FourBank */ = {
 			isa = PBXGroup;
 			children = (
+				139ED2CB2847ED3300F2C59C /* Models */,
 				CF9ACBAC28479684001A2F87 /* AppDelegate.swift */,
 				CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */,
-				CF9ACBB028479684001A2F87 /* ViewController.swift */,
-				CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */,
-				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
-				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
-				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
-				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
-				098372112847E57700A4FAC1 /* Main.storyboard */,
-				098372132847E5B500A4FAC1 /* Login.swift */,
+				139ED2C92847ED0B00F2C59C /* ViewModels */,
+				139ED2CA2847ED2600F2C59C /* Views */,
 				CF9ACBB528479684001A2F87 /* Assets.xcassets */,
 				CF9ACBBA28479684001A2F87 /* Info.plist */,
-				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
-				CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */,
-				CF0669902847EB0B00C3FB50 /* Home.swift */,
-				CF0669912847EB0B00C3FB50 /* Home.xib */,
-				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
-				CF0669952847EBAB00C3FB50 /* StatementScreen.xib */,
-				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
-				CF0669992847EBD200C3FB50 /* TransferScreen1.xib */,
-				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
-				CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */,
-				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
-				CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */,
-				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
-				CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */,
-				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
-				CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */,
 			);
 			path = FourBank;
 			sourceTree = "<group>";
