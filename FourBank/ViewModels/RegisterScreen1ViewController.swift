@@ -9,20 +9,13 @@ import UIKit
 
 class RegisterScreen1ViewController: UIViewController {
 
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var cpfTextField: UITextField!
+    @IBOutlet weak var rgTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let gradientLayer = CAGradientLayer()
-//        gradientLayer.frame = view.bounds
-//        gradientLayer.colors = [
-//
-//            UIColor(red: 0.133, green: 0.133, blue: 0.224, alpha: 1).cgColor,
-//
-//            UIColor(red: 0.271, green: 0.271, blue: 0.455, alpha: 1).cgColor,
-//
-//            UIColor(red: 0.228, green: 0.228, blue: 0.383, alpha: 0.29).cgColor
-//
-//          ]
-//        view.layer.addSublayer(gradientLayer)
        
             }
 
