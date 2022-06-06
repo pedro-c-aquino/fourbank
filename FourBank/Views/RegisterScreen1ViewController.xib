@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterScreen1ViewController" customModule="FourBank" customModuleProvider="target">
             <connections>
+                <outlet property="cpfTextField" destination="BdK-gi-mZP" id="NCV-JI-fch"/>
+                <outlet property="firstNameTextField" destination="GjV-DW-O7d" id="OKl-jg-Uef"/>
+                <outlet property="lastNameTextField" destination="A7G-6z-Mzx" id="K3A-4x-P5V"/>
+                <outlet property="rgTextField" destination="HFL-wk-5HL" id="Kc4-Xa-Ekv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
