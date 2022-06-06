@@ -28,9 +28,19 @@
 		CF0669A72847EC2D00C3FB50 /* TransferScreen4.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */; };
 		CF0669AA2847EC5500C3FB50 /* TransferScreen5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */; };
 		CF0669AB2847EC5500C3FB50 /* TransferScreen5.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */; };
+		CF4A58AB284E828900ECA3FC /* RegisterScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */; };
+		CF4A58AD284E829900ECA3FC /* RegisterScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */; };
+		CF4A58AF284E82A700ECA3FC /* RegisterScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */; };
+		CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */; };
+		CF4A58B3284E82E000ECA3FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */; };
+		CF4A58B5284E830100ECA3FC /* StatementScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */; };
+		CF4A58B7284E832600ECA3FC /* TransferScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */; };
+		CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */; };
+		CF4A58BB284E834A00ECA3FC /* TransferScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */; };
+		CF4A58BD284E835700ECA3FC /* TransferScreen4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BC284E835700ECA3FC /* TransferScreen4ViewModel.swift */; };
+		CF4A58BF284E837600ECA3FC /* TransferScreen5ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BE284E837600ECA3FC /* TransferScreen5ViewModel.swift */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
-		CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBB028479684001A2F87 /* ViewController.swift */; };
 		CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB528479684001A2F87 /* Assets.xcassets */; };
 		CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */; };
 		CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */; };
@@ -59,10 +69,20 @@
 		CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen4.xib; sourceTree = "<group>"; };
 		CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen5.swift; sourceTree = "<group>"; };
 		CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferScreen5.xib; sourceTree = "<group>"; };
+		CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen2ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreenViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58BC284E835700ECA3FC /* TransferScreen4ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen4ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58BE284E837600ECA3FC /* TransferScreen5ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen5ViewModel.swift; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF9ACBB028479684001A2F87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF9ACBB528479684001A2F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF9ACBB828479684001A2F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF9ACBBA28479684001A2F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,18 +104,17 @@
 		139ED2C92847ED0B00F2C59C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CF9ACBB028479684001A2F87 /* ViewController.swift */,
-				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
-				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
-				098372132847E5B500A4FAC1 /* Login.swift */,
-				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
-				CF0669902847EB0B00C3FB50 /* Home.swift */,
-				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
-				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
-				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
-				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
-				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
-				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
+				CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */,
+				CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */,
+				CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */,
+				CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */,
+				CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */,
+				CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */,
+				CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */,
+				CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */,
+				CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */,
+				CF4A58BC284E835700ECA3FC /* TransferScreen4ViewModel.swift */,
+				CF4A58BE284E837600ECA3FC /* TransferScreen5ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -103,6 +122,17 @@
 		139ED2CA2847ED2600F2C59C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
+				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
+				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
+				098372132847E5B500A4FAC1 /* Login.swift */,
+				CF0669902847EB0B00C3FB50 /* Home.swift */,
+				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
+				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
+				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
+				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
+				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
+				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
 				CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */,
 				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
 				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
@@ -238,20 +268,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4A58B3284E82E000ECA3FC /* HomeViewModel.swift in Sources */,
 				CF0669AA2847EC5500C3FB50 /* TransferScreen5.swift in Sources */,
+				CF4A58B5284E830100ECA3FC /* StatementScreenViewModel.swift in Sources */,
+				CF4A58AF284E82A700ECA3FC /* RegisterScreen3ViewModel.swift in Sources */,
 				CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */,
 				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
-				CF9ACBB128479684001A2F87 /* ViewController.swift in Sources */,
 				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
+				CF4A58AD284E829900ECA3FC /* RegisterScreen2ViewModel.swift in Sources */,
 				CF0669A22847EC1D00C3FB50 /* TransferScreen3.swift in Sources */,
+				CF4A58B7284E832600ECA3FC /* TransferScreen1ViewModel.swift in Sources */,
+				CF4A58BF284E837600ECA3FC /* TransferScreen5ViewModel.swift in Sources */,
 				CF0669A62847EC2D00C3FB50 /* TransferScreen4.swift in Sources */,
 				CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */,
 				098372142847E5B500A4FAC1 /* Login.swift in Sources */,
 				CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */,
+				CF4A58BD284E835700ECA3FC /* TransferScreen4ViewModel.swift in Sources */,
 				CF0669922847EB0B00C3FB50 /* Home.swift in Sources */,
+				CF4A58AB284E828900ECA3FC /* RegisterScreen1ViewModel.swift in Sources */,
 				CF06699A2847EBD200C3FB50 /* TransferScreen1.swift in Sources */,
 				CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */,
+				CF4A58BB284E834A00ECA3FC /* TransferScreen3ViewModel.swift in Sources */,
 				133D1B01284E789D00EB777C /* UserModel.swift in Sources */,
+				CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */,
+				CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */,
 				CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

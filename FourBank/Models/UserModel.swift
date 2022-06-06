@@ -13,3 +13,17 @@ struct UserPersonalInfo {
     var cpf: String?
     var rg: String?
 }
+
+struct UserPersonalInfo {
+    var firstName: String?
+    var lastName: String?
+    var cpf: String?
+    var rg: String?
+}
+
+struct UserPersonalInfo {
+    var firstName: String?
+    var lastName: String?
+    var cpf: String?
+    var rg: String?
+}
