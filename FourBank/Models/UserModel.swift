@@ -14,16 +14,10 @@ struct UserPersonalInfo {
     var rg: String?
 }
 
-struct UserPersonalInfo {
-    var firstName: String?
-    var lastName: String?
-    var cpf: String?
-    var rg: String?
+struct UserPersonalAddress {
+    var address: String?
+    var city: String?
+    var state: String?
+    var zipcode: String?
 }
 
-struct UserPersonalInfo {
-    var firstName: String?
-    var lastName: String?
-    var cpf: String?
-    var rg: String?
-}

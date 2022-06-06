@@ -9,7 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterScreen2" customModule="FourBank" customModuleProvider="target">
             <connections>
+                <outlet property="addressTextField" destination="qO0-xE-y1D" id="NOK-iW-sPd"/>
+                <outlet property="cityTextField" destination="MYE-aj-zGG" id="TyI-bq-RiH"/>
+                <outlet property="stateTextField" destination="gXz-va-iho" id="LST-TO-767"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="zipcodeTextField" destination="p6V-FS-bX7" id="Wd5-N5-SCm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -120,7 +124,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jSu-5o-U1C" secondAttribute="bottom" constant="150" id="sXE-oD-Xbn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dXo-K7-MVz" secondAttribute="bottom" constant="10" id="yx0-76-Cz7"/>
             </constraints>
-            <point key="canvasLocation" x="141" y="130"/>
+            <point key="canvasLocation" x="326" y="121"/>
         </view>
     </objects>
 </document>
