@@ -9,6 +9,12 @@ import UIKit
 
 class RegisterScreen2: UIViewController {
 
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var zipcodeTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

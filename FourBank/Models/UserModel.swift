@@ -13,3 +13,11 @@ struct UserPersonalInfo {
     var cpf: String?
     var rg: String?
 }
+
+struct UserPersonalAddress {
+    var address: String?
+    var city: String?
+    var state: String?
+    var zipcode: String?
+}
+
