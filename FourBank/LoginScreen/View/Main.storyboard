@@ -10,7 +10,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Login" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="Login" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.22424242420000001" green="0.18927738920000001" blue="0.39860139859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="NQx-Fq-oQu" kind="presentation" modalPresentationStyle="fullScreen" id="eKG-Ip-rp0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -114,10 +117,19 @@
                             <constraint firstItem="En6-m9-lyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="wvv-4Q-sk1"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="d7z-CF-a5C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="116"/>
+            <point key="canvasLocation" x="250.72463768115944" y="77.678571428571431"/>
+        </scene>
+        <!--RegisterScreen1-->
+        <scene sceneID="WOa-iu-IeR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen1" storyboardName="RegisterScreen1" referencedIdentifier="RegisterScreen1" id="NQx-Fq-oQu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pz4-rW-NME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1131.1594202898552" y="-64.285714285714278"/>
         </scene>
     </scenes>
     <resources>
