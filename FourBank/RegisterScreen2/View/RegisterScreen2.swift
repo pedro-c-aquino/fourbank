@@ -24,9 +24,11 @@ class RegisterScreen2: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         registerScreen2ViewModel.registerPersonalInfo(address: addressTextField.text, city: cityTextField.text, state: stateTextField.text, zipcode: zipcodeTextField.text)
+        performSegue(withIdentifier: "RegScreen2ToRegScreen3", sender: self)
     }
     
-    @IBAction func cancelButton(_ sender: UIButton) {
+    @IBAction func goBackButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "RegScreen2ToRegScreen1", sender: self)
     }
 
     /*
