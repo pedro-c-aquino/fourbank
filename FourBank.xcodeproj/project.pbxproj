@@ -11,7 +11,6 @@
 		098372142847E5B500A4FAC1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098372132847E5B500A4FAC1 /* Login.swift */; };
 		133D1B01284E789D00EB777C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D1B00284E789D00EB777C /* UserModel.swift */; };
 		139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */; };
-		139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */; };
 		13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */; };
 		13BB52C228522A03002A5769 /* RegisterScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */; };
 		13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */; };
@@ -54,7 +53,6 @@
 		098372132847E5B500A4FAC1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		133D1B00284E789D00EB777C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewController.swift; sourceTree = "<group>"; };
-		139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterScreen1ViewController.xib; sourceTree = "<group>"; };
 		13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen1.storyboard; sourceTree = "<group>"; };
 		13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen2.storyboard; sourceTree = "<group>"; };
 		13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen3.storyboard; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
-				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
 				13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */,
 			);
 			path = View;
@@ -614,7 +611,6 @@
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
 				CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */,
 				13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */,
-				139ED2C82847E0C600F2C59C /* RegisterScreen1ViewController.xib in Resources */,
 				13BB52C228522A03002A5769 /* RegisterScreen2.storyboard in Resources */,
 				13BB52D228522BB1002A5769 /* TransferScreen5.storyboard in Resources */,
 				13BB52CE28522B76002A5769 /* TransferScreen3.storyboard in Resources */,
