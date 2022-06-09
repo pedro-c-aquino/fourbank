@@ -27,7 +27,7 @@ class RegisterScreen1ViewController: UIViewController {
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {
-        self.dismiss(animated: true)
+        self.performSegue(withIdentifier: "RegScreen1ToLogin", sender: self)
     }
     /*
     // MARK: - Navigation
