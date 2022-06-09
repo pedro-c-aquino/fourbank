@@ -10,7 +10,9 @@
         <!--RegisterScreen2-->
         <scene sceneID="Es6-th-W3B">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="VRR-39-uIf" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="VRR-39-uIf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bSR-nh-onu"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gte-he-jdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-608" y="44"/>
@@ -127,6 +129,7 @@
                         <outlet property="firstNameTextField" destination="9eZ-1I-HBt" id="kc2-ff-fEL"/>
                         <outlet property="lastNameTextField" destination="2T4-fW-OpL" id="Aqa-rk-nTF"/>
                         <outlet property="rgTextField" destination="tVP-G1-qoA" id="GbG-ll-TNX"/>
+                        <segue destination="VRR-39-uIf" kind="presentation" identifier="RegScreen1ToRegScreen2" modalPresentationStyle="fullScreen" id="QOL-IT-6Aj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
