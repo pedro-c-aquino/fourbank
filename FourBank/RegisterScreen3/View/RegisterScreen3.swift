@@ -9,13 +9,21 @@ import UIKit
 
 class RegisterScreen3: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func registerButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 
