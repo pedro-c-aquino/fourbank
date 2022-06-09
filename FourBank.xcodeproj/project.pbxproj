@@ -45,7 +45,6 @@
 		CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB528479684001A2F87 /* Assets.xcassets */; };
 		CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */; };
 		CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */; };
-		CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,7 +88,6 @@
 		CF9ACBB828479684001A2F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF9ACBBA28479684001A2F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen2.swift; sourceTree = "<group>"; };
-		CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterScreen2.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +212,6 @@
 		13BB529D2852224F002A5769 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
 				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
 				13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */,
 			);
@@ -609,7 +606,6 @@
 				13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */,
 				13BB52CC28522B5A002A5769 /* TransferScreen2.storyboard in Resources */,
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
-				CF9ACBC5284797A8001A2F87 /* RegisterScreen2.xib in Resources */,
 				13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */,
 				13BB52C228522A03002A5769 /* RegisterScreen2.storyboard in Resources */,
 				13BB52D228522BB1002A5769 /* TransferScreen5.storyboard in Resources */,
