@@ -130,11 +130,20 @@
                         <outlet property="lastNameTextField" destination="2T4-fW-OpL" id="Aqa-rk-nTF"/>
                         <outlet property="rgTextField" destination="tVP-G1-qoA" id="GbG-ll-TNX"/>
                         <segue destination="VRR-39-uIf" kind="presentation" identifier="RegScreen1ToRegScreen2" modalPresentationStyle="fullScreen" id="QOL-IT-6Aj"/>
+                        <segue destination="QqR-TX-BML" kind="presentation" identifier="RegScreen1ToLogin" modalPresentationStyle="fullScreen" id="xSu-ye-dH0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="98"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="bJR-jG-2jq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" referencedIdentifier="Main" id="QqR-TX-BML" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8H4-Av-Gc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="59"/>
         </scene>
     </scenes>
 </document>
