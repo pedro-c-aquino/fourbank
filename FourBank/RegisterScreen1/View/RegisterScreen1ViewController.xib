@@ -76,6 +76,9 @@
                         </attributedString>
                         <color key="baseBackgroundColor" red="0.22352941176470587" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="proceedButton:" destination="-1" eventType="touchUpInside" id="AID-DM-noj"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ6-FJ-uP4">
                     <rect key="frame" x="154.5" y="802" width="105" height="40"/>
@@ -91,6 +94,9 @@
                         </attributedString>
                         <color key="baseBackgroundColor" red="0.22352941176470587" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="AgV-yP-pbr"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

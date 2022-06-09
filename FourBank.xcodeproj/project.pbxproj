@@ -104,17 +104,6 @@
 		139ED2C92847ED0B00F2C59C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */,
-				CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */,
-				CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */,
-				CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */,
-				CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */,
-				CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */,
-				CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */,
-				CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */,
-				CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */,
-				CF4A58BC284E835700ECA3FC /* TransferScreen4ViewModel.swift */,
-				CF4A58BE284E837600ECA3FC /* TransferScreen5ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -122,29 +111,7 @@
 		139ED2CA2847ED2600F2C59C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
-				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
-				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
-				098372132847E5B500A4FAC1 /* Login.swift */,
-				CF0669902847EB0B00C3FB50 /* Home.swift */,
-				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
-				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
-				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
-				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
-				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
-				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
 				CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */,
-				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
-				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
-				098372112847E57700A4FAC1 /* Main.storyboard */,
-				CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */,
-				CF0669912847EB0B00C3FB50 /* Home.xib */,
-				CF0669952847EBAB00C3FB50 /* StatementScreen.xib */,
-				CF0669992847EBD200C3FB50 /* TransferScreen1.xib */,
-				CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */,
-				CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */,
-				CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */,
-				CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +122,380 @@
 				133D1B00284E789D00EB777C /* UserModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		13BB52922852218B002A5769 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				13BB5296285221CD002A5769 /* ViewModel */,
+				13BB5295285221C6002A5769 /* View */,
+				13BB5294285221BD002A5769 /* Model */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		13BB5294285221BD002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB5295285221C6002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098372112847E57700A4FAC1 /* Main.storyboard */,
+				098372132847E5B500A4FAC1 /* Login.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB5296285221CD002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB5297285221FB002A5769 /* RegisterScreen1 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB529A28522213002A5769 /* ViewModel */,
+				13BB52992852220C002A5769 /* View */,
+				13BB529828522206002A5769 /* Model */,
+			);
+			path = RegisterScreen1;
+			sourceTree = "<group>";
+		};
+		13BB529828522206002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52992852220C002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */,
+				139ED2C72847E0C600F2C59C /* RegisterScreen1ViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB529A28522213002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB529B28522240002A5769 /* RegisterScreen2 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB529E28522254002A5769 /* ViewModel */,
+				13BB529D2852224F002A5769 /* View */,
+				13BB529C28522249002A5769 /* Model */,
+			);
+			path = RegisterScreen2;
+			sourceTree = "<group>";
+		};
+		13BB529C28522249002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB529D2852224F002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF9ACBC3284797A8001A2F87 /* RegisterScreen2.xib */,
+				CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB529E28522254002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB529F2852226C002A5769 /* RegisterScreen3 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52A228522290002A5769 /* ViewModel */,
+				13BB52A12852228B002A5769 /* View */,
+				13BB52A028522285002A5769 /* Model */,
+			);
+			path = RegisterScreen3;
+			sourceTree = "<group>";
+		};
+		13BB52A028522285002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52A12852228B002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */,
+				CF06698D2847EA5300C3FB50 /* RegisterScreen3.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52A228522290002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52A3285222BC002A5769 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52A6285222D4002A5769 /* ViewModel */,
+				13BB52A5285222CE002A5769 /* View */,
+				13BB52A4285222C8002A5769 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		13BB52A4285222C8002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52A5285222CE002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF0669912847EB0B00C3FB50 /* Home.xib */,
+				CF0669902847EB0B00C3FB50 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52A6285222D4002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52A7285222E8002A5769 /* StatementScreen */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52AA28522301002A5769 /* ViewModel */,
+				13BB52A9285222F9002A5769 /* View */,
+				13BB52A8285222F2002A5769 /* Model */,
+			);
+			path = StatementScreen;
+			sourceTree = "<group>";
+		};
+		13BB52A8285222F2002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52A9285222F9002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF0669952847EBAB00C3FB50 /* StatementScreen.xib */,
+				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52AA28522301002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52AB28522314002A5769 /* TransferScreen1 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52AE2852232D002A5769 /* ViewModel */,
+				13BB52AD28522328002A5769 /* View */,
+				13BB52AC28522322002A5769 /* Model */,
+			);
+			path = TransferScreen1;
+			sourceTree = "<group>";
+		};
+		13BB52AC28522322002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52AD28522328002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
+				CF0669992847EBD200C3FB50 /* TransferScreen1.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52AE2852232D002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52AF28522342002A5769 /* TransferScreen2 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52B228522358002A5769 /* ViewModel */,
+				13BB52B128522352002A5769 /* View */,
+				13BB52B02852234C002A5769 /* Model */,
+			);
+			path = TransferScreen2;
+			sourceTree = "<group>";
+		};
+		13BB52B02852234C002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52B128522352002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
+				CF06699D2847EC0800C3FB50 /* TransferScreen2.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52B228522358002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52B32852236F002A5769 /* TransferScreen3 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52B628522388002A5769 /* ViewModel */,
+				13BB52B528522381002A5769 /* View */,
+				13BB52B42852237A002A5769 /* Model */,
+			);
+			path = TransferScreen3;
+			sourceTree = "<group>";
+		};
+		13BB52B42852237A002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52B528522381002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF0669A12847EC1D00C3FB50 /* TransferScreen3.xib */,
+				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52B628522388002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52B7285223A1002A5769 /* TransferScreen4 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52BA285223B6002A5769 /* ViewModel */,
+				13BB52B9285223AF002A5769 /* View */,
+				13BB52B8285223A9002A5769 /* Model */,
+			);
+			path = TransferScreen4;
+			sourceTree = "<group>";
+		};
+		13BB52B8285223A9002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52B9285223AF002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF0669A42847EC2D00C3FB50 /* TransferScreen4.swift */,
+				CF0669A52847EC2D00C3FB50 /* TransferScreen4.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52BA285223B6002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58BC284E835700ECA3FC /* TransferScreen4ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		13BB52BB285223CB002A5769 /* TransferScreen5 */ = {
+			isa = PBXGroup;
+			children = (
+				13BB52BE285223E0002A5769 /* ViewModel */,
+				13BB52BD285223DB002A5769 /* View */,
+				13BB52BC285223D5002A5769 /* Model */,
+			);
+			path = TransferScreen5;
+			sourceTree = "<group>";
+		};
+		13BB52BC285223D5002A5769 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13BB52BD285223DB002A5769 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF0669A82847EC5500C3FB50 /* TransferScreen5.swift */,
+				CF0669A92847EC5500C3FB50 /* TransferScreen5.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		13BB52BE285223E0002A5769 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF4A58BE284E837600ECA3FC /* TransferScreen5ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CF9ACBA028479684001A2F87 = {
@@ -176,6 +517,17 @@
 		CF9ACBAB28479684001A2F87 /* FourBank */ = {
 			isa = PBXGroup;
 			children = (
+				13BB52BB285223CB002A5769 /* TransferScreen5 */,
+				13BB52B7285223A1002A5769 /* TransferScreen4 */,
+				13BB52B32852236F002A5769 /* TransferScreen3 */,
+				13BB52AF28522342002A5769 /* TransferScreen2 */,
+				13BB52AB28522314002A5769 /* TransferScreen1 */,
+				13BB52A7285222E8002A5769 /* StatementScreen */,
+				13BB52A3285222BC002A5769 /* Home */,
+				13BB529F2852226C002A5769 /* RegisterScreen3 */,
+				13BB529B28522240002A5769 /* RegisterScreen2 */,
+				13BB5297285221FB002A5769 /* RegisterScreen1 */,
+				13BB52922852218B002A5769 /* LoginScreen */,
 				139ED2CB2847ED3300F2C59C /* Models */,
 				CF9ACBAC28479684001A2F87 /* AppDelegate.swift */,
 				CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */,
