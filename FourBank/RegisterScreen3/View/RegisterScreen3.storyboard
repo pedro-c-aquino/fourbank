@@ -117,11 +117,29 @@
                         <outlet property="confirmPasswordTextField" destination="h01-cj-rsj" id="2EG-pc-Cbz"/>
                         <outlet property="emailTextField" destination="v3F-D2-soi" id="wWD-FR-Z9K"/>
                         <outlet property="passwordTextField" destination="WML-QD-GxJ" id="iYv-Kp-njE"/>
+                        <segue destination="9IT-Kd-gqs" kind="presentation" identifier="RegScreen3ToMain" modalPresentationStyle="fullScreen" id="bnc-VF-viy"/>
+                        <segue destination="BjW-AT-a1O" kind="presentation" identifier="RegScreen3ToRegScreen2" modalPresentationStyle="fullScreen" id="D8G-HO-j4z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="98"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Ncz-dG-QqA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" referencedIdentifier="Main" id="9IT-Kd-gqs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAs-Wt-VjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-110"/>
+        </scene>
+        <!--RegisterScreen2-->
+        <scene sceneID="WCA-W3-pub">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="BjW-AT-a1O" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvX-Z0-0kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="230"/>
         </scene>
     </scenes>
 </document>
