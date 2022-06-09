@@ -9,6 +9,7 @@ import UIKit
 
 class RegisterScreen2: UIViewController {
 
+    let registerScreen2ViewModel = RegisterScreen2ViewModel()
     
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
@@ -20,7 +21,13 @@ class RegisterScreen2: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func proceedButton(_ sender: UIButton) {
+        registerScreen2ViewModel.registerPersonalInfo(address: addressTextField.text, city: cityTextField.text, state: stateTextField.text, zipcode: zipcodeTextField.text)
+    }
+    
+    @IBAction func cancelButton(_ sender: UIButton) {
+    }
 
     /*
     // MARK: - Navigation
