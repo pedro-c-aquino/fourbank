@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register Screen3-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RegisterScreen3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterScreen3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterScreen3" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,6 +67,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="registerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cZX-1L-Ufq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-qJ-9de">
                                 <rect key="frame" x="154.5" y="826" width="105" height="40"/>
@@ -84,6 +87,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DJg-C0-lxU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -107,10 +113,33 @@
                             <constraint firstAttribute="bottom" secondItem="ncc-qJ-9de" secondAttribute="bottom" constant="30" id="yQO-3u-D5q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="h01-cj-rsj" id="2EG-pc-Cbz"/>
+                        <outlet property="emailTextField" destination="v3F-D2-soi" id="wWD-FR-Z9K"/>
+                        <outlet property="passwordTextField" destination="WML-QD-GxJ" id="iYv-Kp-njE"/>
+                        <segue destination="9IT-Kd-gqs" kind="presentation" identifier="RegScreen3ToMain" modalPresentationStyle="fullScreen" id="bnc-VF-viy"/>
+                        <segue destination="BjW-AT-a1O" kind="presentation" identifier="RegScreen3ToRegScreen2" modalPresentationStyle="fullScreen" id="D8G-HO-j4z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="98"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Ncz-dG-QqA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" referencedIdentifier="Main" id="9IT-Kd-gqs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SAs-Wt-VjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="-110"/>
+        </scene>
+        <!--RegisterScreen2-->
+        <scene sceneID="WCA-W3-pub">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="BjW-AT-a1O" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvX-Z0-0kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="230"/>
         </scene>
     </scenes>
 </document>

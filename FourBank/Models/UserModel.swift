@@ -21,3 +21,8 @@ struct UserPersonalAddress {
     var zipcode: String?
 }
 
+struct UserLoginInfo {
+    var email: String?
+    var password: String?
+}
+
