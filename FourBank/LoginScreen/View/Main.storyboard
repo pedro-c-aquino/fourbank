@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="886" y="145"/>
         </scene>
-        <!--Home-->
+        <!--HomeTabBar-->
         <scene sceneID="vxA-rJ-UwD">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" referencedIdentifier="Home" id="zv7-jt-j5j" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="HomeTabBar" storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="zv7-jt-j5j" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoQ-Rv-Cam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="841" y="15"/>

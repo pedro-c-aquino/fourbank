@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="5e2-D7-7DJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCb-Dp-9vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" referencedIdentifier="Home" id="4o4-fN-VDd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lFF-mC-3ei"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="-2068" y="167"/>
+        </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="U03-IM-mnX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFx-qN-ZCn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="HomeTabBar" title="HomeTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S3s-wk-msb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bvo-M0-faa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4o4-fN-VDd" kind="relationship" relationship="viewControllers" id="623-cw-HKy"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="-1529" y="-271"/>
+        </scene>
+    </scenes>
+</document>
