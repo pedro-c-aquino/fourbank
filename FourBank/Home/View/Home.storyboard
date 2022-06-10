@@ -8,6 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--StatementScreen-->
+        <scene sceneID="hhI-0v-m3A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="StatementScreen" referencedIdentifier="StatementScreen" id="2f8-YP-Oua" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4P7-ch-QLz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMG-xr-3Qq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1141" y="-355"/>
+        </scene>
         <!--TransferScreen1-->
         <scene sceneID="mqt-30-Vqg">
             <objects>
@@ -21,7 +31,7 @@
         <!--Home-->
         <scene sceneID="wTz-ez-J5V">
             <objects>
-                <viewController id="FZA-vx-v6p" sceneMemberID="viewController">
+                <viewController id="FZA-vx-v6p" customClass="Home" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hm3-Oe-zKE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,6 +52,10 @@
                                         <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="list.bullet.rectangle.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="statementButtonTapped:" destination="FZA-vx-v6p" eventType="touchUpInside" id="f3K-c3-7An"/>
+                                            <segue destination="2f8-YP-Oua" kind="show" id="p8r-WK-694"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzh-da-cRM">
                                         <rect key="frame" x="236" y="142" width="80" height="80"/>
@@ -49,6 +63,10 @@
                                         <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="arrow.right.arrow.left.square.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="transferButtonTapped:" destination="FZA-vx-v6p" eventType="touchUpInside" id="bID-KB-4yq"/>
+                                            <segue destination="BN1-ih-YVt" kind="show" id="aWM-sY-l2b"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extrato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4r-Zc-tnN">
                                         <rect key="frame" x="82" y="256" width="55" height="21"/>
