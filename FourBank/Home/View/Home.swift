@@ -15,7 +15,15 @@ class Home: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func statementButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func transferButtonTapped(_ sender: UIButton) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 

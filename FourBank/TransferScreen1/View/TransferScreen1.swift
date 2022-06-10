@@ -27,7 +27,7 @@ class TransferScreen1: UIViewController {
     }
 
     @IBAction func closeButton(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        
     }
     
     @IBAction func proceedButton(_ sender: UIButton) {

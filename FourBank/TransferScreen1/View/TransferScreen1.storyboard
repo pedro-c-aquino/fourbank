@@ -80,6 +80,7 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="closeButton:" destination="Y6W-OH-hqX" id="Dhf-uE-s7T"/>
+                                <segue destination="cvh-Fc-bRt" kind="presentation" modalPresentationStyle="fullScreen" id="oti-y9-g29"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -91,6 +92,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
+        </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="XBo-sf-iG1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeTabBar" storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="cvh-Fc-bRt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HBg-8e-VuU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbZ-OC-avO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="-153"/>
         </scene>
         <!--TransferScreen2-->
         <scene sceneID="nNH-7J-ciO">
