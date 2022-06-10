@@ -114,6 +114,13 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09247BC4285390EE00FC3606 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		139ED2C92847ED0B00F2C59C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,16 +319,9 @@
 			children = (
 				13BB52AA28522301002A5769 /* ViewModel */,
 				13BB52A9285222F9002A5769 /* View */,
-				13BB52A8285222F2002A5769 /* Model */,
+				09247BC4285390EE00FC3606 /* Model */,
 			);
 			path = StatementScreen;
-			sourceTree = "<group>";
-		};
-		13BB52A8285222F2002A5769 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		13BB52A9285222F9002A5769 /* View */ = {
