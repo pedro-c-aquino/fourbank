@@ -8,6 +8,10 @@
 import UIKit
 
 class TransferScreen1: UIViewController {
+    
+    var transferAmount: Double = 0
+    
+    let transferScreen1VM = TransferScreen1ViewModel()
 
     @IBOutlet weak var amountTextField: UITextField!
     
@@ -27,7 +31,18 @@ class TransferScreen1: UIViewController {
     }
     
     @IBAction func proceedButton(_ sender: UIButton) {
+        
+        let amountString = amountTextField.text
+        
+        transferAmount = transferScreen1VM.getAmount(amountText: amountString)
+        
+        
         performSegue(withIdentifier: "TrScreen1ToTrScreen2", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? TransferScreen2
+        vc?.transferAmount = transferAmount
     }
     
     /*

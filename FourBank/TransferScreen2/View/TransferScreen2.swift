@@ -8,10 +8,12 @@
 import UIKit
 
 class TransferScreen2: UIViewController {
+    
+    var transferAmount: Double = 0.00
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(transferAmount)
         // Do any additional setup after loading the view.
     }
 
