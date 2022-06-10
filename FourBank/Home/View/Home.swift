@@ -16,10 +16,12 @@ class Home: UIViewController {
     }
 
     @IBAction func statementButtonTapped(_ sender: UIButton) {
+        
     }
     
     
     @IBAction func transferButtonTapped(_ sender: UIButton) {
+        
     }
     
     /*
