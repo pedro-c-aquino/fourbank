@@ -1,25 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JdG-WC-a91">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Extrato-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="StatementScreenViewController" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXl-xG-Nm9">
+                                <rect key="frame" x="0.0" y="208" width="414" height="654"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-Fj-ZeM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="654"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZmL-Fj-ZeM" secondAttribute="bottom" id="SPZ-zT-fCa"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZmL-Fj-ZeM" secondAttribute="trailing" id="hZS-zl-DZe"/>
+                                    <constraint firstItem="ZmL-Fj-ZeM" firstAttribute="leading" secondItem="AXl-xG-Nm9" secondAttribute="leading" id="kYO-7B-8nP"/>
+                                    <constraint firstItem="ZmL-Fj-ZeM" firstAttribute="top" secondItem="AXl-xG-Nm9" secondAttribute="top" id="ujh-Sh-VZU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-nn-sNj">
+                                <rect key="frame" x="35" y="143" width="165" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jpU-dO-vnv"/>
+                                    <constraint firstAttribute="width" constant="165" id="vn4-zy-C6q"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Saldo na conta:   R$">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="AppleSymbols"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7I4-Ha-31A">
+                                <rect key="frame" x="205" y="143" width="174" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LwA-w2-Rgn"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="0,00">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="22" name="AppleSymbols"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="7I4-Ha-31A" secondAttribute="trailing" constant="35" id="3dL-xv-IFo"/>
+                            <constraint firstItem="AXl-xG-Nm9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="ANt-Ex-6rr"/>
+                            <constraint firstItem="7I4-Ha-31A" firstAttribute="leading" secondItem="f3V-nn-sNj" secondAttribute="trailing" constant="5" id="H0y-r3-lEa"/>
+                            <constraint firstItem="AXl-xG-Nm9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NIR-T4-Tuu"/>
+                            <constraint firstItem="7I4-Ha-31A" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="Ra9-U4-f9a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="AXl-xG-Nm9" secondAttribute="trailing" id="Rxc-Wu-OrW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="AXl-xG-Nm9" secondAttribute="bottom" id="UmR-zw-R7R"/>
+                            <constraint firstItem="f3V-nn-sNj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="35" id="Zof-GH-JLz"/>
+                            <constraint firstItem="f3V-nn-sNj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="esL-dw-8bz"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Extrato" id="bgO-vr-SgO"/>
+                    <connections>
+                        <outlet property="balanceLabel" destination="7I4-Ha-31A" id="j4t-wa-QYM"/>
+                        <outlet property="balanceTableView" destination="ZmL-Fj-ZeM" id="65s-bv-TjO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="96.428571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G3h-ey-onu">
+            <objects>
+                <navigationController storyboardIdentifier="StatementScreen" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JdG-WC-a91" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FcA-3u-gmk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="nYe-gB-yp6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uoq-zy-d0f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="96.428571428571431"/>
         </scene>
     </scenes>
     <resources>
