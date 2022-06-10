@@ -33,7 +33,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7M-sX-qyf">
                                 <rect key="frame" x="30" y="287" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukn-li-MjV">
                                 <rect key="frame" x="154.5" y="341" width="105" height="40"/>
@@ -55,6 +55,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="proceedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X0u-DG-U7L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -75,12 +78,29 @@
                     <navigationItem key="navigationItem" title="Transferências" id="i0W-Ex-0Ac">
                         <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="nIu-YJ-MJ7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="closeButton:" destination="Y6W-OH-hqX" id="Dhf-uE-s7T"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="j7M-sX-qyf" id="hWj-d1-2aV"/>
+                        <segue destination="HG9-ES-bw4" kind="show" identifier="TrScreen1ToTrScreen2" id="ula-aK-Utf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
+        </scene>
+        <!--TransferScreen2-->
+        <scene sceneID="nNH-7J-ciO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TransferScreen2" storyboardName="TransferScreen2" referencedIdentifier="TransferScreen2" id="HG9-ES-bw4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cVL-1t-nnY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPN-eV-DUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="97"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kid-2R-eeu">

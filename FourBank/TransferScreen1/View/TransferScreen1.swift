@@ -9,13 +9,27 @@ import UIKit
 
 class TransferScreen1: UIViewController {
 
+    @IBOutlet weak var amountTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        amountTextField.becomeFirstResponder()
+    }
 
-
+    @IBAction func closeButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func proceedButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "TrScreen1ToTrScreen2", sender: self)
+    }
+    
     /*
     // MARK: - Navigation
 

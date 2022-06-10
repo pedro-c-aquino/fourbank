@@ -143,7 +143,7 @@
         <!--Home-->
         <scene sceneID="vxA-rJ-UwD">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="zv7-jt-j5j" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" referencedIdentifier="Home" id="zv7-jt-j5j" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eoQ-Rv-Cam" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="841" y="15"/>
