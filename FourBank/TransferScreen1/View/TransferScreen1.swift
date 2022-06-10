@@ -8,14 +8,43 @@
 import UIKit
 
 class TransferScreen1: UIViewController {
+    
+    var transferAmount: Double = 0
+    
+    let transferScreen1VM = TransferScreen1ViewModel()
 
+    @IBOutlet weak var amountTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        amountTextField.becomeFirstResponder()
+    }
 
-
+    @IBAction func closeButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
+    
+    @IBAction func proceedButton(_ sender: UIButton) {
+        
+        let amountString = amountTextField.text
+        
+        transferAmount = transferScreen1VM.getAmount(amountText: amountString)
+        
+        
+        performSegue(withIdentifier: "TrScreen1ToTrScreen2", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? TransferScreen2
+        vc?.transferAmount = transferAmount
+    }
+    
     /*
     // MARK: - Navigation
 
