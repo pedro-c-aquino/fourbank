@@ -101,11 +101,11 @@
             </objects>
             <point key="canvasLocation" x="421.73913043478262" y="-232.36607142857142"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="DPm-Av-5bC">
             <objects>
                 <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MPA-DY-MSh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gCX-Hd-2Ql"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="gCX-Hd-2Ql"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XxQ-ig-iom">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -123,6 +123,7 @@
     </scenes>
     <resources>
         <image name="arrow.right.arrow.left.square.fill" catalog="system" width="128" height="114"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
