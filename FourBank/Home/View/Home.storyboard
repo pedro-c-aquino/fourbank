@@ -17,7 +17,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMG-xr-3Qq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141" y="-355"/>
+            <point key="canvasLocation" x="1080" y="-78"/>
         </scene>
         <!--TransferScreen1-->
         <scene sceneID="mqt-30-Vqg">
@@ -27,7 +27,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hE2-Jx-774" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="912" y="-65"/>
+            <point key="canvasLocation" x="1085" y="-382"/>
         </scene>
         <!--Home-->
         <scene sceneID="wTz-ez-J5V">
@@ -83,6 +83,9 @@
                                                                     <imageReference key="image" image="arrow.right.arrow.left.square.fill" catalog="system" symbolScale="large"/>
                                                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="default"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <segue destination="BN1-ih-YVt" kind="show" id="NfL-hl-QZT"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transferências" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGN-7k-7h4">
                                                                 <rect key="frame" x="10" y="89" width="112" height="21"/>
@@ -114,6 +117,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="">
                                                                     <imageReference key="image" image="list.bullet.rectangle.fill" catalog="system" symbolScale="large"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <segue destination="2f8-YP-Oua" kind="show" id="VHX-GO-c7v"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Extrato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2q-0S-rA0">
                                                                 <rect key="frame" x="38" y="93" width="55" height="21"/>
