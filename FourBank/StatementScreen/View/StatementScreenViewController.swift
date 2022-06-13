@@ -9,7 +9,7 @@ import UIKit
 
 class StatementScreenViewController: UIViewController {
     
-    @IBOutlet weak var balanceLabel:         UILabel!
+    @IBOutlet weak var balanceLabel: UILabel!
     
     @IBOutlet weak var balanceTableView: UITableView!
     
@@ -20,7 +20,7 @@ class StatementScreenViewController: UIViewController {
         self.balanceTableView.delegate = self
         self.balanceTableView.dataSource = self
         
-        self.balanceTableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "BalanceCell")
+        self.balanceTableView.register(UINib(nibName: "BalanceCell", bundle: nil), forCellReuseIdentifier: "BalanceCell")
 
     }
 
