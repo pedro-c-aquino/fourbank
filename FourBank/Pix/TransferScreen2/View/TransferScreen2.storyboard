@@ -15,8 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rC0-aD-t9h">
+                                <rect key="frame" x="0.0" y="414" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a Chave PIX do destinatário." lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hOB-fZ-gcM">
+                                <rect key="frame" x="30" y="106" width="207" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="kji-78-x5L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo disponível em conta: R$ 0,00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hP4-hD-rff">
+                                <rect key="frame" x="30" y="192" width="268" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CaO-jx-DkN">
+                                <rect key="frame" x="30" y="243" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CaO-jx-DkN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="0vc-Ye-gKG"/>
+                            <constraint firstItem="hOB-fZ-gcM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="7dv-bC-s9Q"/>
+                            <constraint firstItem="rC0-aD-t9h" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.5" id="Lsb-3C-Oaq"/>
+                            <constraint firstItem="hOB-fZ-gcM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="VcT-yG-xyF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rC0-aD-t9h" secondAttribute="trailing" id="aDR-gK-Uuc"/>
+                            <constraint firstItem="rC0-aD-t9h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aYR-FZ-sgT"/>
+                            <constraint firstItem="CaO-jx-DkN" firstAttribute="top" secondItem="hP4-hD-rff" secondAttribute="bottom" constant="30" id="d5G-ea-4aL"/>
+                            <constraint firstItem="CaO-jx-DkN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="eEH-zx-AG3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rC0-aD-t9h" secondAttribute="bottom" id="ech-Bq-J8t"/>
+                            <constraint firstItem="hOB-fZ-gcM" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" id="nMg-o4-p2n"/>
+                            <constraint firstItem="hP4-hD-rff" firstAttribute="leading" secondItem="hOB-fZ-gcM" secondAttribute="leading" id="rJM-ek-xxj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="CaO-jx-DkN" secondAttribute="trailing" constant="30" id="sGW-I4-Bsk"/>
+                            <constraint firstItem="hP4-hD-rff" firstAttribute="top" secondItem="hOB-fZ-gcM" secondAttribute="bottom" constant="20" id="vxv-95-xlK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
