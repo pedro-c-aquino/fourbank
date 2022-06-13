@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXl-xG-Nm9">
-                                <rect key="frame" x="0.0" y="208" width="414" height="654"/>
+                                <rect key="frame" x="0.0" y="208" width="414" height="605"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZmL-Fj-ZeM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="654"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="605"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                 </subviews>
@@ -80,7 +80,14 @@
                             <constraint firstItem="f3V-nn-sNj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="esL-dw-8bz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Extrato" id="bgO-vr-SgO"/>
+                    <navigationItem key="navigationItem" title="Extrato" id="bgO-vr-SgO">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="vr8-hI-cWZ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="KLv-ue-OSf" kind="presentation" modalPresentationStyle="fullScreen" id="BdI-DL-fXj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="balanceLabel" destination="7I4-Ha-31A" id="j4t-wa-QYM"/>
                         <outlet property="balanceTableView" destination="ZmL-Fj-ZeM" id="65s-bv-TjO"/>
@@ -90,11 +97,23 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="96.428571428571431"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--HomeTabBar-->
+        <scene sceneID="5Jq-5Z-ZO0">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeTabBar" storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="KLv-ue-OSf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="scg-DH-oOP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BI9-ko-gIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="-158"/>
+        </scene>
+        <!--Extrato-->
         <scene sceneID="G3h-ey-onu">
             <objects>
                 <navigationController storyboardIdentifier="StatementScreen" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JdG-WC-a91" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Extrato" image="list.bullet" catalog="system" id="XRo-4A-fZC"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FcA-3u-gmk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -113,6 +132,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
