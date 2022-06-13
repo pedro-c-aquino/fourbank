@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StatementScreenViewController: UIViewController {
+class StatementScreen: UIViewController {
     
     @IBOutlet weak var balanceLabel: UILabel!
     
@@ -27,7 +27,7 @@ class StatementScreenViewController: UIViewController {
 
 }
 
-extension StatementScreenViewController: UITableViewDelegate, UITableViewDataSource {
+extension StatementScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         3

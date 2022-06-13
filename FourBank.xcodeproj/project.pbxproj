@@ -26,7 +26,7 @@
 		13BB52CE28522B76002A5769 /* TransferScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CD28522B76002A5769 /* TransferScreen3.storyboard */; };
 		CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */; };
 		CF0669922847EB0B00C3FB50 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669902847EB0B00C3FB50 /* Home.swift */; };
-		CF0669962847EBAB00C3FB50 /* StatementScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669942847EBAB00C3FB50 /* StatementScreenViewController.swift */; };
+		CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669942847EBAB00C3FB50 /* StatementScreen.swift */; };
 		CF06699A2847EBD200C3FB50 /* TransferScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669982847EBD200C3FB50 /* TransferScreen1.swift */; };
 		CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */; };
 		CF0669A22847EC1D00C3FB50 /* TransferScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */; };
@@ -69,7 +69,7 @@
 		13BB52CD28522B76002A5769 /* TransferScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen3.storyboard; sourceTree = "<group>"; };
 		CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3.swift; sourceTree = "<group>"; };
 		CF0669902847EB0B00C3FB50 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		CF0669942847EBAB00C3FB50 /* StatementScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreenViewController.swift; sourceTree = "<group>"; };
+		CF0669942847EBAB00C3FB50 /* StatementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreen.swift; sourceTree = "<group>"; };
 		CF0669982847EBD200C3FB50 /* TransferScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1.swift; sourceTree = "<group>"; };
 		CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2.swift; sourceTree = "<group>"; };
 		CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3.swift; sourceTree = "<group>"; };
@@ -385,7 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				09247BBD285387E800FC3606 /* Cell */,
-				CF0669942847EBAB00C3FB50 /* StatementScreenViewController.swift */,
+				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
 				13BB52C728522B15002A5769 /* StatementScreen.storyboard */,
 			);
 			path = View;
@@ -632,7 +632,7 @@
 				CF4A58B3284E82E000ECA3FC /* HomeViewModel.swift in Sources */,
 				CF4A58B5284E830100ECA3FC /* StatementScreenViewModel.swift in Sources */,
 				CF4A58AF284E82A700ECA3FC /* RegisterScreen3ViewModel.swift in Sources */,
-				CF0669962847EBAB00C3FB50 /* StatementScreenViewController.swift in Sources */,
+				CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */,
 				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
 				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
 				CF4A58AD284E829900ECA3FC /* RegisterScreen2ViewModel.swift in Sources */,
