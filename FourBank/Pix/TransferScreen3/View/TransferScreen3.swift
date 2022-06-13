@@ -8,22 +8,33 @@
 import UIKit
 
 class TransferScreen3: UIViewController {
-
+    
+    
+    @IBOutlet weak var transferDataTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.transferDataTableView.delegate = self
+        self.transferDataTableView.dataSource = self
+        
+        self.transferDataTableView.register(UINib(nibName: "transferDataCell", bundle: nil), forCellReuseIdentifier: "transferDataCell")
     }
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension TransferScreen3: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let transferDataCell: transferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "transferDataCell", for: indexPath) as? transferDataCell
+               
+        return transferDataCell ?? UITableViewCell()
+    }
+    
+    
+    
 }
