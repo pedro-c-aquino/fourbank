@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		09247BC02853881400FC3606 /* BalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09247BBE2853881400FC3606 /* BalanceCell.swift */; };
 		09247BC12853881400FC3606 /* BalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09247BBF2853881400FC3606 /* BalanceCell.xib */; };
+		094C0B932857A6E500B7F3E0 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C0B912857A6E500B7F3E0 /* DataCell.swift */; };
+		094C0B942857A6E500B7F3E0 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094C0B922857A6E500B7F3E0 /* DataCell.xib */; };
 		097C38F92857755D00828C1F /* AccountScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097C38F82857755D00828C1F /* AccountScreen.storyboard */; };
 		097C38FB2857756F00828C1F /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097C38FA2857756F00828C1F /* AccountScreen.swift */; };
 		097C38FD2857759B00828C1F /* AccountScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097C38FC2857759B00828C1F /* AccountScreenViewModel.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		09247BBE2853881400FC3606 /* BalanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCell.swift; sourceTree = "<group>"; };
 		09247BBF2853881400FC3606 /* BalanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceCell.xib; sourceTree = "<group>"; };
+		094C0B912857A6E500B7F3E0 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		094C0B922857A6E500B7F3E0 /* DataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
 		097C38F82857755D00828C1F /* AccountScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountScreen.storyboard; sourceTree = "<group>"; };
 		097C38FA2857756F00828C1F /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		097C38FC2857759B00828C1F /* AccountScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +125,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		094C0B902857A6B700B7F3E0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				094C0B912857A6E500B7F3E0 /* DataCell.swift */,
+				094C0B922857A6E500B7F3E0 /* DataCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		097C38F12857741800828C1F /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +157,7 @@
 		097C38F32857748D00828C1F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				094C0B902857A6B700B7F3E0 /* Cell */,
 				097C38F82857755D00828C1F /* AccountScreen.storyboard */,
 				097C38FA2857756F00828C1F /* AccountScreen.swift */,
 			);
@@ -610,6 +624,7 @@
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
 				CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */,
 				13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */,
+				094C0B942857A6E500B7F3E0 /* DataCell.xib in Resources */,
 				13BB52CC28522B5A002A5769 /* TransferScreen2.storyboard in Resources */,
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
 				13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */,
@@ -653,6 +668,7 @@
 				CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */,
 				CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */,
 				CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */,
+				094C0B932857A6E500B7F3E0 /* DataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
