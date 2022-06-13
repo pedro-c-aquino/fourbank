@@ -180,7 +180,7 @@
                         <barButtonItem key="leftBarButtonItem" image="person.crop.circle.fill" catalog="system" id="jp9-v5-nD4">
                             <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="Zhx-wW-fZ3" kind="show" id="uNf-ZW-ocL"/>
+                                <segue destination="Zhx-wW-fZ3" kind="presentation" modalPresentationStyle="fullScreen" id="uNf-ZW-ocL"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="eye.fill" catalog="system" id="Zul-HT-jKC">

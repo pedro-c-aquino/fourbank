@@ -11,7 +11,7 @@
         <!--Minha Conta-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="AccountScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="AccountScreen" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="AccountScreen" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,7 @@
         <!--Navigation Controller-->
         <scene sceneID="fSV-IM-ul5">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ke9-em-usd" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AccountScreen" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ke9-em-usd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xyE-UW-Hha">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
