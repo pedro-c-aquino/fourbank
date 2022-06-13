@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterScreen3: UIViewController {
     
@@ -23,15 +24,21 @@ class RegisterScreen3: UIViewController {
 
     @IBAction func registerButton(_ sender: UIButton) {
         
-        let email = emailTextField.text
-        let password = passwordTextField.text
-        let confirmPassword = confirmPasswordTextField.text
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        let confirmPassword = confirmPasswordTextField.text ?? ""
         
         if password == confirmPassword {
-            registerScreen3VM.registerUser(email: email, password: password)
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    print(e)
+                } else {
+                    self.performSegue(withIdentifier: "RegScreen3ToMain", sender: self)
+                }
+            }
         }
         
-        self.performSegue(withIdentifier: "RegScreen3ToMain", sender: self)
+       
     }
     
     @IBAction func backButton(_ sender: UIButton) {
