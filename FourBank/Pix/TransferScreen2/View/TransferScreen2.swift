@@ -9,6 +9,10 @@ import UIKit
 
 class TransferScreen2: UIViewController {
     
+    @IBOutlet weak var balanceLabel: UILabel!
+    @IBOutlet weak var pixKeyTextField: UITextField!
+    @IBOutlet weak var contactsTableView: UITableView!
+    
     var transferAmount: Double = 0.00
 
     override func viewDidLoad() {

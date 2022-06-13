@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rC0-aD-t9h">
-                                <rect key="frame" x="0.0" y="414" width="414" height="448"/>
+                                <rect key="frame" x="0.0" y="503.5" width="414" height="358.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a Chave PIX do destinatário." lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hOB-fZ-gcM">
@@ -35,19 +35,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CaO-jx-DkN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chave PIX" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CaO-jx-DkN">
                                 <rect key="frame" x="30" y="243" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contatos PIX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ye9-2K-mu4">
+                                <rect key="frame" x="156" y="472.5" width="102" height="21"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CaO-jx-DkN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="0vc-Ye-gKG"/>
+                            <constraint firstItem="Ye9-2K-mu4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4SR-a0-2dS"/>
                             <constraint firstItem="hOB-fZ-gcM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="7dv-bC-s9Q"/>
-                            <constraint firstItem="rC0-aD-t9h" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.5" id="Lsb-3C-Oaq"/>
+                            <constraint firstItem="rC0-aD-t9h" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="Lsb-3C-Oaq"/>
                             <constraint firstItem="hOB-fZ-gcM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="VcT-yG-xyF"/>
+                            <constraint firstItem="rC0-aD-t9h" firstAttribute="top" secondItem="Ye9-2K-mu4" secondAttribute="bottom" constant="10" id="Y1D-NJ-M6T"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rC0-aD-t9h" secondAttribute="trailing" id="aDR-gK-Uuc"/>
                             <constraint firstItem="rC0-aD-t9h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aYR-FZ-sgT"/>
                             <constraint firstItem="CaO-jx-DkN" firstAttribute="top" secondItem="hP4-hD-rff" secondAttribute="bottom" constant="30" id="d5G-ea-4aL"/>
@@ -59,10 +67,15 @@
                             <constraint firstItem="hP4-hD-rff" firstAttribute="top" secondItem="hOB-fZ-gcM" secondAttribute="bottom" constant="20" id="vxv-95-xlK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="balanceLabel" destination="hP4-hD-rff" id="WGl-ZN-17u"/>
+                        <outlet property="contactsTableView" destination="rC0-aD-t9h" id="5hW-EZ-J9S"/>
+                        <outlet property="pixKeyTextField" destination="CaO-jx-DkN" id="hc6-i0-RaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="98"/>
+            <point key="canvasLocation" x="140.57971014492756" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
