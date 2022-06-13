@@ -65,6 +65,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="4lP-3r-ThF"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
