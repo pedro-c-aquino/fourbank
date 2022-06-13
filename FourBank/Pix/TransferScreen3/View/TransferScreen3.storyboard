@@ -16,12 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-5x-quU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="574"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-Mx-PoT">
-                                <rect key="frame" x="77" y="718" width="120" height="55"/>
+                                <rect key="frame" x="77" y="508" width="120" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="ak6-LV-asn"/>
                                     <constraint firstAttribute="height" constant="55" id="gIq-5c-67j"/>
@@ -38,9 +34,12 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0Nn-Bu-Gb1" kind="show" id="rNL-Ye-RhW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-7k-7hL">
-                                <rect key="frame" x="217" y="718" width="120" height="55"/>
+                                <rect key="frame" x="217" y="508" width="120" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="FzT-c0-1R1"/>
                                     <constraint firstAttribute="height" constant="55" id="ZFc-l1-4cM"/>
@@ -58,7 +57,14 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.22424242420000001" green="0.18927738920000001" blue="0.39860139859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0Nn-Bu-Gb1" kind="show" id="wCE-yt-D4B"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-5x-quU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="364"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iEq-VW-3zr"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -70,7 +76,7 @@
                             <constraint firstItem="g6z-5x-quU" firstAttribute="leading" secondItem="iEq-VW-3zr" secondAttribute="leading" id="XIZ-hu-Ndg"/>
                             <constraint firstItem="iEq-VW-3zr" firstAttribute="trailing" secondItem="g6z-5x-quU" secondAttribute="trailing" id="YC8-Sh-4mE"/>
                             <constraint firstItem="S3q-Mx-PoT" firstAttribute="top" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="56" id="eMt-9E-mUl"/>
-                            <constraint firstItem="iEq-VW-3zr" firstAttribute="bottom" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="200" id="jOy-eL-Buv"/>
+                            <constraint firstItem="iEq-VW-3zr" firstAttribute="bottom" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="410" id="jOy-eL-Buv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pix" id="3Tu-pk-RIA"/>
@@ -81,6 +87,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="gDU-rH-OI3">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" referencedIdentifier="Home" id="0Nn-Bu-Gb1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="K9o-jc-eXv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppW-oC-t3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JBC-k8-hBI">
@@ -104,6 +120,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wCE-yt-D4B"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

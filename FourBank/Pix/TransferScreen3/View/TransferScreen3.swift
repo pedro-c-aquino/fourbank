@@ -30,9 +30,10 @@ extension TransferScreen3: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let transferDataCell: transferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "transferDataCell", for: indexPath) as? transferDataCell
+        let cell: transferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "transferDataCell", for: indexPath) as? transferDataCell
                
-        return transferDataCell ?? UITableViewCell()
+        return cell ?? UITableViewCell()
+        
     }
     
     
