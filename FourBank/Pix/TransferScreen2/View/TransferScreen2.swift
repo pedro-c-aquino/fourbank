@@ -30,7 +30,12 @@ class TransferScreen2: UIViewController {
         
     }
     
-
+    @IBAction func proceedButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "TrScreen2ToTrScreen3", sender: self)
+        
+    }
+    
 
     /*
     // MARK: - Navigation
