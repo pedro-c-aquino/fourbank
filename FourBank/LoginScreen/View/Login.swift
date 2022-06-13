@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class Login: UIViewController {
+    
+    let loginViewModel = LoginViewModel()
     
     @IBOutlet weak var emailTextField:    UITextField!
     
@@ -20,18 +23,20 @@ class Login: UIViewController {
     }
 
     @IBAction func loginButton(_ sender: UIButton) {
+        
+        let loginInfo = loginViewModel.validateLoginData(email: emailTextField.text, password: passwordTextField.text)
+        
+        if loginInfo.validation {
             
-            if (emailTextField.text == "" && passwordTextField.text == "") {
+            Auth.auth().signIn(withEmail: loginInfo.email, password: loginInfo.password) { authResult, error in
+                if let e = error {
+                    print(e)
+                } else {
+                    self.performSegue(withIdentifier: "toHome", sender: nil)
+                }
+            }
+            
                 
-                print("Campos vazios.")
-                
-            } else if (emailTextField.text == "" || passwordTextField.text == ""){
-                
-                print("E-mail ou senha inválidos.")
-                
-            } else {
-                
-                performSegue(withIdentifier: "toHome", sender: nil)
             }
             
         }

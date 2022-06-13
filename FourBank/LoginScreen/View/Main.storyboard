@@ -37,7 +37,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Agência" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-gj-A8e">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAZ-gj-A8e">
                                 <rect key="frame" x="20" y="269" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="nrE-eh-NVu"/>
@@ -45,7 +45,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder=" Conta" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUx-Nn-m5W">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder=" Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUx-Nn-m5W">
                                 <rect key="frame" x="20" y="344" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="zTg-76-CZa"/>
