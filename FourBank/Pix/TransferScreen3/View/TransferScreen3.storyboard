@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-Mx-PoT">
-                                <rect key="frame" x="77" y="508" width="120" height="55"/>
+                                <rect key="frame" x="77" y="473" width="120" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="ak6-LV-asn"/>
                                     <constraint firstAttribute="height" constant="55" id="gIq-5c-67j"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-7k-7hL">
-                                <rect key="frame" x="217" y="508" width="120" height="55"/>
+                                <rect key="frame" x="217" y="473" width="120" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="FzT-c0-1R1"/>
                                     <constraint firstAttribute="height" constant="55" id="ZFc-l1-4cM"/>
@@ -62,8 +62,11 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-5x-quU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="364"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="365"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="365" id="C9m-rC-wC6"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iEq-VW-3zr"/>
@@ -75,8 +78,7 @@
                             <constraint firstItem="PR1-7k-7hL" firstAttribute="top" secondItem="S3q-Mx-PoT" secondAttribute="top" id="HEe-84-DGY"/>
                             <constraint firstItem="g6z-5x-quU" firstAttribute="leading" secondItem="iEq-VW-3zr" secondAttribute="leading" id="XIZ-hu-Ndg"/>
                             <constraint firstItem="iEq-VW-3zr" firstAttribute="trailing" secondItem="g6z-5x-quU" secondAttribute="trailing" id="YC8-Sh-4mE"/>
-                            <constraint firstItem="S3q-Mx-PoT" firstAttribute="top" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="56" id="eMt-9E-mUl"/>
-                            <constraint firstItem="iEq-VW-3zr" firstAttribute="bottom" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="410" id="jOy-eL-Buv"/>
+                            <constraint firstItem="S3q-Mx-PoT" firstAttribute="top" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="20" id="eMt-9E-mUl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Pix" id="3Tu-pk-RIA"/>
