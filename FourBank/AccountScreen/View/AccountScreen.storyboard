@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Account Screen-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="AccountScreen" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,21 +32,10 @@
                                     <constraint firstItem="vug-VC-dph" firstAttribute="leading" secondItem="Bib-Gd-wyP" secondAttribute="leading" id="qzp-3c-YbO"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg1-FP-Cz6">
-                                <rect key="frame" x="40" y="64" width="44" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="VRh-g0-N3K"/>
-                                    <constraint firstAttribute="width" constant="44" id="vuD-rx-h7b"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system" imagePadding="4">
-                                    <attributedString key="attributedTitle"/>
-                                </buttonConfiguration>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cqb-bG-eMK">
-                                <rect key="frame" x="104" y="74" width="280" height="30"/>
+                                <rect key="frame" x="112" y="74" width="272" height="27.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XIs-UO-H3R"/>
+                                    <constraint firstAttribute="height" constant="27.5" id="UFH-wG-Fvq"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="UserName">
@@ -59,9 +48,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ru5-Nj-y4d">
-                                <rect key="frame" x="104" y="114" width="53" height="22"/>
+                                <rect key="frame" x="112" y="111.5" width="53" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="21Y-jk-Ows"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="gMp-ID-ksg"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Agencia:">
@@ -75,8 +65,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFj-4x-28M">
-                                <rect key="frame" x="167" y="114" width="35" height="22"/>
+                                <rect key="frame" x="170" y="111.5" width="35" height="22"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="1s1-v3-0R3"/>
                                     <constraint firstAttribute="width" constant="35" id="3XJ-4r-TLX"/>
                                     <constraint firstAttribute="height" constant="22" id="Vqf-ee-ENh"/>
                                 </constraints>
@@ -91,8 +82,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haK-8f-niV">
-                                <rect key="frame" x="217" y="114" width="41" height="22"/>
+                                <rect key="frame" x="220" y="111.5" width="41" height="22"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="0Ya-ue-4eJ"/>
                                     <constraint firstAttribute="height" constant="22" id="kmc-OY-oAn"/>
                                 </constraints>
                                 <attributedString key="attributedText">
@@ -105,10 +97,18 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-profile-icon" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-SC-SPR">
+                                <rect key="frame" x="20" y="54" width="77" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="AM8-XI-MEs"/>
+                                    <constraint firstAttribute="width" constant="77" id="x8Y-kQ-W58"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-Ac-55k">
-                                <rect key="frame" x="268" y="114" width="52" height="22"/>
+                                <rect key="frame" x="266" y="111.5" width="52" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Ocb-ub-qhj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="vQe-cL-Q5q"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="000001">
@@ -124,33 +124,39 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="EFj-4x-28M" firstAttribute="leading" secondItem="ru5-Nj-y4d" secondAttribute="trailing" constant="5" id="1PG-zH-Yzo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cqb-bG-eMK" secondAttribute="trailing" constant="30" id="2ZX-sd-vIk"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bib-Gd-wyP" secondAttribute="trailing" id="6E5-L7-7iC"/>
-                            <constraint firstItem="EFj-4x-28M" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="6PY-ra-spR"/>
-                            <constraint firstItem="EFj-4x-28M" firstAttribute="leading" secondItem="ru5-Nj-y4d" secondAttribute="trailing" constant="10" id="9Sd-gX-McN"/>
-                            <constraint firstItem="ru5-Nj-y4d" firstAttribute="leading" secondItem="cqb-bG-eMK" secondAttribute="leading" id="HGS-8k-BEP"/>
-                            <constraint firstItem="haK-8f-niV" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="KFN-L6-aMP"/>
-                            <constraint firstItem="YQA-Ac-55k" firstAttribute="leading" secondItem="haK-8f-niV" secondAttribute="trailing" constant="10" id="LNY-td-aF2"/>
-                            <constraint firstItem="haK-8f-niV" firstAttribute="leading" secondItem="EFj-4x-28M" secondAttribute="trailing" constant="15" id="Q5Z-4O-X4B"/>
+                            <constraint firstItem="cqb-bG-eMK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="AMg-dB-Uyl"/>
+                            <constraint firstItem="cqb-bG-eMK" firstAttribute="leading" secondItem="g4g-SC-SPR" secondAttribute="trailing" constant="15" id="Keb-I6-dNX"/>
+                            <constraint firstItem="haK-8f-niV" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="MpE-L9-x6q"/>
                             <constraint firstItem="Bib-Gd-wyP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="TRn-YX-cWR"/>
-                            <constraint firstItem="YQA-Ac-55k" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="VXB-N8-RDc"/>
+                            <constraint firstItem="ru5-Nj-y4d" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="UsC-Gh-pmt"/>
                             <constraint firstItem="Bib-Gd-wyP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Vmr-Vv-mEv"/>
-                            <constraint firstItem="ru5-Nj-y4d" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="Z83-fN-wmS"/>
-                            <constraint firstItem="cqb-bG-eMK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="cUI-lj-X1A"/>
-                            <constraint firstItem="Cg1-FP-Cz6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="fWc-Pb-PWw"/>
-                            <constraint firstItem="Cg1-FP-Cz6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="gQ1-mN-lTG"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cqb-bG-eMK" secondAttribute="trailing" constant="30" id="gbG-Hs-AvV"/>
+                            <constraint firstItem="ru5-Nj-y4d" firstAttribute="leading" secondItem="cqb-bG-eMK" secondAttribute="leading" id="X6I-JF-QOI"/>
+                            <constraint firstItem="g4g-SC-SPR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="dM1-fn-J1I"/>
+                            <constraint firstItem="YQA-Ac-55k" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="ehh-ko-8GV"/>
+                            <constraint firstItem="EFj-4x-28M" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="pgO-NT-K6q"/>
+                            <constraint firstItem="g4g-SC-SPR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qBO-VH-veW"/>
+                            <constraint firstItem="haK-8f-niV" firstAttribute="leading" secondItem="EFj-4x-28M" secondAttribute="trailing" constant="15" id="sMY-vc-TvR"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Bib-Gd-wyP" secondAttribute="bottom" id="wJa-NL-i8U"/>
-                            <constraint firstItem="cqb-bG-eMK" firstAttribute="leading" secondItem="Cg1-FP-Cz6" secondAttribute="trailing" constant="20" id="xEr-oy-g7k"/>
+                            <constraint firstItem="YQA-Ac-55k" firstAttribute="leading" secondItem="haK-8f-niV" secondAttribute="trailing" constant="5" id="zVu-fa-iGY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accountLabel" destination="YQA-Ac-55k" id="gb5-gj-DXT"/>
+                        <outlet property="agencyLabel" destination="EFj-4x-28M" id="Tbd-fG-xma"/>
+                        <outlet property="personalDataTableView" destination="vug-VC-dph" id="7up-WT-q6h"/>
+                        <outlet property="usernameLabel" destination="cqb-bG-eMK" id="e63-B5-tVK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="97"/>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="user-profile-icon" width="980" height="980"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
