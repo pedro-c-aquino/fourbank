@@ -17,7 +17,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GMG-xr-3Qq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080" y="-78"/>
+            <point key="canvasLocation" x="1068" y="-241"/>
         </scene>
         <!--TransferScreen1-->
         <scene sceneID="mqt-30-Vqg">
@@ -27,7 +27,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hE2-Jx-774" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1085" y="-382"/>
+            <point key="canvasLocation" x="1059" y="-143"/>
         </scene>
         <!--Home-->
         <scene sceneID="wTz-ez-J5V">
@@ -177,6 +177,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="VFp-h5-sC1">
+                        <barButtonItem key="leftBarButtonItem" image="person.crop.circle.fill" catalog="system" id="jp9-v5-nD4">
+                            <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="Zhx-wW-fZ3" kind="presentation" modalPresentationStyle="fullScreen" id="uNf-ZW-ocL"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="eye.fill" catalog="system" id="Zul-HT-jKC">
                             <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -213,12 +219,23 @@
             </objects>
             <point key="canvasLocation" x="-488.40579710144931" y="-232.36607142857142"/>
         </scene>
+        <!--AccountScreen-->
+        <scene sceneID="Vq6-Lg-l90">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AccountScreen" storyboardName="AccountScreen" referencedIdentifier="AccountScreen" id="Zhx-wW-fZ3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RaI-G3-3H0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLq-Yl-18R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="-313"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.right.arrow.left.square.fill" catalog="system" width="128" height="114"/>
         <image name="eye.fill" catalog="system" width="128" height="78"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
