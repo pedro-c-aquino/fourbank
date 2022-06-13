@@ -39,6 +39,8 @@
 		CF4A58B7284E832600ECA3FC /* TransferScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */; };
 		CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */; };
 		CF4A58BB284E834A00ECA3FC /* TransferScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */; };
+		CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64C3422857870A004DEE54 /* transferDataCell.swift */; };
+		CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF64C3432857870A004DEE54 /* transferDataCell.xib */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
 		CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB528479684001A2F87 /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3ViewModel.swift; sourceTree = "<group>"; };
+		CF64C3422857870A004DEE54 /* transferDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferDataCell.swift; sourceTree = "<group>"; };
+		CF64C3432857870A004DEE54 /* transferDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transferDataCell.xib; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -485,6 +489,7 @@
 			children = (
 				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
 				13BB52CD28522B76002A5769 /* TransferScreen3.storyboard */,
+				CF64C34628578713004DEE54 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,6 +500,15 @@
 				CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF64C34628578713004DEE54 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CF64C3422857870A004DEE54 /* transferDataCell.swift */,
+				CF64C3432857870A004DEE54 /* transferDataCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CF9ACBA028479684001A2F87 = {
@@ -594,6 +608,7 @@
 				13BB52CA28522B34002A5769 /* TransferScreen1.storyboard in Resources */,
 				13BB52C628522AD1002A5769 /* Home.storyboard in Resources */,
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
+				CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */,
 				13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */,
 				13BB52CC28522B5A002A5769 /* TransferScreen2.storyboard in Resources */,
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
@@ -637,6 +652,7 @@
 				CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */,
 				CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */,
 				CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */,
+				CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
