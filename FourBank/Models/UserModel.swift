@@ -7,6 +7,20 @@
 
 import Foundation
 
+struct CurrentUser {
+    
+    static var currentUserEmail = ""
+    
+    static func getUser(users: [User], email: String) -> User? {
+        for user in users {
+            if user.email == email {
+                return user
+            }
+        }
+        return nil
+    }
+}
+
 struct Users: Decodable {
     var users: [User]
 }
