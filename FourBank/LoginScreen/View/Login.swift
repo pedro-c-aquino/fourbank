@@ -30,7 +30,7 @@ class Login: UIViewController {
             
             Auth.auth().signIn(withEmail: loginInfo.email, password: loginInfo.password) { authResult, error in
                 if let e = error {
-                    print(e)
+                    print(e.localizedDescription)
                 } else {
                     self.performSegue(withIdentifier: "toHome", sender: nil)
                 }

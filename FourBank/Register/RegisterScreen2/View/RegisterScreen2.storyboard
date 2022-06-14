@@ -36,13 +36,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8Y-fE-5Ei">
-                                <rect key="frame" x="20" y="74" width="374" height="44"/>
-                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="36"/>
+                                <rect key="frame" x="20" y="74" width="374" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu endereço para prosseguir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEv-1o-fed">
-                                <rect key="frame" x="69.5" y="148" width="275.5" height="20.5"/>
+                                <rect key="frame" x="69.5" y="143.5" width="275.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -94,7 +94,7 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Prosseguir">
                                             <attributes>
-                                                <font key="NSFont" size="15" name="ArialMT"/>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -116,7 +116,8 @@
                                     <attributedString key="attributedTitle">
                                         <fragment content="Voltar">
                                             <attributes>
-                                                <font key="NSFont" size="15" name="ArialMT"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
