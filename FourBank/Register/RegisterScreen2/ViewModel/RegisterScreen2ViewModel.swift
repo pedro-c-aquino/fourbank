@@ -10,7 +10,7 @@ import Foundation
 class RegisterScreen2ViewModel {
     
     func registerPersonalInfo(address: String?, city: String?, state: String?, zipcode: String?) {
-        let userPersonalAddress = UserPersonalAddress(address: address, city: city, state: state, zipcode: zipcode)
+//        let userPersonalAddress = UserPersonalAddress(address: address, city: city, state: state, zipcode: zipcode)
     }
     
 }

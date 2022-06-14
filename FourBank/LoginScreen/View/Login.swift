@@ -10,6 +10,8 @@ import Firebase
 
 class Login: UIViewController {
     
+    let users = Users.parse(jsonFile: "fourBank").users
+    
     let loginViewModel = LoginViewModel()
     
     @IBOutlet weak var emailTextField:    UITextField!
@@ -19,7 +21,7 @@ class Login: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(users)
     }
 
     @IBAction func loginButton(_ sender: UIButton) {
