@@ -16,6 +16,7 @@
 		097C38FD2857759B00828C1F /* AccountScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097C38FC2857759B00828C1F /* AccountScreenViewModel.swift */; };
 		098372122847E57700A4FAC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098372112847E57700A4FAC1 /* Main.storyboard */; };
 		098372142847E5B500A4FAC1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098372132847E5B500A4FAC1 /* Login.swift */; };
+		131E3E9D2858C6F500C7F1BA /* fourBank.json in Resources */ = {isa = PBXBuildFile; fileRef = 131E3E9C2858C6F500C7F1BA /* fourBank.json */; };
 		133D1B01284E789D00EB777C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D1B00284E789D00EB777C /* UserModel.swift */; };
 		139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */; };
 		139F7FBF2857AA63005F4E22 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 139F7FBE2857AA63005F4E22 /* FirebaseAuth */; };
@@ -63,6 +64,7 @@
 		097C38FC2857759B00828C1F /* AccountScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewModel.swift; sourceTree = "<group>"; };
 		098372112847E57700A4FAC1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		098372132847E5B500A4FAC1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		131E3E9C2858C6F500C7F1BA /* fourBank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourBank.json; sourceTree = "<group>"; };
 		133D1B00284E789D00EB777C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewController.swift; sourceTree = "<group>"; };
 		139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -560,6 +562,7 @@
 				CF9ACBB528479684001A2F87 /* Assets.xcassets */,
 				CF9ACBBA28479684001A2F87 /* Info.plist */,
 				139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */,
+				131E3E9C2858C6F500C7F1BA /* fourBank.json */,
 			);
 			path = FourBank;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				13BB52CC28522B5A002A5769 /* TransferScreen2.storyboard in Resources */,
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
 				13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */,
+				131E3E9D2858C6F500C7F1BA /* fourBank.json in Resources */,
 				CFFCE646285397DB00698B11 /* HomeTabBar.storyboard in Resources */,
 				139F7FC12857AB1D005F4E22 /* GoogleService-Info.plist in Resources */,
 				09247BC12853881400FC3606 /* BalanceCell.xib in Resources */,
