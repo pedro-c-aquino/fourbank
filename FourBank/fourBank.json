@@ -186,6 +186,99 @@
                     "saldo": 500.00
                 }
             ]
+        },
+        {
+            "id": 368779636,
+            "nome": "Kauê Jacyntho",
+            "idade": 34,
+            "cpf": "01317524802",
+            "rg": "426238461",
+            "data_nasc": "10/04/1988",
+            "sexo": "Masculino",
+            "mae": "Tereza Tânia Cecília",
+            "pai": "Igor Breno Figueiredo",
+            "email": "k@mail.com",
+            "senha": "k12345",
+            "cep": "17470970",
+            "endereco": "Avenida São Paulo 295",
+            "numero": 696,
+            "bairro": "Centro",
+            "cidade": "Duartina",
+            "estado": "SP",
+            "telefone_fixo": "1435855020",
+            "celular": "14988804344",
+            "banco":[
+                {
+                    "conta": "7894519-4",
+                    "agencia": "0019",
+                    "banco": "Bradesco",
+                    "cidade": "Duartina",
+                    "estado": "SP",
+                    "saldo": 5000.00
+                }
+            ]
+        },
+        {
+            "id": 632749857,
+            "nome": "Pedro Ivo",
+            "idade": 85,
+            "cpf": "01317524802",
+            "rg": "426238461",
+            "data_nasc": "10/04/1986",
+            "sexo": "Masculino",
+            "mae": "Tereza Tânia Cecília",
+            "pai": "Igor Breno Figueiredo",
+            "email": "p@mail.com",
+            "senha": "p123",
+            "cep": "17470970",
+            "endereco": "Avenida São Paulo 854",
+            "numero": 856,
+            "bairro": "Centro",
+            "cidade": "Duartina",
+            "estado": "SP",
+            "telefone_fixo": "1435855020",
+            "celular": "14988804344",
+            "banco":[
+                {
+                    "conta": "1234119-4",
+                    "agencia": "0018",
+                    "banco": "Bradesco",
+                    "cidade": "Duartina",
+                    "estado": "SP",
+                    "saldo": 5000.00
+                }
+            ]
+        },
+        {
+            "id": 368779705,
+            "nome": "Henrique Rodrigues",
+            "idade": 65,
+            "cpf": "56917524802",
+            "rg": "987638461",
+            "data_nasc": "10/04/1950",
+            "sexo": "Masculino",
+            "mae": "Claudio Silva Cecília",
+            "pai": "Fábio Breno Figueiredo",
+            "email": "h@mail.com",
+            "senha": "h1234",
+            "cep": "17470970",
+            "endereco": "Avenida São Paulo 295",
+            "numero": 666,
+            "bairro": "Centro",
+            "cidade": "Duartina",
+            "estado": "SP",
+            "telefone_fixo": "1435855020",
+            "celular": "14988804344",
+            "banco":[
+                {
+                    "conta": "4564119-4",
+                    "agencia": "0018",
+                    "banco": "Bradesco",
+                    "cidade": "Duartina",
+                    "estado": "SP",
+                    "saldo": 5000.00
+                }
+            ]
         }
 
     ]
