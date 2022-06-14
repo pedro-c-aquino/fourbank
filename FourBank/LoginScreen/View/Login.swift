@@ -10,8 +10,6 @@ import Firebase
 
 class Login: UIViewController {
     
-    let users = Users.parse(jsonFile: "fourBank").users
-    
     let loginViewModel = LoginViewModel()
     
     @IBOutlet weak var emailTextField:    UITextField!
@@ -21,7 +19,6 @@ class Login: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(users)
     }
 
     @IBAction func loginButton(_ sender: UIButton) {
@@ -29,6 +26,8 @@ class Login: UIViewController {
         let loginInfo = loginViewModel.validateLoginData(email: emailTextField.text, password: passwordTextField.text)
         
         if loginInfo.validation {
+            
+            CurrentUser.currentUserEmail = loginInfo.email
             
             Auth.auth().signIn(withEmail: loginInfo.email, password: loginInfo.password) { authResult, error in
                 if let e = error {
