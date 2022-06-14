@@ -25,8 +25,9 @@ class AccountScreen: UIViewController {
         self.personalDataTableView.dataSource = self
         self.personalDataTableView.register(UINib(nibName: "DataCell", bundle: nil), forCellReuseIdentifier: "DataCell")
 
-
     }
+    
+    
     
 }
 
