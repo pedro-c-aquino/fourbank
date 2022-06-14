@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class AccountScreen: UIViewController {
     
@@ -27,6 +28,16 @@ class AccountScreen: UIViewController {
 
     }
     
+    @IBAction func logoutButton(_ sender: UIButton) {
+        
+        do {
+            try Auth.auth().signOut()
+            performSegue(withIdentifier: "Main", sender: nil)
+            
+        } catch  {
+            print(error.localizedDescription)
+        }
+    }
     
     
 }

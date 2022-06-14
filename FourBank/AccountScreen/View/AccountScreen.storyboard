@@ -42,7 +42,7 @@
                                             <color key="baseBackgroundColor" red="0.91764705879999997" green="0.33725490200000002" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="3fG-to-8Uf" kind="presentation" modalPresentationStyle="fullScreen" id="aUF-no-8hg"/>
+                                            <action selector="logoutButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oMB-T3-2Vd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -181,6 +181,7 @@
                         <outlet property="agencyLabel" destination="EFj-4x-28M" id="Tbd-fG-xma"/>
                         <outlet property="personalDataTableView" destination="vug-VC-dph" id="7up-WT-q6h"/>
                         <outlet property="usernameLabel" destination="cqb-bG-eMK" id="e63-B5-tVK"/>
+                        <segue destination="3fG-to-8Uf" kind="presentation" identifier="Main" modalPresentationStyle="fullScreen" id="0g2-HY-d1e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
