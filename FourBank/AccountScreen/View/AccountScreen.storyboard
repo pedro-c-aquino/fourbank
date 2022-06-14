@@ -20,15 +20,40 @@
                                 <rect key="frame" x="0.0" y="208" width="414" height="654"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vug-VC-dph">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="654"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="594"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-45-Oz6">
+                                        <rect key="frame" x="20" y="594" width="374" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="QbN-cR-WPA"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="33" id="yLO-CB-xjM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="xmark" catalog="system" imagePlacement="leading" imagePadding="10">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Sair do aplicativo">
+                                                    <attributes>
+                                                        <font key="NSFont" size="16" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseBackgroundColor" red="0.91764705879999997" green="0.33725490200000002" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="3fG-to-8Uf" kind="presentation" modalPresentationStyle="fullScreen" id="aUF-no-8hg"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="z6e-45-Oz6" secondAttribute="trailing" constant="20" id="57R-1q-teg"/>
                                     <constraint firstAttribute="trailing" secondItem="vug-VC-dph" secondAttribute="trailing" id="Fqm-iK-Yl1"/>
-                                    <constraint firstAttribute="bottom" secondItem="vug-VC-dph" secondAttribute="bottom" id="YhJ-7r-gxl"/>
+                                    <constraint firstItem="z6e-45-Oz6" firstAttribute="leading" secondItem="Bib-Gd-wyP" secondAttribute="leading" constant="20" id="Jht-x5-zH7"/>
+                                    <constraint firstAttribute="bottom" secondItem="vug-VC-dph" secondAttribute="bottom" constant="60" id="YhJ-7r-gxl"/>
                                     <constraint firstItem="vug-VC-dph" firstAttribute="top" secondItem="Bib-Gd-wyP" secondAttribute="top" id="e1E-wH-JiG"/>
+                                    <constraint firstItem="z6e-45-Oz6" firstAttribute="top" secondItem="vug-VC-dph" secondAttribute="bottom" id="jEr-th-gC8"/>
                                     <constraint firstItem="vug-VC-dph" firstAttribute="leading" secondItem="Bib-Gd-wyP" secondAttribute="leading" id="qzp-3c-YbO"/>
                                 </constraints>
                             </view>
@@ -170,7 +195,15 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0KR-gY-PaZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507" y="-130"/>
+            <point key="canvasLocation" x="1604" y="-113"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Ie9-vD-bPU">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" referencedIdentifier="Main" id="3fG-to-8Uf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BqN-Jx-HcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1671" y="113"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fSV-IM-ul5">
