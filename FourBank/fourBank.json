@@ -1,0 +1,192 @@
+{
+    "users": [
+        {
+            "id": 368779701,
+            "nome": "Oliver Igor dos Santos",
+		    "idade": 42,
+		    "cpf": "51932667890",
+		    "rg": "443634658",
+		    "data_nasc": "11/01/1980",
+		    "sexo": "Masculino",
+		    "mae": "Luna Alice",
+		    "pai": "Arthur Renan Manuel dos Santos",
+		    "email": "oliverigordossantos@truran.com.br",
+		    "senha": "EQpdHC6pJ2",
+		    "cep": "06416040",
+		    "endereco": "Rua Andes",
+		    "numero": 477,
+		    "bairro": "Vila Engenho Novo",
+		    "cidade": "Barueri",
+		    "estado": "SP",
+		    "telefone_fixo": "1139732896",
+		    "celular": "11985507627",
+            "banco": [
+                { 
+                    "conta": "1713013-7",
+                    "agencia": "3390",
+                    "banco": "Bradesco",
+                    "cidade": "Barueri",
+                    "estado": "SP",
+                    "saldo": 2000.00
+                }
+            ]
+        },
+        {
+            "id": 368779702,
+            "nome": "Alice Aparecida Moura",
+		    "idade": 67,
+		    "cpf": "40086097849",
+		    "rg": "330605963",
+		    "data_nasc": "26/04/1955",
+		    "sexo": "Feminino",
+		    "mae": "Natália Alana Isabella",
+		    "pai": "Raimundo Manoel Moura",
+		    "email": "aliceaparecidamoura@uol.com",
+		    "senha": "g0ISZM4zQ9",
+		    "cep": "18740970",
+		    "endereco": "Rua Marechal Floriano Peixoto 1032",
+		    "numero": 846,
+		    "bairro": "Centro",
+		    "cidade": "Taquarituba",
+		    "estado": "SP",
+		    "telefone_fixo": "1426673365",
+		    "celular": "14981878283",
+            "banco":[
+                {
+                    "conta": "0099819-2",
+                    "agencia": "0178",
+                    "banco": "Bradesco",
+                    "cidade": "Taquarituba",
+                    "estado": "SP",
+                    "saldo": 3000.00
+                }
+                
+            ]
+		},
+        {
+            "id": 368779703,
+            "nome": "Jorge Carlos Eduardo Giovanni Castro",
+		    "idade": 71,
+		    "cpf": "02670166890",
+		    "rg": "497289301",
+		    "data_nasc": "11/01/1951",
+		    "sexo": "Masculino",
+		    "mae": "Andrea Brenda",
+		    "pai": "Enzo Benedito Joaquim Castro",
+		    "email": "jorgecarloscastro@suplementototal.com.br",
+		    "senha": "4RUtOEpTWW",
+		    "cep": "14801060",
+		    "endereco": "Avenida São Paulo",
+		    "numero": 299,
+		    "bairro": "Centro",
+		    "cidade": "Araraquara",
+		    "estado": "SP",
+		    "telefone_fixo": "1628938313",
+		    "celular": "16995210254",
+            "banco":[
+                {
+                    "conta": "1609004-2",
+                    "agencia": "2836",
+                    "banco": "Bradesco",
+                    "cidade": "Araraquara",
+                    "estado": "SP",
+                    "saldo": 900.00
+                }
+            ]
+        },
+        {
+            "id": 368779704,
+            "nome": "Isabela Heloisa da Rosa",
+		    "idade": 42,
+		    "cpf": "08266669813",
+		    "rg": "192464498",
+		    "data_nasc": "05/06/1980",
+		    "sexo": "Feminino",
+		    "mae": "Liz Sônia",
+		    "pai": "Samuel Edson da Rosa",
+		    "email": "isabela_darosa@pibnet.com.br",
+		    "senha": "r6ngK28KuK",
+		    "cep": "18780971",
+		    "endereco": "Rua Avaré 140",
+		    "numero": 499,
+		    "bairro": "São Berto",
+		    "cidade": "Manduri",
+		    "estado": "SP",
+		    "telefone_fixo": "1438048150",
+		    "celular": "14992406336",
+            "banco":[
+                {
+                    "conta": "1429470-8",
+                    "agencia": "2070",
+                    "banco": "Bradesco",
+                    "cidade": "Manduri",
+                    "estado": "SP",
+                    "saldo": 300.00
+                }
+            ]
+        },
+        {
+            "id": 368779705,
+            "nome": "Ian Pedro Alexandre Figueiredo",
+		    "idade": 36,
+		    "cpf": "01317524802",
+		    "rg": "426238461",
+		    "data_nasc": "10/04/1986",
+		    "sexo": "Masculino",
+		    "mae": "Tereza Tânia Cecília",
+		    "pai": "Igor Breno Figueiredo",
+		    "email": "ian_pedro_figueiredo@imail.com",
+		    "senha": "wlzDYb4dkR",
+		    "cep": "17470970",
+		    "endereco": "Avenida São Paulo 295",
+		    "numero": 666,
+		    "bairro": "Centro",
+		    "cidade": "Duartina",
+		    "estado": "SP",
+		    "telefone_fixo": "1435855020",
+		    "celular": "14988804344",
+            "banco":[
+                {
+                    "conta": "0974119-4",
+                    "agencia": "0018",
+                    "banco": "Bradesco",
+                    "cidade": "Duartina",
+                    "estado": "SP",
+                    "saldo": 1000.00
+                }
+            ]
+        },
+        {
+            "id": 368779706,
+            "nome": "Heloise Brenda Renata Gonçalves",
+		    "idade": 35,
+		    "cpf": "20430684827",
+		    "rg": "338411409",
+		    "data_nasc": "12/02/1987",
+		    "sexo": "Feminino",
+		    "mae": "Alana Pietra Mariah",
+		    "pai": "Marcelo Ian Gonçalves",
+		    "email": "heloisebrendagoncalves@enox.com.br",
+		    "senha": "lAd3kTBzXc",
+		    "cep": "04166003",
+		    "endereco": "Avenida Padre Arlindo Vieira",
+		    "numero": 327,
+		    "bairro": "Jardim Vergueiro (Sacomã)",
+		    "cidade": "São Paulo",
+		    "estado": "SP",
+		    "telefone_fixo": "1127896480",
+		    "celular": "11986402575",
+            "banco":[
+                {
+                    "conta": "0437166-6",
+                    "agencia": "3380",
+                    "banco": "Bradesco",
+                    "cidade": "Sao Paulo",
+                    "estado": "SP",
+                    "saldo": 500.00
+                }
+            ]
+        }
+
+    ]
+}
