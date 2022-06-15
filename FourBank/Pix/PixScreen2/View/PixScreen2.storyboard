@@ -117,7 +117,7 @@
                         <outlet property="balanceLabel" destination="hP4-hD-rff" id="WGl-ZN-17u"/>
                         <outlet property="contactsTableView" destination="rC0-aD-t9h" id="5hW-EZ-J9S"/>
                         <outlet property="pixKeyTextField" destination="CaO-jx-DkN" id="hc6-i0-RaZ"/>
-                        <segue destination="YTi-M9-Xtg" kind="show" identifier="TrScreen2ToTrScreen3" id="ZhF-Mb-rcl"/>
+                        <segue destination="YTi-M9-Xtg" kind="show" identifier="PixScreen2ToPixScreen3" id="ZhF-Mb-rcl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

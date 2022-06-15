@@ -1,32 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecL-OM-cFH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Transfer Screen2-->
+        <!--Transferência - Destinatário-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="TransferScreen2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TransferScreen2" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite os dados do destinatário da transferência" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="xhp-AR-S0I">
+                                <rect key="frame" x="30" y="150" width="331" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="fSI-ae-zR7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome Completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="toc-4m-955">
+                                <rect key="frame" x="30" y="246" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="UaH-KC-dG6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agência" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-Un-mFv">
+                                <rect key="frame" x="30" y="310" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="se1-7K-Amx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Conta" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpZ-al-qBT">
+                                <rect key="frame" x="30" y="374" width="354" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Xxx-M0-N6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXz-xf-YXC">
+                                <rect key="frame" x="154.5" y="438" width="105" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Q12-oi-BgP"/>
+                                    <constraint firstAttribute="width" constant="105" id="UM4-y5-1Dk"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prosseguir">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="proceedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nxh-2W-Git"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vtG-Un-mFv" secondAttribute="trailing" constant="30" id="2Sw-7w-CjY"/>
+                            <constraint firstItem="wXz-xf-YXC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FeZ-9d-R4c"/>
+                            <constraint firstItem="toc-4m-955" firstAttribute="top" secondItem="xhp-AR-S0I" secondAttribute="bottom" constant="30" id="Jak-UE-Pwf"/>
+                            <constraint firstItem="xhp-AR-S0I" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="UNm-Ot-uXp"/>
+                            <constraint firstItem="hpZ-al-qBT" firstAttribute="top" secondItem="vtG-Un-mFv" secondAttribute="bottom" constant="30" id="bLV-bB-c5j"/>
+                            <constraint firstItem="xhp-AR-S0I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="gaP-fc-n9w"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hpZ-al-qBT" secondAttribute="trailing" constant="30" id="h4u-0P-ePG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="toc-4m-955" secondAttribute="trailing" constant="30" id="iJO-0m-Uf9"/>
+                            <constraint firstItem="xhp-AR-S0I" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.8" id="jQt-SS-fkK"/>
+                            <constraint firstItem="hpZ-al-qBT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="kNC-9a-DDp"/>
+                            <constraint firstItem="toc-4m-955" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="qBR-zr-wQX"/>
+                            <constraint firstItem="vtG-Un-mFv" firstAttribute="top" secondItem="toc-4m-955" secondAttribute="bottom" constant="30" id="u5T-gf-Thc"/>
+                            <constraint firstItem="wXz-xf-YXC" firstAttribute="top" secondItem="hpZ-al-qBT" secondAttribute="bottom" constant="30" id="uUo-zK-Uch"/>
+                            <constraint firstItem="vtG-Un-mFv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="wQO-sD-pTJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Transferência - Destinatário" id="CQe-xf-VFa"/>
+                    <connections>
+                        <outlet property="bankAccountTextField" destination="hpZ-al-qBT" id="dXY-U6-VXi"/>
+                        <outlet property="bankOfficeTextField" destination="vtG-Un-mFv" id="j3m-iK-MDS"/>
+                        <outlet property="nameTextField" destination="toc-4m-955" id="DNy-K3-cfG"/>
+                        <segue destination="oP6-Ca-VvD" kind="show" identifier="TrScreen2ToTrScreen3" id="Cp6-EN-pBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="80"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
+        </scene>
+        <!--TransferScreen3-->
+        <scene sceneID="3gw-Xi-SEc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TransferScreen3" referencedIdentifier="TransferScreen3" id="oP6-Ca-VvD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Vac-9I-e4p"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASD-O3-VFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="-74"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lnp-bQ-kQd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ecL-OM-cFH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rTt-iP-xXc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="pHr-En-3Ec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWk-Dx-U4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
