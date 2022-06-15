@@ -13,8 +13,9 @@ class RegisterScreen3: UIViewController {
     let registerScreen3VM = RegisterScreen3ViewModel()
 
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    @IBOutlet weak var occupationTextField: UITextField!
+    @IBOutlet weak var incomeTextField: UITextField!
+    @IBOutlet weak var cellphoneTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,8 @@ class RegisterScreen3: UIViewController {
     @IBAction func registerButton(_ sender: UIButton) {
         
         let email = emailTextField.text
-        let password = passwordTextField.text
-        let confirmPassword = confirmPasswordTextField.text
+        let password = occupationTextField.text
+        let confirmPassword = incomeTextField.text
         
         let registerInfo = registerScreen3VM.registerUser(email: email, password: password, confirmPassword: confirmPassword)
         
