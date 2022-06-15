@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Del-Sq-I4K">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PIX-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="PixScreen1" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o valor da transferência?" lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-Ud-XdF">
+                                <rect key="frame" x="30" y="106" width="314" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="8GB-kY-6vG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo disponível em conta: R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tlo-eg-g3Y">
+                                <rect key="frame" x="30" y="192" width="268" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7M-sX-qyf">
+                                <rect key="frame" x="30" y="243" width="540" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukn-li-MjV">
+                                <rect key="frame" x="247.5" y="297" width="105" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MqZ-qP-HTD"/>
+                                    <constraint firstAttribute="width" constant="105" id="Vzv-wL-cFT"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Prosseguir">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="proceedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X0u-DG-U7L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" constant="14" id="EKC-VY-v34"/>
+                            <constraint firstItem="Ukn-li-MjV" firstAttribute="top" secondItem="j7M-sX-qyf" secondAttribute="bottom" constant="20" id="FGC-Kw-PRS"/>
+                            <constraint firstItem="Tlo-eg-g3Y" firstAttribute="leading" secondItem="wRF-Ud-XdF" secondAttribute="leading" id="Siu-lu-K8w"/>
+                            <constraint firstItem="j7M-sX-qyf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="X7g-79-8lA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="j7M-sX-qyf" secondAttribute="trailing" constant="30" id="ZZP-CW-hQg"/>
+                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="khP-YO-QnL"/>
+                            <constraint firstItem="Tlo-eg-g3Y" firstAttribute="top" secondItem="wRF-Ud-XdF" secondAttribute="bottom" constant="20" id="lZF-Kl-jhz"/>
+                            <constraint firstItem="j7M-sX-qyf" firstAttribute="top" secondItem="Tlo-eg-g3Y" secondAttribute="bottom" constant="30" id="rEN-Gh-QeW"/>
+                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="vrp-96-pcM"/>
+                            <constraint firstItem="Ukn-li-MjV" firstAttribute="centerX" secondItem="j7M-sX-qyf" secondAttribute="centerX" id="wmW-TF-rlQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PIX" id="i0W-Ex-0Ac">
+                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="nIu-YJ-MJ7">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="closeButton:" destination="Y6W-OH-hqX" id="Dhf-uE-s7T"/>
+                                <segue destination="cvh-Fc-bRt" kind="presentation" modalPresentationStyle="fullScreen" id="oti-y9-g29"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="j7M-sX-qyf" id="hWj-d1-2aV"/>
+                        <segue destination="HG9-ES-bw4" kind="show" identifier="TrScreen1ToTrScreen2" id="ula-aK-Utf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
+        </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="XBo-sf-iG1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeTabBar" storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="cvh-Fc-bRt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="HBg-8e-VuU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbZ-OC-avO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="-153"/>
+        </scene>
+        <!--PixScreen2-->
+        <scene sceneID="nNH-7J-ciO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="PixScreen2" storyboardName="PixScreen2" referencedIdentifier="PixScreen2" id="HG9-ES-bw4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cVL-1t-nnY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GPN-eV-DUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="97"/>
+        </scene>
+        <!--Transferências-->
+        <scene sceneID="kid-2R-eeu">
+            <objects>
+                <navigationController storyboardIdentifier="PixScreen1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Del-Sq-I4K" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Transferências" image="arrow.right.arrow.left" catalog="system" id="8iK-uU-XiT"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9DZ-VJ-d1V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="bOF-57-Fqu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lur-3U-Wuc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right.arrow.left" catalog="system" width="119" height="128"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
