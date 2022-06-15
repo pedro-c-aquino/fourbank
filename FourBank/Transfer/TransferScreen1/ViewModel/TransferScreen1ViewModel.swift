@@ -5,19 +5,9 @@
 //  Created by user220237 on 6/15/22.
 //
 
-import UIKit
+import Foundation
 
-class TransferScreen1ViewModel: UITableViewCell {
+class TransferScreen1ViewModel {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
 }

@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRa-LW-m7d">
-                                <rect key="frame" x="30" y="364" width="448" height="70"/>
+                                <rect key="frame" x="30" y="364" width="354" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="jDq-Bo-Ybw"/>
                                 </constraints>

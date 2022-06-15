@@ -7,17 +7,21 @@
 
 import UIKit
 
-class TransferScreen2: UITableViewCell {
+class TransferScreen2: UIViewController {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var bankOfficeTextField: UITextField!
+    @IBOutlet weak var bankAccountTextField: UITextField!
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBAction func proceedButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "TrScreen2ToTrScreen3", sender: self)
+        
     }
-
+    
 }

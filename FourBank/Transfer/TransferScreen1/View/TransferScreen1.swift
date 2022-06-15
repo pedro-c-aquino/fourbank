@@ -7,17 +7,17 @@
 
 import UIKit
 
-class TransferScreen1: UITableViewCell {
+class TransferScreen1: UIViewController {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var amountTextField: UITextField!
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func proceedButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "TrScreen1ToTrScreen2", sender: self)
     }
-
 }
