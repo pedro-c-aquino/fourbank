@@ -43,7 +43,7 @@ class PixScreen1: UIViewController {
         transferAmount = transferScreen1VM.getAmount(amountText: amountString)
         
         
-        performSegue(withIdentifier: "TrScreen1ToTrScreen2", sender: self)
+        performSegue(withIdentifier: "PixScreen1ToPixScreen2", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

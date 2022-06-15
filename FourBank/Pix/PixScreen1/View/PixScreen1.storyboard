@@ -119,7 +119,7 @@
                         <outlet property="amountTextField" destination="j7M-sX-qyf" id="hWj-d1-2aV"/>
                         <outlet property="balanceLabel" destination="dwQ-IU-trg" id="Xd6-Q8-oWs"/>
                         <outlet property="typeTransferPickerView" destination="gRa-LW-m7d" id="oeq-lk-RTC"/>
-                        <segue destination="HG9-ES-bw4" kind="show" identifier="TrScreen1ToTrScreen2" id="ula-aK-Utf"/>
+                        <segue destination="HG9-ES-bw4" kind="show" identifier="PixScreen1ToPixScreen2" id="ula-aK-Utf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
