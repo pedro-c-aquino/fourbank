@@ -7,17 +7,23 @@
 
 import UIKit
 
-class Deposit1: UITableViewCell {
+class Deposit1: UITableViewController {
+    
+    
+    @IBOutlet weak var balanceLabel:     UILabel!
+    
+    @IBOutlet weak var amountLabel:  UITextField!
+    
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @IBAction func continueButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "DepositScreen1ToDepositScreen2", sender: nil)
     }
+    
 
 }

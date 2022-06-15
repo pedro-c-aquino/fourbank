@@ -10,7 +10,7 @@
         <!--Depósito-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="Deposit1" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,6 +60,9 @@
                                     </attributedString>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="continueButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PA2-7W-HGy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-05-vVD">
                                 <rect key="frame" x="264" y="188" width="34.5" height="21"/>
@@ -92,17 +95,40 @@
                     <navigationItem key="navigationItem" title="Depósito" id="1c9-vt-pLJ">
                         <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="ed5-fl-Hsm">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="cP4-O9-OZg" kind="presentation" modalPresentationStyle="fullScreen" id="PBz-Wg-TmT"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountLabel" destination="Kq6-4r-9vn" id="Mzg-eX-5aD"/>
+                        <segue destination="tmW-vs-zht" kind="presentation" identifier="DepositScreen1ToDepositScreen2" modalPresentationStyle="fullScreen" id="KXm-1E-8Gu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="96.428571428571431"/>
         </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="00r-yb-ayO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeTabBar" storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="cP4-O9-OZg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0e-BV-mjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1650" y="54"/>
+        </scene>
+        <!--Deposit2-->
+        <scene sceneID="6PP-y2-Xcn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Deposit2" storyboardName="Deposit2" referencedIdentifier="Deposit2" id="tmW-vs-zht" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8HB-fY-LYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="135"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="XO8-Tb-azm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1OV-tv-paQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Deposit1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1OV-tv-paQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1WT-yd-0AS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
