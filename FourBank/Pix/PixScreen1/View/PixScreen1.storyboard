@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o valor do PIX?" lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-Ud-XdF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o valor do PIX?" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-Ud-XdF">
                                 <rect key="frame" x="30" y="118" width="287" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="8GB-kY-6vG"/>
@@ -24,7 +24,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de PIX que deseja fazer:" lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hco-Fu-xRg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de PIX que deseja fazer:" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hco-Fu-xRg">
                                 <rect key="frame" x="30" y="293" width="354" height="66"/>
                                 <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukn-li-MjV">
-                                <rect key="frame" x="154.5" y="556" width="105" height="40"/>
+                                <rect key="frame" x="154.5" y="464" width="105" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MqZ-qP-HTD"/>
                                     <constraint firstAttribute="width" constant="105" id="Vzv-wL-cFT"/>
@@ -67,9 +67,9 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRa-LW-m7d">
-                                <rect key="frame" x="30" y="364" width="354" height="162"/>
+                                <rect key="frame" x="30" y="364" width="448" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="162" id="jDq-Bo-Ybw"/>
+                                    <constraint firstAttribute="height" constant="70" id="jDq-Bo-Ybw"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dwQ-IU-trg">
