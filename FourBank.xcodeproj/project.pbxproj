@@ -209,7 +209,7 @@
 			children = (
 				13BB52B32852236F002A5769 /* PixScreen3 */,
 				13BB52AF28522342002A5769 /* PixScreen2 */,
-				13BB52AB28522314002A5769 /* pixScreen1 */,
+				13BB52AB28522314002A5769 /* PixScreen1 */,
 			);
 			path = Pix;
 			sourceTree = "<group>";
@@ -474,14 +474,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		13BB52AB28522314002A5769 /* pixScreen1 */ = {
+		13BB52AB28522314002A5769 /* PixScreen1 */ = {
 			isa = PBXGroup;
 			children = (
 				13BB52AE2852232D002A5769 /* ViewModel */,
 				13BB52AD28522328002A5769 /* View */,
 				13BB52AC28522322002A5769 /* Model */,
 			);
-			path = pixScreen1;
+			path = PixScreen1;
 			sourceTree = "<group>";
 		};
 		13BB52AC28522322002A5769 /* Model */ = {
