@@ -26,7 +26,7 @@
 		13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */; };
 		13BB52C628522AD1002A5769 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C528522AD1002A5769 /* Home.storyboard */; };
 		13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C728522B15002A5769 /* StatementScreen.storyboard */; };
-		13BB52CA28522B34002A5769 /* PixScreen1ST.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C928522B34002A5769 /* PixScreen1ST.storyboard */; };
+		13BB52CA28522B34002A5769 /* PixScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C928522B34002A5769 /* PixScreen1.storyboard */; };
 		13BB52CC28522B5A002A5769 /* PixScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CB28522B5A002A5769 /* PixScreen2.storyboard */; };
 		13BB52CE28522B76002A5769 /* PixScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CD28522B76002A5769 /* PixScreen3.storyboard */; };
 		CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */; };
@@ -100,7 +100,7 @@
 		13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen3.storyboard; sourceTree = "<group>"; };
 		13BB52C528522AD1002A5769 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		13BB52C728522B15002A5769 /* StatementScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatementScreen.storyboard; sourceTree = "<group>"; };
-		13BB52C928522B34002A5769 /* PixScreen1ST.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen1ST.storyboard; sourceTree = "<group>"; };
+		13BB52C928522B34002A5769 /* PixScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen1.storyboard; sourceTree = "<group>"; };
 		13BB52CB28522B5A002A5769 /* PixScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen2.storyboard; sourceTree = "<group>"; };
 		13BB52CD28522B76002A5769 /* PixScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen3.storyboard; sourceTree = "<group>"; };
 		CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3.swift; sourceTree = "<group>"; };
@@ -495,7 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				CF0669982847EBD200C3FB50 /* PixScreen1.swift */,
-				13BB52C928522B34002A5769 /* PixScreen1ST.storyboard */,
+				13BB52C928522B34002A5769 /* PixScreen1.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1028,7 +1028,7 @@
 				CFC79ED0285A19F5002C5BB0 /* Payment1.storyboard in Resources */,
 				CFC79EEA285A1C5E002C5BB0 /* Deposit2.storyboard in Resources */,
 				13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */,
-				13BB52CA28522B34002A5769 /* PixScreen1ST.storyboard in Resources */,
+				13BB52CA28522B34002A5769 /* PixScreen1.storyboard in Resources */,
 				13BB52C628522AD1002A5769 /* Home.storyboard in Resources */,
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
 				CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */,
