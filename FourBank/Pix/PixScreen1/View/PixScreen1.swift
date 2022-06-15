@@ -12,8 +12,14 @@ class PixScreen1: UIViewController {
     var transferAmount: Double = 0
     
     let transferScreen1VM = PixScreen1ViewModel()
+    
 
+    @IBOutlet weak var balanceLabel: UILabel!
+    
     @IBOutlet weak var amountTextField: UITextField!
+    
+    @IBOutlet weak var typeTransferPickerView: UIPickerView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

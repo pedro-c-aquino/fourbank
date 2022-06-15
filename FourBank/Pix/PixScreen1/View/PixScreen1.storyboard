@@ -15,31 +15,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o valor da transferência?" lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-Ud-XdF">
-                                <rect key="frame" x="30" y="150" width="221" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual é o valor do PIX?" lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-Ud-XdF">
+                                <rect key="frame" x="30" y="118" width="287" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="8GB-kY-6vG"/>
+                                    <constraint firstAttribute="height" constant="50" id="8GB-kY-6vG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo disponível em conta: R$ 0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tlo-eg-g3Y">
-                                <rect key="frame" x="30" y="236" width="268" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o tipo de PIX que deseja fazer:" lineBreakMode="clip" numberOfLines="7" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hco-Fu-xRg">
+                                <rect key="frame" x="30" y="293" width="354" height="66"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo disponível em conta: R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tlo-eg-g3Y">
+                                <rect key="frame" x="30" y="188" width="229" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0,00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j7M-sX-qyf">
-                                <rect key="frame" x="30" y="287" width="354" height="34"/>
+                                <rect key="frame" x="30" y="229" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukn-li-MjV">
-                                <rect key="frame" x="154.5" y="341" width="105" height="40"/>
+                                <rect key="frame" x="154.5" y="556" width="105" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MqZ-qP-HTD"/>
                                     <constraint firstAttribute="width" constant="105" id="Vzv-wL-cFT"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="WJ5-Lb-lba"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -59,20 +66,44 @@
                                     <action selector="proceedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X0u-DG-U7L"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gRa-LW-m7d">
+                                <rect key="frame" x="30" y="364" width="354" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="jDq-Bo-Ybw"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dwQ-IU-trg">
+                                <rect key="frame" x="264" y="188" width="34.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="y4F-cD-zqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" constant="14" id="EKC-VY-v34"/>
-                            <constraint firstItem="Ukn-li-MjV" firstAttribute="top" secondItem="j7M-sX-qyf" secondAttribute="bottom" constant="20" id="FGC-Kw-PRS"/>
+                            <constraint firstItem="gRa-LW-m7d" firstAttribute="top" secondItem="Hco-Fu-xRg" secondAttribute="bottom" constant="5" id="687-o0-RlF"/>
+                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.5" constant="80" id="EKC-VY-v34"/>
+                            <constraint firstItem="Ukn-li-MjV" firstAttribute="top" secondItem="gRa-LW-m7d" secondAttribute="bottom" constant="30" id="HdN-KI-KVw"/>
+                            <constraint firstItem="Hco-Fu-xRg" firstAttribute="leading" secondItem="wRF-Ud-XdF" secondAttribute="leading" id="KKw-QZ-KJY"/>
+                            <constraint firstItem="Ukn-li-MjV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MEc-ko-9f1"/>
                             <constraint firstItem="Tlo-eg-g3Y" firstAttribute="leading" secondItem="wRF-Ud-XdF" secondAttribute="leading" id="Siu-lu-K8w"/>
+                            <constraint firstItem="gRa-LW-m7d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="VaG-Ns-2LO"/>
                             <constraint firstItem="j7M-sX-qyf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="X7g-79-8lA"/>
+                            <constraint firstItem="Hco-Fu-xRg" firstAttribute="top" secondItem="j7M-sX-qyf" secondAttribute="bottom" constant="30" id="XGy-ZQ-bo5"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="j7M-sX-qyf" secondAttribute="trailing" constant="30" id="ZZP-CW-hQg"/>
-                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="62" id="khP-YO-QnL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Hco-Fu-xRg" secondAttribute="trailing" constant="30" id="gdN-eh-fXT"/>
+                            <constraint firstItem="wRF-Ud-XdF" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="khP-YO-QnL"/>
                             <constraint firstItem="Tlo-eg-g3Y" firstAttribute="top" secondItem="wRF-Ud-XdF" secondAttribute="bottom" constant="20" id="lZF-Kl-jhz"/>
-                            <constraint firstItem="j7M-sX-qyf" firstAttribute="top" secondItem="Tlo-eg-g3Y" secondAttribute="bottom" constant="30" id="rEN-Gh-QeW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gRa-LW-m7d" secondAttribute="trailing" constant="30" id="lwk-yx-8H7"/>
+                            <constraint firstItem="j7M-sX-qyf" firstAttribute="top" secondItem="Tlo-eg-g3Y" secondAttribute="bottom" constant="20" id="rEN-Gh-QeW"/>
+                            <constraint firstItem="gRa-LW-m7d" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="s3h-lD-hHn"/>
                             <constraint firstItem="wRF-Ud-XdF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="vrp-96-pcM"/>
-                            <constraint firstItem="Ukn-li-MjV" firstAttribute="centerX" secondItem="j7M-sX-qyf" secondAttribute="centerX" id="wmW-TF-rlQ"/>
+                            <constraint firstItem="dwQ-IU-trg" firstAttribute="leading" secondItem="Tlo-eg-g3Y" secondAttribute="trailing" constant="5" id="wv7-Zc-0sb"/>
+                            <constraint firstItem="dwQ-IU-trg" firstAttribute="top" secondItem="wRF-Ud-XdF" secondAttribute="bottom" constant="20" id="x8Z-3F-RTs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PIX" id="i0W-Ex-0Ac">
@@ -86,12 +117,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="j7M-sX-qyf" id="hWj-d1-2aV"/>
+                        <outlet property="balanceLabel" destination="dwQ-IU-trg" id="Xd6-Q8-oWs"/>
+                        <outlet property="typeTransferPickerView" destination="gRa-LW-m7d" id="oeq-lk-RTC"/>
                         <segue destination="HG9-ES-bw4" kind="show" identifier="TrScreen1ToTrScreen2" id="ula-aK-Utf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="97.767857142857139"/>
+            <point key="canvasLocation" x="1044.9275362318842" y="97.098214285714278"/>
         </scene>
         <!--HomeTabBar-->
         <scene sceneID="XBo-sf-iG1">
