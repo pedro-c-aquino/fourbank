@@ -32,7 +32,7 @@ class PixScreen2: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "TrScreen2ToTrScreen3", sender: self)
+        performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
         
     }
     
