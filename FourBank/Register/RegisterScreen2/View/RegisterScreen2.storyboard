@@ -7,20 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RegisterScreen3-->
+        <!--RegisterScreen4-->
         <scene sceneID="MPv-Gq-gPi">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen3" storyboardName="RegisterScreen3" referencedIdentifier="RegisterScreen3" id="iar-JV-dqW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen3" storyboardName="RegisterScreen4" referencedIdentifier="RegisterScreen4" id="iar-JV-dqW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PKJ-Jl-2zZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8w-OY-eBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-637" y="59"/>
         </scene>
-        <!--RegisterScreen1-->
+        <!--RegisterScreen3-->
         <scene sceneID="BQ1-Ch-kRl">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen1" storyboardName="RegisterScreen1" referencedIdentifier="RegisterScreen1" id="A7H-cb-yYK" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen1" storyboardName="RegisterScreen3" referencedIdentifier="RegisterScreen3" id="A7H-cb-yYK" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Wuc-vy-QeY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8b-XD-E6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -47,26 +47,31 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vOs-ra-bnp">
-                                <rect key="frame" x="41.5" y="443" width="331" height="269"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vOs-ra-bnp">
+                                <rect key="frame" x="41.5" y="353.5" width="331" height="358.5"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-Zd-OKK">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="52.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rua" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vcs-Zd-OKK">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-Ob-iXQ">
+                                        <rect key="frame" x="0.0" y="76" width="331" height="55.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kys-Pw-2js">
+                                        <rect key="frame" x="0.0" y="151.5" width="331" height="55.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZR-kl-wUJ">
-                                        <rect key="frame" x="0.0" y="72.5" width="331" height="52"/>
+                                        <rect key="frame" x="0.0" y="227" width="331" height="56"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SKm-N7-fvJ">
-                                        <rect key="frame" x="0.0" y="144.5" width="331" height="52.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CEP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kys-Pw-2js">
-                                        <rect key="frame" x="0.0" y="217" width="331" height="52"/>
+                                        <rect key="frame" x="0.0" y="303" width="331" height="55.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -99,6 +104,7 @@
                                             </attributes>
                                         </fragment>
                                     </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.22352941176470587" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -112,17 +118,12 @@
                                 </constraints>
                                 <color key="tintColor" red="0.13100178949999999" green="0.13435787220000001" blue="0.21248673130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" cornerStyle="medium">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Voltar">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.22352941176470587" green="0.18823529411764706" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="15"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="goBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RB9-1S-at1"/>
@@ -130,7 +131,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8fl-4f-dNL"/>
-                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KOH-T2-d7C" firstAttribute="trailing" secondItem="jud-oz-d79" secondAttribute="trailing" id="2f2-73-CaS"/>
                             <constraint firstItem="KOH-T2-d7C" firstAttribute="leading" secondItem="jud-oz-d79" secondAttribute="leading" id="6AE-ak-LSs"/>
@@ -145,16 +146,17 @@
                             <constraint firstItem="I8Y-fE-5Ei" firstAttribute="top" secondItem="8fl-4f-dNL" secondAttribute="top" constant="30" id="ipk-Q5-RaO"/>
                             <constraint firstItem="vOs-ra-bnp" firstAttribute="centerX" secondItem="Ajp-Jb-hue" secondAttribute="centerX" id="nC0-fi-7S4"/>
                             <constraint firstItem="8fl-4f-dNL" firstAttribute="trailing" secondItem="I8Y-fE-5Ei" secondAttribute="trailing" constant="20" id="oYI-5I-0aI"/>
-                            <constraint firstItem="vOs-ra-bnp" firstAttribute="height" secondItem="Ajp-Jb-hue" secondAttribute="height" multiplier="0.3" id="tkG-t0-JS8"/>
+                            <constraint firstItem="vOs-ra-bnp" firstAttribute="height" secondItem="Ajp-Jb-hue" secondAttribute="height" multiplier="0.4" id="tkG-t0-JS8"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addressTextField" destination="Vcs-Zd-OKK" id="0Yl-LN-qG0"/>
                         <outlet property="cityTextField" destination="yZR-kl-wUJ" id="lZZ-v8-A7a"/>
+                        <outlet property="neighborhoodTextField" destination="Kys-Pw-2js" id="hGP-A4-EX4"/>
+                        <outlet property="numberTextField" destination="OWK-Ob-iXQ" id="z8H-x3-Ehu"/>
                         <outlet property="stateTextField" destination="SKm-N7-fvJ" id="grW-kc-toE"/>
-                        <outlet property="zipcodeTextField" destination="Kys-Pw-2js" id="hGP-A4-EX4"/>
-                        <segue destination="iar-JV-dqW" kind="show" identifier="RegScreen2ToRegScreen3" id="5jO-4b-FgM"/>
-                        <segue destination="A7H-cb-yYK" kind="show" identifier="RegScreen2ToRegScreen1" id="BNQ-XB-f1H"/>
+                        <outlet property="streetTextField" destination="Vcs-Zd-OKK" id="0Yl-LN-qG0"/>
+                        <segue destination="iar-JV-dqW" kind="presentation" identifier="RegScreen3ToRegScreen4" modalPresentationStyle="fullScreen" id="5jO-4b-FgM"/>
+                        <segue destination="A7H-cb-yYK" kind="presentation" identifier="RegScreen3ToRegScreen2" modalPresentationStyle="fullScreen" id="BNQ-XB-f1H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
