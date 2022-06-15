@@ -40,12 +40,12 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="tHL-lO-Moo">
                                 <rect key="frame" x="41.5" y="443" width="331" height="269"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-1I-HBt">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome Completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-1I-HBt">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="51"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sobrenome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2T4-fW-OpL">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data de Nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2T4-fW-OpL">
                                         <rect key="frame" x="0.0" y="73" width="331" height="50.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -125,9 +125,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthdayTextField" destination="2T4-fW-OpL" id="Aqa-rk-nTF"/>
                         <outlet property="cpfTextField" destination="pnL-98-EDw" id="brs-x6-0Z4"/>
-                        <outlet property="firstNameTextField" destination="9eZ-1I-HBt" id="kc2-ff-fEL"/>
-                        <outlet property="lastNameTextField" destination="2T4-fW-OpL" id="Aqa-rk-nTF"/>
+                        <outlet property="nameTextField" destination="9eZ-1I-HBt" id="kc2-ff-fEL"/>
                         <outlet property="rgTextField" destination="tVP-G1-qoA" id="GbG-ll-TNX"/>
                         <segue destination="VRR-39-uIf" kind="presentation" identifier="RegScreen1ToRegScreen2" modalPresentationStyle="fullScreen" id="QOL-IT-6Aj"/>
                         <segue destination="QqR-TX-BML" kind="presentation" identifier="RegScreen1ToLogin" modalPresentationStyle="fullScreen" id="xSu-ye-dH0"/>

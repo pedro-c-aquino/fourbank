@@ -11,8 +11,8 @@ class RegisterScreen1ViewController: UIViewController {
     
     let registerScreen1ViewModel = RegisterScreen1ViewModel()
 
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var birthdayTextField: UITextField!
     @IBOutlet weak var cpfTextField: UITextField!
     @IBOutlet weak var rgTextField: UITextField!
     
@@ -22,7 +22,7 @@ class RegisterScreen1ViewController: UIViewController {
             }
 
     @IBAction func proceedButton(_ sender: UIButton) {
-        registerScreen1ViewModel.registerPersonalInfo(firstName: firstNameTextField.text, lastName: lastNameTextField.text, cpf: cpfTextField.text, rg: rgTextField.text)
+        registerScreen1ViewModel.registerPersonalInfo(firstName: nameTextField.text, lastName: birthdayTextField.text, cpf: cpfTextField.text, rg: rgTextField.text)
         self.performSegue(withIdentifier: "RegScreen1ToRegScreen2", sender: self)
     }
     
