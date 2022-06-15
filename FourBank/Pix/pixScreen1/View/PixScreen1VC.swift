@@ -11,7 +11,7 @@ class PixScreen1VC: UIViewController {
     
     var transferAmount: Double = 0
     
-    let transferScreen1VM = PixScreen1VM()
+    let transferScreen1VM = PixScreen1ViewModel()
 
     @IBOutlet weak var amountTextField: UITextField!
     

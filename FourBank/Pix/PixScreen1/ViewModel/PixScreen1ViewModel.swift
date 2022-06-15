@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PixScreen1VM {
+class PixScreen1ViewModel {
     
     func getAmount(amountText: String?) -> Double {
         
