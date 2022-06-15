@@ -16,10 +16,10 @@
             </objects>
             <point key="canvasLocation" x="-1978" y="167"/>
         </scene>
-        <!--TransferScreen1-->
+        <!--PixScreen1-->
         <scene sceneID="QLy-fa-JQD">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TransferScreen1" storyboardName="TransferScreen1" referencedIdentifier="TransferScreen1" id="m7Q-i2-JUp" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="PixScreen1" storyboardName="PixScreen1" referencedIdentifier="PixScreen1" id="m7Q-i2-JUp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="4xh-ng-WCl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qh-Az-mTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
