@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TransferScreen2: UIViewController {
+class PixScreen2: UIViewController {
     
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var pixKeyTextField: UITextField!
@@ -49,7 +49,7 @@ class TransferScreen2: UIViewController {
 
 }
 
-extension TransferScreen2: UITableViewDelegate, UITableViewDataSource {
+extension PixScreen2: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         contatos.count

@@ -11,7 +11,7 @@
         <!--Pix - Chave-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="TransferScreen2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TransferScreen2" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PixScreen2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PixScreen2" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="97.767857142857139"/>
         </scene>
-        <!--TransferScreen3-->
+        <!--PixScreen3-->
         <scene sceneID="paY-eJ-9kf">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TransferScreen3" storyboardName="TransferScreen3" referencedIdentifier="TransferScreen3" id="YTi-M9-Xtg" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="PixScreen3" storyboardName="PixScreen3" referencedIdentifier="PixScreen3" id="YTi-M9-Xtg" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="IGd-hE-Spm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ykg-2G-v4H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

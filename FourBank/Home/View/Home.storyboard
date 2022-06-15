@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="1068" y="-241"/>
         </scene>
-        <!--TransferScreen1-->
+        <!--PixScreen1-->
         <scene sceneID="mqt-30-Vqg">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TransferScreen1" storyboardName="TransferScreen1" referencedIdentifier="TransferScreen1" id="BN1-ih-YVt" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="PixScreen1" storyboardName="PixScreen1" referencedIdentifier="PixScreen1" id="BN1-ih-YVt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PUN-V3-Bfo"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hE2-Jx-774" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -74,15 +74,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qu9-RK-Zto">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transferências" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGN-7k-7h4">
-                                                                <rect key="frame" x="9" y="92" width="112" height="21"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGN-7k-7h4">
+                                                                <rect key="frame" x="54" y="89" width="23" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGD-aO-Vwt" customClass="IconButton" customModule="FourBank" customModuleProvider="target">
-                                                                <rect key="frame" x="13" y="12" width="105" height="105"/>
+                                                                <rect key="frame" x="13" y="13" width="105" height="105"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Button"/>

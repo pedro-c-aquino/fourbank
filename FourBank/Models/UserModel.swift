@@ -32,7 +32,7 @@ struct User: Decodable {
     var cpf: String
     var rg: String
 //    var data_nasc: String
-//    var sexo: String
+//    var sexo: String	
 //    var mae: String
 //    var pai: String
     var email: String

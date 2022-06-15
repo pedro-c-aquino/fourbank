@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TransferScreen3: UIViewController {
+class PixScreen3: UIViewController {
     
     
     @IBOutlet weak var transferDataTableView: UITableView!
@@ -23,7 +23,7 @@ class TransferScreen3: UIViewController {
 
 }
 
-extension TransferScreen3: UITableViewDelegate, UITableViewDataSource {
+extension PixScreen3: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         1
     }
