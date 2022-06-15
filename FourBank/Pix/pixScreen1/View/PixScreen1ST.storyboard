@@ -10,7 +10,7 @@
         <!--PIX-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="TransferScreen1" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="PixScreen1VC" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,10 +103,10 @@
             </objects>
             <point key="canvasLocation" x="1888" y="-153"/>
         </scene>
-        <!--TransferScreen2-->
+        <!--PixScreen2-->
         <scene sceneID="nNH-7J-ciO">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TransferScreen2" storyboardName="TransferScreen2" referencedIdentifier="TransferScreen2" id="HG9-ES-bw4" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="PixScreen2" storyboardName="PixScreen2" referencedIdentifier="PixScreen2" id="HG9-ES-bw4" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="cVL-1t-nnY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPN-eV-DUS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -116,7 +116,7 @@
         <!--Transferências-->
         <scene sceneID="kid-2R-eeu">
             <objects>
-                <navigationController storyboardIdentifier="TransferScreen1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Del-Sq-I4K" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PixScreen1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Del-Sq-I4K" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Transferências" image="arrow.right.arrow.left" catalog="system" id="8iK-uU-XiT"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

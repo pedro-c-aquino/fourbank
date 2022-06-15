@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TransferScreen1ViewModel {
+class PixScreen1VM {
     
     func getAmount(amountText: String?) -> Double {
         

@@ -7,11 +7,11 @@
 
 import UIKit
 
-class TransferScreen1: UIViewController {
+class PixScreen1VC: UIViewController {
     
     var transferAmount: Double = 0
     
-    let transferScreen1VM = TransferScreen1ViewModel()
+    let transferScreen1VM = PixScreen1VM()
 
     @IBOutlet weak var amountTextField: UITextField!
     
@@ -41,7 +41,7 @@ class TransferScreen1: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as? TransferScreen2
+        let vc = segue.destination as? PixScreen2
         vc?.transferAmount = transferAmount
     }
     
