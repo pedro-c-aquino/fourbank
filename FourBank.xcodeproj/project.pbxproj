@@ -32,7 +32,7 @@
 		CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */; };
 		CF0669922847EB0B00C3FB50 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669902847EB0B00C3FB50 /* Home.swift */; };
 		CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669942847EBAB00C3FB50 /* StatementScreen.swift */; };
-		CF06699A2847EBD200C3FB50 /* PixScreen1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669982847EBD200C3FB50 /* PixScreen1VC.swift */; };
+		CF06699A2847EBD200C3FB50 /* PixScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669982847EBD200C3FB50 /* PixScreen1.swift */; };
 		CF06699E2847EC0800C3FB50 /* PixScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06699C2847EC0800C3FB50 /* PixScreen2.swift */; };
 		CF0669A22847EC1D00C3FB50 /* PixScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A02847EC1D00C3FB50 /* PixScreen3.swift */; };
 		CF4A58AB284E828900ECA3FC /* RegisterScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */; };
@@ -106,7 +106,7 @@
 		CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3.swift; sourceTree = "<group>"; };
 		CF0669902847EB0B00C3FB50 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CF0669942847EBAB00C3FB50 /* StatementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreen.swift; sourceTree = "<group>"; };
-		CF0669982847EBD200C3FB50 /* PixScreen1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen1VC.swift; sourceTree = "<group>"; };
+		CF0669982847EBD200C3FB50 /* PixScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen1.swift; sourceTree = "<group>"; };
 		CF06699C2847EC0800C3FB50 /* PixScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen2.swift; sourceTree = "<group>"; };
 		CF0669A02847EC1D00C3FB50 /* PixScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen3.swift; sourceTree = "<group>"; };
 		CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewModel.swift; sourceTree = "<group>"; };
@@ -494,7 +494,7 @@
 		13BB52AD28522328002A5769 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF0669982847EBD200C3FB50 /* PixScreen1VC.swift */,
+				CF0669982847EBD200C3FB50 /* PixScreen1.swift */,
 				13BB52C928522B34002A5769 /* PixScreen1ST.storyboard */,
 			);
 			path = View;
@@ -1090,7 +1090,7 @@
 				CFC79EC3285A18BF002C5BB0 /* TransferScreen4.swift in Sources */,
 				CF0669922847EB0B00C3FB50 /* Home.swift in Sources */,
 				CF4A58AB284E828900ECA3FC /* RegisterScreen1ViewModel.swift in Sources */,
-				CF06699A2847EBD200C3FB50 /* PixScreen1VC.swift in Sources */,
+				CF06699A2847EBD200C3FB50 /* PixScreen1.swift in Sources */,
 				CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */,
 				CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */,
 				097C38FB2857756F00828C1F /* AccountScreen.swift in Sources */,
