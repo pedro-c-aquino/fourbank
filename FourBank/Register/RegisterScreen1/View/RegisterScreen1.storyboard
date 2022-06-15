@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--RegisterScreen2-->
+        <!--RegisterScreen3-->
         <scene sceneID="Es6-th-W3B">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="VRR-39-uIf" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen3" referencedIdentifier="RegisterScreen3" id="VRR-39-uIf" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="bSR-nh-onu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gte-he-jdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
