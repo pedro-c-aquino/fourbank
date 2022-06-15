@@ -7,17 +7,21 @@
 
 import UIKit
 
-class RegisterScreen4: UITableViewCell {
+class RegisterScreen4: UITableViewController{
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func registerButton(_ sender: UIButton) {
     }
+    
 
+    @IBAction func backButton(_ sender: UIButton) {
+    }
+    
 }
