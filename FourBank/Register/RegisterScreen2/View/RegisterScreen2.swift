@@ -11,10 +11,11 @@ class RegisterScreen2: UIViewController {
 
     let registerScreen2ViewModel = RegisterScreen2ViewModel()
     
-    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var streetTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var stateTextField: UITextField!
-    @IBOutlet weak var zipcodeTextField: UITextField!
+    @IBOutlet weak var neighborhoodTextField: UITextField!
+    @IBOutlet weak var numberTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,7 @@ class RegisterScreen2: UIViewController {
     }
     
     @IBAction func proceedButton(_ sender: UIButton) {
-        registerScreen2ViewModel.registerPersonalInfo(address: addressTextField.text, city: cityTextField.text, state: stateTextField.text, zipcode: zipcodeTextField.text)
+        registerScreen2ViewModel.registerPersonalInfo(address: streetTextField.text, city: cityTextField.text, state: stateTextField.text, zipcode: neighborhoodTextField.text)
         performSegue(withIdentifier: "RegScreen2ToRegScreen3", sender: self)
     }
     
