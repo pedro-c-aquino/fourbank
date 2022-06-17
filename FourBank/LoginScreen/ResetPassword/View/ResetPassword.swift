@@ -21,5 +21,16 @@ class ResetPAssword: UIViewController {
     }
     
     @IBAction func resetPasswordButton(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: "Confirmação", message: "Senha alterada com sucesso!", preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+            self.performSegue(withIdentifier: "resetPasswordToLogin", sender: self)
+        }
+        
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
 }
