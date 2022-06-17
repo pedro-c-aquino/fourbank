@@ -46,6 +46,9 @@
 		CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */; };
 		CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64C3422857870A004DEE54 /* transferDataCell.swift */; };
 		CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF64C3432857870A004DEE54 /* transferDataCell.xib */; };
+		CF7905BF285CC60000D7109B /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7905BE285CC60000D7109B /* ResetPassword.swift */; };
+		CF7905C1285CC61100D7109B /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7905C0285CC61100D7109B /* ResetPassword.storyboard */; };
+		CF7905C3285CC62500D7109B /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */; };
 		CF8262A9285A6A020011F274 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8262A8285A6A020011F274 /* LoginModel.swift */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
@@ -121,6 +124,9 @@
 		CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen3ViewModel.swift; sourceTree = "<group>"; };
 		CF64C3422857870A004DEE54 /* transferDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferDataCell.swift; sourceTree = "<group>"; };
 		CF64C3432857870A004DEE54 /* transferDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transferDataCell.xib; sourceTree = "<group>"; };
+		CF7905BE285CC60000D7109B /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		CF7905C0285CC61100D7109B /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
+		CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
 		CF8262A8285A6A020011F274 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -280,9 +286,8 @@
 		13BB52922852218B002A5769 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				13BB5296285221CD002A5769 /* ViewModel */,
-				13BB5295285221C6002A5769 /* View */,
-				13BB5294285221BD002A5769 /* Model */,
+				CF7905BD285CC5C600D7109B /* ResetPassword */,
+				CF7905B9285CC59600D7109B /* Login */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -587,6 +592,50 @@
 				CF64C3432857870A004DEE54 /* transferDataCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF7905B9285CC59600D7109B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				13BB5296285221CD002A5769 /* ViewModel */,
+				13BB5295285221C6002A5769 /* View */,
+				13BB5294285221BD002A5769 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF7905BA285CC5A600D7109B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF7905BB285CC5AF00D7109B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF7905BE285CC60000D7109B /* ResetPassword.swift */,
+				CF7905C0285CC61100D7109B /* ResetPassword.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF7905BC285CC5B800D7109B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF7905BD285CC5C600D7109B /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CF7905BC285CC5B800D7109B /* ViewModel */,
+				CF7905BB285CC5AF00D7109B /* View */,
+				CF7905BA285CC5A600D7109B /* Model */,
+			);
+			path = ResetPassword;
 			sourceTree = "<group>";
 		};
 		CF9ACBA028479684001A2F87 = {
@@ -1028,6 +1077,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */,
+				CF7905C1285CC61100D7109B /* ResetPassword.storyboard in Resources */,
 				CFC79ED0285A19F5002C5BB0 /* Payment1.storyboard in Resources */,
 				CFC79EEA285A1C5E002C5BB0 /* Deposit2.storyboard in Resources */,
 				13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */,
@@ -1078,6 +1128,7 @@
 				CFC79EE5285A1C22002C5BB0 /* Deposit2.swift in Sources */,
 				CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */,
 				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
+				CF7905C3285CC62500D7109B /* ResetPasswordViewModel.swift in Sources */,
 				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
 				CF4A58AD284E829900ECA3FC /* RegisterScreen2ViewModel.swift in Sources */,
 				CFC79EF2285A1D09002C5BB0 /* RegisterScreen4.swift in Sources */,
@@ -1098,6 +1149,7 @@
 				CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */,
 				097C38FB2857756F00828C1F /* AccountScreen.swift in Sources */,
 				CFC79EDB285A1B80002C5BB0 /* Deposit1.swift in Sources */,
+				CF7905BF285CC60000D7109B /* ResetPassword.swift in Sources */,
 				133D1B01284E789D00EB777C /* UserModel.swift in Sources */,
 				CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */,
 				CF4A58B9284E833A00ECA3FC /* PixScreen2ViewModel.swift in Sources */,
