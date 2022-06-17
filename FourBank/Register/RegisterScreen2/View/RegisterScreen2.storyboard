@@ -10,7 +10,7 @@
         <!--Register Screen2-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RegisterScreen3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterScreen2" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterScreen2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterScreen2" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="98"/>
         </scene>
-        <!--RegisterScreen2-->
+        <!--RegisterScreen3-->
         <scene sceneID="Ncz-dG-QqA">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="9IT-Kd-gqs" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen3" storyboardName="RegisterScreen3" referencedIdentifier="RegisterScreen3" id="9IT-Kd-gqs" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAs-Wt-VjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1022" y="-110"/>
@@ -143,7 +143,7 @@
         <!--RegisterScreen1-->
         <scene sceneID="WCA-W3-pub">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen1" referencedIdentifier="RegisterScreen1" id="BjW-AT-a1O" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen1" storyboardName="RegisterScreen1" referencedIdentifier="RegisterScreen1" id="BjW-AT-a1O" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvX-Z0-0kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1082" y="230"/>

@@ -10,17 +10,17 @@
         <!--RegisterScreen4-->
         <scene sceneID="MPv-Gq-gPi">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen3" storyboardName="RegisterScreen4" referencedIdentifier="RegisterScreen4" id="iar-JV-dqW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen4" storyboardName="RegisterScreen4" referencedIdentifier="RegisterScreen4" id="iar-JV-dqW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PKJ-Jl-2zZ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k8w-OY-eBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-637" y="59"/>
         </scene>
-        <!--RegisterScreen3-->
+        <!--RegisterScreen2-->
         <scene sceneID="BQ1-Ch-kRl">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen1" storyboardName="RegisterScreen3" referencedIdentifier="RegisterScreen3" id="A7H-cb-yYK" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="A7H-cb-yYK" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Wuc-vy-QeY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8b-XD-E6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -30,7 +30,7 @@
         <!--Register Screen3-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RegisterScreen2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterScreen3" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterScreen3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="RegisterScreen3" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ajp-Jb-hue">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
