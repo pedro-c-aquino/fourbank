@@ -9,8 +9,5 @@ import Foundation
 
 class RegisterScreen1ViewModel {
     
-    func registerPersonalInfo(firstName: String?, lastName: String?, cpf: String?, rg: String?) {
-        let userPersonalInfo = UserPersonalInfo(firstName: firstName, lastName: lastName, cpf: cpf, rg: rg)
-    }
     
 }

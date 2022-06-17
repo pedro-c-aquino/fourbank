@@ -16,14 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J0n-xX-RxG">
-                                <rect key="frame" x="20" y="74" width="374" height="44"/>
-                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="36"/>
+                                <rect key="frame" x="20" y="74" width="374" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu email e senha para finalizar o cadastro" textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDu-qD-ZYA">
-                                <rect key="frame" x="103.5" y="158" width="207" height="37"/>
-                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite mais algumas informações pessoais para continuar o cadastro." textAlignment="center" lineBreakMode="clip" numberOfLines="5" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WDu-qD-ZYA">
+                                <rect key="frame" x="103.5" y="153.5" width="207" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,18 +31,23 @@
                                 <rect key="frame" x="41.5" y="477" width="331" height="269"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v3F-D2-soi">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WML-QD-GxJ">
-                                        <rect key="frame" x="0.0" y="100" width="331" height="69.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Profissão" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WML-QD-GxJ">
+                                        <rect key="frame" x="0.0" y="75" width="331" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirme sua senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h01-cj-rsj">
-                                        <rect key="frame" x="0.0" y="199.5" width="331" height="69.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Renda" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h01-cj-rsj">
+                                        <rect key="frame" x="0.0" y="149.5" width="331" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ha9-IB-wWE">
+                                        <rect key="frame" x="0.0" y="224.5" width="331" height="44.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -59,9 +64,10 @@
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Cadastrar">
+                                        <fragment content="Prosseguir">
                                             <attributes>
                                                 <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -114,29 +120,30 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="confirmPasswordTextField" destination="h01-cj-rsj" id="2EG-pc-Cbz"/>
+                        <outlet property="cellphoneTextField" destination="ha9-IB-wWE" id="AdL-6K-Boe"/>
                         <outlet property="emailTextField" destination="v3F-D2-soi" id="wWD-FR-Z9K"/>
-                        <outlet property="passwordTextField" destination="WML-QD-GxJ" id="iYv-Kp-njE"/>
-                        <segue destination="9IT-Kd-gqs" kind="presentation" identifier="RegScreen3ToMain" modalPresentationStyle="fullScreen" id="bnc-VF-viy"/>
-                        <segue destination="BjW-AT-a1O" kind="presentation" identifier="RegScreen3ToRegScreen2" modalPresentationStyle="fullScreen" id="D8G-HO-j4z"/>
+                        <outlet property="incomeTextField" destination="h01-cj-rsj" id="2EG-pc-Cbz"/>
+                        <outlet property="occupationTextField" destination="WML-QD-GxJ" id="iYv-Kp-njE"/>
+                        <segue destination="9IT-Kd-gqs" kind="presentation" identifier="RegScreen2ToRegScreen3" modalPresentationStyle="fullScreen" id="bnc-VF-viy"/>
+                        <segue destination="BjW-AT-a1O" kind="presentation" identifier="RegScreen2ToRegScreen1" modalPresentationStyle="fullScreen" id="D8G-HO-j4z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="98"/>
         </scene>
-        <!--Main-->
+        <!--RegisterScreen2-->
         <scene sceneID="Ncz-dG-QqA">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" referencedIdentifier="Main" id="9IT-Kd-gqs" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="9IT-Kd-gqs" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAs-Wt-VjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1022" y="-110"/>
         </scene>
-        <!--RegisterScreen2-->
+        <!--RegisterScreen1-->
         <scene sceneID="WCA-W3-pub">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen2" referencedIdentifier="RegisterScreen2" id="BjW-AT-a1O" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="RegisterScreen2" storyboardName="RegisterScreen1" referencedIdentifier="RegisterScreen1" id="BjW-AT-a1O" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvX-Z0-0kC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1082" y="230"/>

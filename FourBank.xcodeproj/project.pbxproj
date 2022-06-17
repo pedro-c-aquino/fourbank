@@ -9,81 +9,125 @@
 /* Begin PBXBuildFile section */
 		09247BC02853881400FC3606 /* BalanceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09247BBE2853881400FC3606 /* BalanceCell.swift */; };
 		09247BC12853881400FC3606 /* BalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09247BBF2853881400FC3606 /* BalanceCell.xib */; };
+		094C0B932857A6E500B7F3E0 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094C0B912857A6E500B7F3E0 /* DataCell.swift */; };
+		094C0B942857A6E500B7F3E0 /* DataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094C0B922857A6E500B7F3E0 /* DataCell.xib */; };
 		097C38F92857755D00828C1F /* AccountScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097C38F82857755D00828C1F /* AccountScreen.storyboard */; };
 		097C38FB2857756F00828C1F /* AccountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097C38FA2857756F00828C1F /* AccountScreen.swift */; };
 		097C38FD2857759B00828C1F /* AccountScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097C38FC2857759B00828C1F /* AccountScreenViewModel.swift */; };
 		098372122847E57700A4FAC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 098372112847E57700A4FAC1 /* Main.storyboard */; };
 		098372142847E5B500A4FAC1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098372132847E5B500A4FAC1 /* Login.swift */; };
+		131E3E9D2858C6F500C7F1BA /* fourBank.json in Resources */ = {isa = PBXBuildFile; fileRef = 131E3E9C2858C6F500C7F1BA /* fourBank.json */; };
 		133D1B01284E789D00EB777C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D1B00284E789D00EB777C /* UserModel.swift */; };
 		139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */; };
+		139F7FBF2857AA63005F4E22 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 139F7FBE2857AA63005F4E22 /* FirebaseAuth */; };
+		139F7FC12857AB1D005F4E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */; };
 		13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */; };
 		13BB52C228522A03002A5769 /* RegisterScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */; };
 		13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */; };
 		13BB52C628522AD1002A5769 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C528522AD1002A5769 /* Home.storyboard */; };
 		13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C728522B15002A5769 /* StatementScreen.storyboard */; };
-		13BB52CA28522B34002A5769 /* TransferScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C928522B34002A5769 /* TransferScreen1.storyboard */; };
-		13BB52CC28522B5A002A5769 /* TransferScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CB28522B5A002A5769 /* TransferScreen2.storyboard */; };
-		13BB52CE28522B76002A5769 /* TransferScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CD28522B76002A5769 /* TransferScreen3.storyboard */; };
+		13BB52CA28522B34002A5769 /* PixScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C928522B34002A5769 /* PixScreen1.storyboard */; };
+		13BB52CC28522B5A002A5769 /* PixScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CB28522B5A002A5769 /* PixScreen2.storyboard */; };
+		13BB52CE28522B76002A5769 /* PixScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52CD28522B76002A5769 /* PixScreen3.storyboard */; };
 		CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */; };
 		CF0669922847EB0B00C3FB50 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669902847EB0B00C3FB50 /* Home.swift */; };
-		CF0669962847EBAB00C3FB50 /* StatementScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669942847EBAB00C3FB50 /* StatementScreenViewController.swift */; };
-		CF06699A2847EBD200C3FB50 /* TransferScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669982847EBD200C3FB50 /* TransferScreen1.swift */; };
-		CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */; };
-		CF0669A22847EC1D00C3FB50 /* TransferScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */; };
+		CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669942847EBAB00C3FB50 /* StatementScreen.swift */; };
+		CF06699A2847EBD200C3FB50 /* PixScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669982847EBD200C3FB50 /* PixScreen1.swift */; };
+		CF06699E2847EC0800C3FB50 /* PixScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06699C2847EC0800C3FB50 /* PixScreen2.swift */; };
+		CF0669A22847EC1D00C3FB50 /* PixScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0669A02847EC1D00C3FB50 /* PixScreen3.swift */; };
 		CF4A58AB284E828900ECA3FC /* RegisterScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */; };
 		CF4A58AD284E829900ECA3FC /* RegisterScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */; };
 		CF4A58AF284E82A700ECA3FC /* RegisterScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */; };
 		CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */; };
 		CF4A58B3284E82E000ECA3FC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */; };
 		CF4A58B5284E830100ECA3FC /* StatementScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */; };
-		CF4A58B7284E832600ECA3FC /* TransferScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */; };
-		CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */; };
-		CF4A58BB284E834A00ECA3FC /* TransferScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */; };
+		CF4A58B7284E832600ECA3FC /* PixScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B6284E832600ECA3FC /* PixScreen1ViewModel.swift */; };
+		CF4A58B9284E833A00ECA3FC /* PixScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B8284E833A00ECA3FC /* PixScreen2ViewModel.swift */; };
+		CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */; };
 		CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64C3422857870A004DEE54 /* transferDataCell.swift */; };
 		CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF64C3432857870A004DEE54 /* transferDataCell.xib */; };
+		CF7905BF285CC60000D7109B /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7905BE285CC60000D7109B /* ResetPassword.swift */; };
+		CF7905C1285CC61100D7109B /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7905C0285CC61100D7109B /* ResetPassword.storyboard */; };
+		CF7905C3285CC62500D7109B /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */; };
+		CF8262A9285A6A020011F274 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8262A8285A6A020011F274 /* LoginModel.swift */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
 		CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB528479684001A2F87 /* Assets.xcassets */; };
 		CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB728479684001A2F87 /* LaunchScreen.storyboard */; };
 		CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */; };
+		CFC79EA4285A155D002C5BB0 /* TransferScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EA3285A155D002C5BB0 /* TransferScreen1.swift */; };
+		CFC79EA7285A15A8002C5BB0 /* TransferScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EA6285A15A8002C5BB0 /* TransferScreen1ViewModel.swift */; };
+		CFC79EA9285A15D5002C5BB0 /* TransferScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EA8285A15D5002C5BB0 /* TransferScreen1.storyboard */; };
+		CFC79EAF285A16D3002C5BB0 /* TransferScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EAE285A16D3002C5BB0 /* TransferScreen2.swift */; };
+		CFC79EB1285A16E4002C5BB0 /* TransferScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EB0285A16E4002C5BB0 /* TransferScreen2.storyboard */; };
+		CFC79EB3285A1702002C5BB0 /* TransferScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EB2285A1702002C5BB0 /* TransferScreen2ViewModel.swift */; };
+		CFC79EB9285A178B002C5BB0 /* TransferScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EB8285A178B002C5BB0 /* TransferScreen3.swift */; };
+		CFC79EBB285A17AE002C5BB0 /* TransferScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EBA285A17AE002C5BB0 /* TransferScreen3.storyboard */; };
+		CFC79EBD285A17FB002C5BB0 /* TransferScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EBC285A17FB002C5BB0 /* TransferScreen3ViewModel.swift */; };
+		CFC79EC3285A18BF002C5BB0 /* TransferScreen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EC2285A18BF002C5BB0 /* TransferScreen4.swift */; };
+		CFC79EC5285A18E2002C5BB0 /* TransferScreen4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EC4285A18E2002C5BB0 /* TransferScreen4.storyboard */; };
+		CFC79EC7285A190F002C5BB0 /* TransferScreen4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EC6285A190F002C5BB0 /* TransferScreen4ViewModel.swift */; };
+		CFC79ECE285A19CD002C5BB0 /* Payment1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ECD285A19CD002C5BB0 /* Payment1.swift */; };
+		CFC79ED0285A19F5002C5BB0 /* Payment1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79ECF285A19F5002C5BB0 /* Payment1.storyboard */; };
+		CFC79ED2285A1A25002C5BB0 /* Payment1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ED1285A1A25002C5BB0 /* Payment1ViewModel.swift */; };
+		CFC79ED4285A1A76002C5BB0 /* Payment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ED3285A1A76002C5BB0 /* Payment2.swift */; };
+		CFC79ED6285A1A99002C5BB0 /* Payment2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79ED5285A1A99002C5BB0 /* Payment2.storyboard */; };
+		CFC79ED8285A1AB9002C5BB0 /* Payment2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ED7285A1AB9002C5BB0 /* Payment2ViewModel.swift */; };
+		CFC79EDB285A1B80002C5BB0 /* Deposit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EDA285A1B80002C5BB0 /* Deposit1.swift */; };
+		CFC79EDD285A1B90002C5BB0 /* Deposit1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EDC285A1B90002C5BB0 /* Deposit1.storyboard */; };
+		CFC79EDF285A1BD1002C5BB0 /* Deposit1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EDE285A1BD1002C5BB0 /* Deposit1ViewModel.swift */; };
+		CFC79EE5285A1C22002C5BB0 /* Deposit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EE4285A1C22002C5BB0 /* Deposit2.swift */; };
+		CFC79EEA285A1C5E002C5BB0 /* Deposit2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EE9285A1C5E002C5BB0 /* Deposit2.storyboard */; };
+		CFC79EEC285A1C7E002C5BB0 /* Deposit2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EEB285A1C7E002C5BB0 /* Deposit2ViewModel.swift */; };
+		CFC79EF2285A1D09002C5BB0 /* RegisterScreen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EF1285A1D09002C5BB0 /* RegisterScreen4.swift */; };
+		CFC79EF4285A1D21002C5BB0 /* RegisterScreen4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EF3285A1D21002C5BB0 /* RegisterScreen4.storyboard */; };
+		CFC79EF6285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EF5285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift */; };
 		CFFCE646285397DB00698B11 /* HomeTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFCE645285397DB00698B11 /* HomeTabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09247BBE2853881400FC3606 /* BalanceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceCell.swift; sourceTree = "<group>"; };
 		09247BBF2853881400FC3606 /* BalanceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalanceCell.xib; sourceTree = "<group>"; };
+		094C0B912857A6E500B7F3E0 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		094C0B922857A6E500B7F3E0 /* DataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataCell.xib; sourceTree = "<group>"; };
 		097C38F82857755D00828C1F /* AccountScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountScreen.storyboard; sourceTree = "<group>"; };
 		097C38FA2857756F00828C1F /* AccountScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreen.swift; sourceTree = "<group>"; };
 		097C38FC2857759B00828C1F /* AccountScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountScreenViewModel.swift; sourceTree = "<group>"; };
 		098372112847E57700A4FAC1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		098372132847E5B500A4FAC1 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		131E3E9C2858C6F500C7F1BA /* fourBank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourBank.json; sourceTree = "<group>"; };
 		133D1B00284E789D00EB777C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewController.swift; sourceTree = "<group>"; };
+		139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen1.storyboard; sourceTree = "<group>"; };
 		13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen2.storyboard; sourceTree = "<group>"; };
 		13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen3.storyboard; sourceTree = "<group>"; };
 		13BB52C528522AD1002A5769 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		13BB52C728522B15002A5769 /* StatementScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatementScreen.storyboard; sourceTree = "<group>"; };
-		13BB52C928522B34002A5769 /* TransferScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen1.storyboard; sourceTree = "<group>"; };
-		13BB52CB28522B5A002A5769 /* TransferScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen2.storyboard; sourceTree = "<group>"; };
-		13BB52CD28522B76002A5769 /* TransferScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen3.storyboard; sourceTree = "<group>"; };
+		13BB52C928522B34002A5769 /* PixScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen1.storyboard; sourceTree = "<group>"; };
+		13BB52CB28522B5A002A5769 /* PixScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen2.storyboard; sourceTree = "<group>"; };
+		13BB52CD28522B76002A5769 /* PixScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PixScreen3.storyboard; sourceTree = "<group>"; };
 		CF06698C2847EA5300C3FB50 /* RegisterScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3.swift; sourceTree = "<group>"; };
 		CF0669902847EB0B00C3FB50 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		CF0669942847EBAB00C3FB50 /* StatementScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreenViewController.swift; sourceTree = "<group>"; };
-		CF0669982847EBD200C3FB50 /* TransferScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1.swift; sourceTree = "<group>"; };
-		CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2.swift; sourceTree = "<group>"; };
-		CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3.swift; sourceTree = "<group>"; };
+		CF0669942847EBAB00C3FB50 /* StatementScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreen.swift; sourceTree = "<group>"; };
+		CF0669982847EBD200C3FB50 /* PixScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen1.swift; sourceTree = "<group>"; };
+		CF06699C2847EC0800C3FB50 /* PixScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen2.swift; sourceTree = "<group>"; };
+		CF0669A02847EC1D00C3FB50 /* PixScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen3.swift; sourceTree = "<group>"; };
 		CF4A58AA284E828900ECA3FC /* RegisterScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58AC284E829900ECA3FC /* RegisterScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen2ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58AE284E82A700ECA3FC /* RegisterScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen3ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58B0284E82B800ECA3FC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CF4A58B2284E82E000ECA3FC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CF4A58B4284E830100ECA3FC /* StatementScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementScreenViewModel.swift; sourceTree = "<group>"; };
-		CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1ViewModel.swift; sourceTree = "<group>"; };
-		CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2ViewModel.swift; sourceTree = "<group>"; };
-		CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B6284E832600ECA3FC /* PixScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen1ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58B8284E833A00ECA3FC /* PixScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen2ViewModel.swift; sourceTree = "<group>"; };
+		CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen3ViewModel.swift; sourceTree = "<group>"; };
 		CF64C3422857870A004DEE54 /* transferDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferDataCell.swift; sourceTree = "<group>"; };
 		CF64C3432857870A004DEE54 /* transferDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transferDataCell.xib; sourceTree = "<group>"; };
+		CF7905BE285CC60000D7109B /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		CF7905C0285CC61100D7109B /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
+		CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
+		CF8262A8285A6A020011F274 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +135,33 @@
 		CF9ACBB828479684001A2F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF9ACBBA28479684001A2F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF9ACBC2284797A8001A2F87 /* RegisterScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen2.swift; sourceTree = "<group>"; };
+		CFC79EA3285A155D002C5BB0 /* TransferScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1.swift; sourceTree = "<group>"; };
+		CFC79EA6285A15A8002C5BB0 /* TransferScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen1ViewModel.swift; sourceTree = "<group>"; };
+		CFC79EA8285A15D5002C5BB0 /* TransferScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen1.storyboard; sourceTree = "<group>"; };
+		CFC79EAE285A16D3002C5BB0 /* TransferScreen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2.swift; sourceTree = "<group>"; };
+		CFC79EB0285A16E4002C5BB0 /* TransferScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen2.storyboard; sourceTree = "<group>"; };
+		CFC79EB2285A1702002C5BB0 /* TransferScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen2ViewModel.swift; sourceTree = "<group>"; };
+		CFC79EB8285A178B002C5BB0 /* TransferScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3.swift; sourceTree = "<group>"; };
+		CFC79EBA285A17AE002C5BB0 /* TransferScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen3.storyboard; sourceTree = "<group>"; };
+		CFC79EBC285A17FB002C5BB0 /* TransferScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3ViewModel.swift; sourceTree = "<group>"; };
+		CFC79EC2285A18BF002C5BB0 /* TransferScreen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen4.swift; sourceTree = "<group>"; };
+		CFC79EC4285A18E2002C5BB0 /* TransferScreen4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen4.storyboard; sourceTree = "<group>"; };
+		CFC79EC6285A190F002C5BB0 /* TransferScreen4ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen4ViewModel.swift; sourceTree = "<group>"; };
+		CFC79ECD285A19CD002C5BB0 /* Payment1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment1.swift; sourceTree = "<group>"; };
+		CFC79ECF285A19F5002C5BB0 /* Payment1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment1.storyboard; sourceTree = "<group>"; };
+		CFC79ED1285A1A25002C5BB0 /* Payment1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment1ViewModel.swift; sourceTree = "<group>"; };
+		CFC79ED3285A1A76002C5BB0 /* Payment2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment2.swift; sourceTree = "<group>"; };
+		CFC79ED5285A1A99002C5BB0 /* Payment2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment2.storyboard; sourceTree = "<group>"; };
+		CFC79ED7285A1AB9002C5BB0 /* Payment2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment2ViewModel.swift; sourceTree = "<group>"; };
+		CFC79EDA285A1B80002C5BB0 /* Deposit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit1.swift; sourceTree = "<group>"; };
+		CFC79EDC285A1B90002C5BB0 /* Deposit1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deposit1.storyboard; sourceTree = "<group>"; };
+		CFC79EDE285A1BD1002C5BB0 /* Deposit1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit1ViewModel.swift; sourceTree = "<group>"; };
+		CFC79EE4285A1C22002C5BB0 /* Deposit2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit2.swift; sourceTree = "<group>"; };
+		CFC79EE9285A1C5E002C5BB0 /* Deposit2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deposit2.storyboard; sourceTree = "<group>"; };
+		CFC79EEB285A1C7E002C5BB0 /* Deposit2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit2ViewModel.swift; sourceTree = "<group>"; };
+		CFC79EF1285A1D09002C5BB0 /* RegisterScreen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen4.swift; sourceTree = "<group>"; };
+		CFC79EF3285A1D21002C5BB0 /* RegisterScreen4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen4.storyboard; sourceTree = "<group>"; };
+		CFC79EF5285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen4ViewModel.swift; sourceTree = "<group>"; };
 		CFFCE645285397DB00698B11 /* HomeTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139F7FBF2857AA63005F4E22 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +193,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		094C0B902857A6B700B7F3E0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				094C0B912857A6E500B7F3E0 /* DataCell.swift */,
+				094C0B922857A6E500B7F3E0 /* DataCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		097C38F12857741800828C1F /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,9 +215,9 @@
 		097C38F22857745E00828C1F /* Pix */ = {
 			isa = PBXGroup;
 			children = (
-				13BB52B32852236F002A5769 /* TransferScreen3 */,
-				13BB52AF28522342002A5769 /* TransferScreen2 */,
-				13BB52AB28522314002A5769 /* TransferScreen1 */,
+				13BB52B32852236F002A5769 /* PixScreen3 */,
+				13BB52AF28522342002A5769 /* PixScreen2 */,
+				13BB52AB28522314002A5769 /* PixScreen1 */,
 			);
 			path = Pix;
 			sourceTree = "<group>";
@@ -144,6 +225,7 @@
 		097C38F32857748D00828C1F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				094C0B902857A6B700B7F3E0 /* Cell */,
 				097C38F82857755D00828C1F /* AccountScreen.storyboard */,
 				097C38FA2857756F00828C1F /* AccountScreen.swift */,
 			);
@@ -168,6 +250,7 @@
 		097C38F6285774C400828C1F /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				CFC79EED285A1CA5002C5BB0 /* RegisterScreen4 */,
 				13BB529F2852226C002A5769 /* RegisterScreen3 */,
 				13BB529B28522240002A5769 /* RegisterScreen2 */,
 				13BB5297285221FB002A5769 /* RegisterScreen1 */,
@@ -203,9 +286,8 @@
 		13BB52922852218B002A5769 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
-				13BB5296285221CD002A5769 /* ViewModel */,
-				13BB5295285221C6002A5769 /* View */,
-				13BB5294285221BD002A5769 /* Model */,
+				CF7905BD285CC5C600D7109B /* ResetPassword */,
+				CF7905B9285CC59600D7109B /* Login */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -213,6 +295,7 @@
 		13BB5294285221BD002A5769 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF8262A8285A6A020011F274 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -385,7 +468,7 @@
 			isa = PBXGroup;
 			children = (
 				09247BBD285387E800FC3606 /* Cell */,
-				CF0669942847EBAB00C3FB50 /* StatementScreenViewController.swift */,
+				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
 				13BB52C728522B15002A5769 /* StatementScreen.storyboard */,
 			);
 			path = View;
@@ -399,14 +482,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		13BB52AB28522314002A5769 /* TransferScreen1 */ = {
+		13BB52AB28522314002A5769 /* PixScreen1 */ = {
 			isa = PBXGroup;
 			children = (
 				13BB52AE2852232D002A5769 /* ViewModel */,
 				13BB52AD28522328002A5769 /* View */,
 				13BB52AC28522322002A5769 /* Model */,
 			);
-			path = TransferScreen1;
+			path = PixScreen1;
 			sourceTree = "<group>";
 		};
 		13BB52AC28522322002A5769 /* Model */ = {
@@ -419,8 +502,8 @@
 		13BB52AD28522328002A5769 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF0669982847EBD200C3FB50 /* TransferScreen1.swift */,
-				13BB52C928522B34002A5769 /* TransferScreen1.storyboard */,
+				CF0669982847EBD200C3FB50 /* PixScreen1.swift */,
+				13BB52C928522B34002A5769 /* PixScreen1.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -428,19 +511,19 @@
 		13BB52AE2852232D002A5769 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CF4A58B6284E832600ECA3FC /* TransferScreen1ViewModel.swift */,
+				CF4A58B6284E832600ECA3FC /* PixScreen1ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		13BB52AF28522342002A5769 /* TransferScreen2 */ = {
+		13BB52AF28522342002A5769 /* PixScreen2 */ = {
 			isa = PBXGroup;
 			children = (
 				13BB52B228522358002A5769 /* ViewModel */,
 				13BB52B128522352002A5769 /* View */,
 				13BB52B02852234C002A5769 /* Model */,
 			);
-			path = TransferScreen2;
+			path = PixScreen2;
 			sourceTree = "<group>";
 		};
 		13BB52B02852234C002A5769 /* Model */ = {
@@ -453,8 +536,8 @@
 		13BB52B128522352002A5769 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF06699C2847EC0800C3FB50 /* TransferScreen2.swift */,
-				13BB52CB28522B5A002A5769 /* TransferScreen2.storyboard */,
+				CF06699C2847EC0800C3FB50 /* PixScreen2.swift */,
+				13BB52CB28522B5A002A5769 /* PixScreen2.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,19 +545,19 @@
 		13BB52B228522358002A5769 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CF4A58B8284E833A00ECA3FC /* TransferScreen2ViewModel.swift */,
+				CF4A58B8284E833A00ECA3FC /* PixScreen2ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		13BB52B32852236F002A5769 /* TransferScreen3 */ = {
+		13BB52B32852236F002A5769 /* PixScreen3 */ = {
 			isa = PBXGroup;
 			children = (
 				13BB52B628522388002A5769 /* ViewModel */,
 				13BB52B528522381002A5769 /* View */,
 				13BB52B42852237A002A5769 /* Model */,
 			);
-			path = TransferScreen3;
+			path = PixScreen3;
 			sourceTree = "<group>";
 		};
 		13BB52B42852237A002A5769 /* Model */ = {
@@ -487,8 +570,8 @@
 		13BB52B528522381002A5769 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CF0669A02847EC1D00C3FB50 /* TransferScreen3.swift */,
-				13BB52CD28522B76002A5769 /* TransferScreen3.storyboard */,
+				CF0669A02847EC1D00C3FB50 /* PixScreen3.swift */,
+				13BB52CD28522B76002A5769 /* PixScreen3.storyboard */,
 				CF64C34628578713004DEE54 /* Cell */,
 			);
 			path = View;
@@ -497,7 +580,7 @@
 		13BB52B628522388002A5769 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CF4A58BA284E834A00ECA3FC /* TransferScreen3ViewModel.swift */,
+				CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -509,6 +592,50 @@
 				CF64C3432857870A004DEE54 /* transferDataCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF7905B9285CC59600D7109B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				13BB5296285221CD002A5769 /* ViewModel */,
+				13BB5295285221C6002A5769 /* View */,
+				13BB5294285221BD002A5769 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CF7905BA285CC5A600D7109B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF7905BB285CC5AF00D7109B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF7905BE285CC60000D7109B /* ResetPassword.swift */,
+				CF7905C0285CC61100D7109B /* ResetPassword.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF7905BC285CC5B800D7109B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF7905BD285CC5C600D7109B /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CF7905BC285CC5B800D7109B /* ViewModel */,
+				CF7905BB285CC5AF00D7109B /* View */,
+				CF7905BA285CC5A600D7109B /* Model */,
+			);
+			path = ResetPassword;
 			sourceTree = "<group>";
 		};
 		CF9ACBA028479684001A2F87 = {
@@ -530,6 +657,9 @@
 		CF9ACBAB28479684001A2F87 /* FourBank */ = {
 			isa = PBXGroup;
 			children = (
+				CFC79E9C285A0A0E002C5BB0 /* Payment */,
+				CFC79E9B285A09EC002C5BB0 /* Transfer */,
+				CFC79E8F285A06FE002C5BB0 /* Deposit */,
 				13BB52922852218B002A5769 /* LoginScreen */,
 				097C38F6285774C400828C1F /* Register */,
 				13BB52A3285222BC002A5769 /* Home */,
@@ -541,8 +671,345 @@
 				139ED2CA2847ED2600F2C59C /* LaunchScreen */,
 				CF9ACBB528479684001A2F87 /* Assets.xcassets */,
 				CF9ACBBA28479684001A2F87 /* Info.plist */,
+				139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */,
+				131E3E9C2858C6F500C7F1BA /* fourBank.json */,
 			);
 			path = FourBank;
+			sourceTree = "<group>";
+		};
+		CFC79E8F285A06FE002C5BB0 /* Deposit */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EE0285A1BDE002C5BB0 /* Deposit2 */,
+				CFC79ED9285A1AFA002C5BB0 /* Deposit1 */,
+			);
+			path = Deposit;
+			sourceTree = "<group>";
+		};
+		CFC79E98285A0845002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EDA285A1B80002C5BB0 /* Deposit1.swift */,
+				CFC79EDC285A1B90002C5BB0 /* Deposit1.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79E99285A084E002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EDE285A1BD1002C5BB0 /* Deposit1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79E9A285A0858002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79E9B285A09EC002C5BB0 /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EBE285A1853002C5BB0 /* TransferScreen4 */,
+				CFC79EB4285A172E002C5BB0 /* TransferScreen3 */,
+				CFC79EAA285A1661002C5BB0 /* TransferScreen2 */,
+				CFC79EA5285A1579002C5BB0 /* TransferScreen1 */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		CFC79E9C285A0A0E002C5BB0 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EC8285A1954002C5BB0 /* Payment2 */,
+				CFC79EC9285A196C002C5BB0 /* Payment1 */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		CFC79E9D285A0A1C002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EA3285A155D002C5BB0 /* TransferScreen1.swift */,
+				CFC79EA8285A15D5002C5BB0 /* TransferScreen1.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79E9E285A0A25002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EA6285A15A8002C5BB0 /* TransferScreen1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79E9F285A0A2F002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EA0285A0A3B002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79ECD285A19CD002C5BB0 /* Payment1.swift */,
+				CFC79ECF285A19F5002C5BB0 /* Payment1.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79EA1285A0A42002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79ED1285A1A25002C5BB0 /* Payment1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79EA2285A0A4A002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EA5285A1579002C5BB0 /* TransferScreen1 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79E9E285A0A25002C5BB0 /* ViewModel */,
+				CFC79E9D285A0A1C002C5BB0 /* View */,
+				CFC79E9F285A0A2F002C5BB0 /* Model */,
+			);
+			path = TransferScreen1;
+			sourceTree = "<group>";
+		};
+		CFC79EAA285A1661002C5BB0 /* TransferScreen2 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EAC285A168E002C5BB0 /* ViewModel */,
+				CFC79EAB285A167D002C5BB0 /* View */,
+				CFC79EAD285A16A0002C5BB0 /* Model */,
+			);
+			path = TransferScreen2;
+			sourceTree = "<group>";
+		};
+		CFC79EAB285A167D002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EAE285A16D3002C5BB0 /* TransferScreen2.swift */,
+				CFC79EB0285A16E4002C5BB0 /* TransferScreen2.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79EAC285A168E002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EB2285A1702002C5BB0 /* TransferScreen2ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79EAD285A16A0002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EB4285A172E002C5BB0 /* TransferScreen3 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EB7285A175E002C5BB0 /* ViewModel */,
+				CFC79EB6285A1752002C5BB0 /* View */,
+				CFC79EB5285A173F002C5BB0 /* Model */,
+			);
+			path = TransferScreen3;
+			sourceTree = "<group>";
+		};
+		CFC79EB5285A173F002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EB6285A1752002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EB8285A178B002C5BB0 /* TransferScreen3.swift */,
+				CFC79EBA285A17AE002C5BB0 /* TransferScreen3.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79EB7285A175E002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EBC285A17FB002C5BB0 /* TransferScreen3ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79EBE285A1853002C5BB0 /* TransferScreen4 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EC1285A1873002C5BB0 /* ViewModel */,
+				CFC79EC0285A1869002C5BB0 /* View */,
+				CFC79EBF285A1861002C5BB0 /* Model */,
+			);
+			path = TransferScreen4;
+			sourceTree = "<group>";
+		};
+		CFC79EBF285A1861002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EC0285A1869002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EC2285A18BF002C5BB0 /* TransferScreen4.swift */,
+				CFC79EC4285A18E2002C5BB0 /* TransferScreen4.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79EC1285A1873002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EC6285A190F002C5BB0 /* TransferScreen4ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79EC8285A1954002C5BB0 /* Payment2 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79ECC285A19A6002C5BB0 /* ViewModel */,
+				CFC79ECB285A199C002C5BB0 /* View */,
+				CFC79ECA285A1992002C5BB0 /* Model */,
+			);
+			path = Payment2;
+			sourceTree = "<group>";
+		};
+		CFC79EC9285A196C002C5BB0 /* Payment1 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EA1285A0A42002C5BB0 /* ViewModel */,
+				CFC79EA0285A0A3B002C5BB0 /* View */,
+				CFC79EA2285A0A4A002C5BB0 /* Model */,
+			);
+			path = Payment1;
+			sourceTree = "<group>";
+		};
+		CFC79ECA285A1992002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79ECB285A199C002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79ED3285A1A76002C5BB0 /* Payment2.swift */,
+				CFC79ED5285A1A99002C5BB0 /* Payment2.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79ECC285A19A6002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79ED7285A1AB9002C5BB0 /* Payment2ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79ED9285A1AFA002C5BB0 /* Deposit1 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79E99285A084E002C5BB0 /* ViewModel */,
+				CFC79E98285A0845002C5BB0 /* View */,
+				CFC79E9A285A0858002C5BB0 /* Model */,
+			);
+			path = Deposit1;
+			sourceTree = "<group>";
+		};
+		CFC79EE0285A1BDE002C5BB0 /* Deposit2 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EE3285A1C06002C5BB0 /* ViewModel */,
+				CFC79EE2285A1BFE002C5BB0 /* View */,
+				CFC79EE1285A1BF7002C5BB0 /* Model */,
+			);
+			path = Deposit2;
+			sourceTree = "<group>";
+		};
+		CFC79EE1285A1BF7002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EE2285A1BFE002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EE4285A1C22002C5BB0 /* Deposit2.swift */,
+				CFC79EE9285A1C5E002C5BB0 /* Deposit2.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79EE3285A1C06002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EEB285A1C7E002C5BB0 /* Deposit2ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CFC79EED285A1CA5002C5BB0 /* RegisterScreen4 */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EF0285A1CDD002C5BB0 /* ViewModel */,
+				CFC79EEF285A1CD6002C5BB0 /* View */,
+				CFC79EEE285A1CCB002C5BB0 /* Model */,
+			);
+			path = RegisterScreen4;
+			sourceTree = "<group>";
+		};
+		CFC79EEE285A1CCB002C5BB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFC79EEF285A1CD6002C5BB0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EF1285A1D09002C5BB0 /* RegisterScreen4.swift */,
+				CFC79EF3285A1D21002C5BB0 /* RegisterScreen4.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CFC79EF0285A1CDD002C5BB0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFC79EF5285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,6 +1028,9 @@
 			dependencies = (
 			);
 			name = FourBank;
+			packageProductDependencies = (
+				139F7FBE2857AA63005F4E22 /* FirebaseAuth */,
+			);
 			productName = FourBank;
 			productReference = CF9ACBA928479684001A2F87 /* FourBank.app */;
 			productType = "com.apple.product-type.application";
@@ -589,6 +1059,9 @@
 				Base,
 			);
 			mainGroup = CF9ACBA028479684001A2F87;
+			packageReferences = (
+				139F7FBD2857AA63005F4E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CF9ACBAA28479684001A2F87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -604,20 +1077,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */,
+				CF7905C1285CC61100D7109B /* ResetPassword.storyboard in Resources */,
+				CFC79ED0285A19F5002C5BB0 /* Payment1.storyboard in Resources */,
+				CFC79EEA285A1C5E002C5BB0 /* Deposit2.storyboard in Resources */,
 				13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */,
-				13BB52CA28522B34002A5769 /* TransferScreen1.storyboard in Resources */,
+				13BB52CA28522B34002A5769 /* PixScreen1.storyboard in Resources */,
 				13BB52C628522AD1002A5769 /* Home.storyboard in Resources */,
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
 				CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */,
 				13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */,
-				13BB52CC28522B5A002A5769 /* TransferScreen2.storyboard in Resources */,
+				CFC79EC5285A18E2002C5BB0 /* TransferScreen4.storyboard in Resources */,
+				CFC79EB1285A16E4002C5BB0 /* TransferScreen2.storyboard in Resources */,
+				094C0B942857A6E500B7F3E0 /* DataCell.xib in Resources */,
+				CFC79EF4285A1D21002C5BB0 /* RegisterScreen4.storyboard in Resources */,
+				13BB52CC28522B5A002A5769 /* PixScreen2.storyboard in Resources */,
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
 				13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */,
+				131E3E9D2858C6F500C7F1BA /* fourBank.json in Resources */,
 				CFFCE646285397DB00698B11 /* HomeTabBar.storyboard in Resources */,
+				139F7FC12857AB1D005F4E22 /* GoogleService-Info.plist in Resources */,
+				CFC79EDD285A1B90002C5BB0 /* Deposit1.storyboard in Resources */,
+				CFC79ED6285A1A99002C5BB0 /* Payment2.storyboard in Resources */,
+				CFC79EA9285A15D5002C5BB0 /* TransferScreen1.storyboard in Resources */,
 				09247BC12853881400FC3606 /* BalanceCell.xib in Resources */,
 				13BB52C228522A03002A5769 /* RegisterScreen2.storyboard in Resources */,
+				CFC79EBB285A17AE002C5BB0 /* TransferScreen3.storyboard in Resources */,
 				097C38F92857755D00828C1F /* AccountScreen.storyboard in Resources */,
-				13BB52CE28522B76002A5769 /* TransferScreen3.storyboard in Resources */,
+				13BB52CE28522B76002A5769 /* PixScreen3.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,30 +1115,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				097C38FD2857759B00828C1F /* AccountScreenViewModel.swift in Sources */,
+				CFC79EAF285A16D3002C5BB0 /* TransferScreen2.swift in Sources */,
+				CFC79EF6285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift in Sources */,
+				CFC79EC7285A190F002C5BB0 /* TransferScreen4ViewModel.swift in Sources */,
 				CF4A58B3284E82E000ECA3FC /* HomeViewModel.swift in Sources */,
+				CFC79EEC285A1C7E002C5BB0 /* Deposit2ViewModel.swift in Sources */,
 				CF4A58B5284E830100ECA3FC /* StatementScreenViewModel.swift in Sources */,
 				CF4A58AF284E82A700ECA3FC /* RegisterScreen3ViewModel.swift in Sources */,
-				CF0669962847EBAB00C3FB50 /* StatementScreenViewController.swift in Sources */,
+				CFC79ED8285A1AB9002C5BB0 /* Payment2ViewModel.swift in Sources */,
+				CFC79EDF285A1BD1002C5BB0 /* Deposit1ViewModel.swift in Sources */,
+				CFC79ED4285A1A76002C5BB0 /* Payment2.swift in Sources */,
+				CFC79EE5285A1C22002C5BB0 /* Deposit2.swift in Sources */,
+				CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */,
 				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
+				CF7905C3285CC62500D7109B /* ResetPasswordViewModel.swift in Sources */,
 				CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */,
 				CF4A58AD284E829900ECA3FC /* RegisterScreen2ViewModel.swift in Sources */,
+				CFC79EF2285A1D09002C5BB0 /* RegisterScreen4.swift in Sources */,
 				09247BC02853881400FC3606 /* BalanceCell.swift in Sources */,
-				CF0669A22847EC1D00C3FB50 /* TransferScreen3.swift in Sources */,
-				CF4A58B7284E832600ECA3FC /* TransferScreen1ViewModel.swift in Sources */,
+				CFC79ED2285A1A25002C5BB0 /* Payment1ViewModel.swift in Sources */,
+				CF0669A22847EC1D00C3FB50 /* PixScreen3.swift in Sources */,
+				CFC79ECE285A19CD002C5BB0 /* Payment1.swift in Sources */,
+				CFC79EA4285A155D002C5BB0 /* TransferScreen1.swift in Sources */,
+				CF4A58B7284E832600ECA3FC /* PixScreen1ViewModel.swift in Sources */,
 				CF06698E2847EA5300C3FB50 /* RegisterScreen3.swift in Sources */,
 				098372142847E5B500A4FAC1 /* Login.swift in Sources */,
 				CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */,
+				CFC79EC3285A18BF002C5BB0 /* TransferScreen4.swift in Sources */,
 				CF0669922847EB0B00C3FB50 /* Home.swift in Sources */,
 				CF4A58AB284E828900ECA3FC /* RegisterScreen1ViewModel.swift in Sources */,
-				CF06699A2847EBD200C3FB50 /* TransferScreen1.swift in Sources */,
+				CF06699A2847EBD200C3FB50 /* PixScreen1.swift in Sources */,
 				CF9ACBC4284797A8001A2F87 /* RegisterScreen2.swift in Sources */,
-				CF4A58BB284E834A00ECA3FC /* TransferScreen3ViewModel.swift in Sources */,
+				CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */,
 				097C38FB2857756F00828C1F /* AccountScreen.swift in Sources */,
+				CFC79EDB285A1B80002C5BB0 /* Deposit1.swift in Sources */,
+				CF7905BF285CC60000D7109B /* ResetPassword.swift in Sources */,
 				133D1B01284E789D00EB777C /* UserModel.swift in Sources */,
 				CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */,
-				CF4A58B9284E833A00ECA3FC /* TransferScreen2ViewModel.swift in Sources */,
-				CF06699E2847EC0800C3FB50 /* TransferScreen2.swift in Sources */,
+				CF4A58B9284E833A00ECA3FC /* PixScreen2ViewModel.swift in Sources */,
+				CF06699E2847EC0800C3FB50 /* PixScreen2.swift in Sources */,
 				CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */,
+				CFC79EB9285A178B002C5BB0 /* TransferScreen3.swift in Sources */,
+				CF8262A9285A6A020011F274 /* LoginModel.swift in Sources */,
+				CFC79EB3285A1702002C5BB0 /* TransferScreen2ViewModel.swift in Sources */,
+				CFC79EA7285A15A8002C5BB0 /* TransferScreen1ViewModel.swift in Sources */,
+				094C0B932857A6E500B7F3E0 /* DataCell.swift in Sources */,
+				CFC79EBD285A17FB002C5BB0 /* TransferScreen3ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -860,6 +1368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		139F7FBD2857AA63005F4E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		139F7FBE2857AA63005F4E22 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 139F7FBD2857AA63005F4E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF9ACBA128479684001A2F87 /* Project object */;
 }

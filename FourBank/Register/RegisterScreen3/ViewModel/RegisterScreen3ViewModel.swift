@@ -8,8 +8,5 @@
 import UIKit
 
 class RegisterScreen3ViewModel {
-    
-    func registerUser(email: String?, password: String?) {
-        let userLogin = UserLoginInfo(email: email, password: password)
-    }
+
 }

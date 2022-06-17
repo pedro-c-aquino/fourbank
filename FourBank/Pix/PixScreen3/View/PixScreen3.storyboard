@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="115-mg-xle">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pix-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PixScreen3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PixScreen3" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i03-oq-L6H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-Mx-PoT">
+                                <rect key="frame" x="77" y="458" width="120" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="ak6-LV-asn"/>
+                                    <constraint firstAttribute="height" constant="55" id="gIq-5c-67j"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Cancelar">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0Nn-Bu-Gb1" kind="presentation" modalPresentationStyle="fullScreen" id="rNL-Ye-RhW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-7k-7hL">
+                                <rect key="frame" x="217" y="458" width="120" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="FzT-c0-1R1"/>
+                                    <constraint firstAttribute="height" constant="55" id="ZFc-l1-4cM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Confirmar">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.22424242420000001" green="0.18927738920000001" blue="0.39860139859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cwo-ka-eVY"/>
+                                    <segue destination="0Nn-Bu-Gb1" kind="presentation" identifier="PixScreenToHome" modalPresentationStyle="fullScreen" id="wCE-yt-D4B"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-5x-quU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="C9m-rC-wC6"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iEq-VW-3zr"/>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="g6z-5x-quU" firstAttribute="top" secondItem="iEq-VW-3zr" secondAttribute="top" id="0fM-Xl-lQp"/>
+                            <constraint firstItem="PR1-7k-7hL" firstAttribute="centerX" secondItem="i03-oq-L6H" secondAttribute="centerX" constant="70" id="6XS-AP-3ZZ"/>
+                            <constraint firstItem="S3q-Mx-PoT" firstAttribute="centerX" secondItem="i03-oq-L6H" secondAttribute="centerX" constant="-70" id="Aii-7W-lrk"/>
+                            <constraint firstItem="PR1-7k-7hL" firstAttribute="top" secondItem="S3q-Mx-PoT" secondAttribute="top" id="HEe-84-DGY"/>
+                            <constraint firstItem="g6z-5x-quU" firstAttribute="leading" secondItem="iEq-VW-3zr" secondAttribute="leading" id="XIZ-hu-Ndg"/>
+                            <constraint firstItem="iEq-VW-3zr" firstAttribute="trailing" secondItem="g6z-5x-quU" secondAttribute="trailing" id="YC8-Sh-4mE"/>
+                            <constraint firstItem="S3q-Mx-PoT" firstAttribute="top" secondItem="g6z-5x-quU" secondAttribute="bottom" constant="20" id="eMt-9E-mUl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pix" id="3Tu-pk-RIA"/>
+                    <connections>
+                        <outlet property="transferDataTableView" destination="g6z-5x-quU" id="0Mp-l7-nKP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
+        </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="gDU-rH-OI3">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HomeTabBar" storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="0Nn-Bu-Gb1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="K9o-jc-eXv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ppW-oC-t3f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JBC-k8-hBI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="115-mg-xle" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DH1-J2-i7J">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="76v-2Q-PaH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNG-V0-B6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wCE-yt-D4B"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
