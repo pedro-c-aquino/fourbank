@@ -54,10 +54,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU4-wQ-2vu">
-                                <rect key="frame" x="77" y="439" width="120" height="55"/>
+                                <rect key="frame" x="84.5" y="429" width="105" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="an2-ll-Rm1"/>
-                                    <constraint firstAttribute="width" constant="120" id="sf0-2n-cVw"/>
+                                    <constraint firstAttribute="height" constant="40" id="an2-ll-Rm1"/>
+                                    <constraint firstAttribute="width" constant="105" id="sf0-2n-cVw"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -76,10 +76,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En6-m9-lyQ">
-                                <rect key="frame" x="217" y="439" width="120" height="55"/>
+                                <rect key="frame" x="224.5" y="429" width="105" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="KoI-FW-bsc"/>
-                                    <constraint firstAttribute="height" constant="55" id="XRW-x1-obZ"/>
+                                    <constraint firstAttribute="width" constant="105" id="KoI-FW-bsc"/>
+                                    <constraint firstAttribute="height" constant="40" id="XRW-x1-obZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -99,7 +99,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-jz-2uA">
-                                <rect key="frame" x="127" y="519" width="160" height="31"/>
+                                <rect key="frame" x="127" y="484" width="160" height="31"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Esqueci minha senha"/>
@@ -113,6 +113,7 @@
                         <constraints>
                             <constraint firstItem="BU4-wQ-2vu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-70" id="2RS-vd-ybA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SUx-Nn-m5W" secondAttribute="trailing" constant="20" id="2ky-TC-H3F"/>
+                            <constraint firstItem="En6-m9-lyQ" firstAttribute="top" secondItem="BU4-wQ-2vu" secondAttribute="top" id="7pX-rd-wdj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Koj-Fh-SeG" secondAttribute="trailing" constant="80" id="A0l-y5-F0v"/>
                             <constraint firstItem="SUx-Nn-m5W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EX9-4H-dq8"/>
                             <constraint firstItem="Cbt-1G-Zjm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Iwj-oS-sZV"/>
@@ -121,11 +122,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cbt-1G-Zjm" secondAttribute="trailing" constant="119" id="ULD-Jh-rvx"/>
                             <constraint firstItem="mAZ-gj-A8e" firstAttribute="top" secondItem="Koj-Fh-SeG" secondAttribute="bottom" constant="30" id="V07-KP-C6l"/>
                             <constraint firstItem="Koj-Fh-SeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ZlH-Ey-zl6"/>
-                            <constraint firstItem="BU4-wQ-2vu" firstAttribute="top" secondItem="SUx-Nn-m5W" secondAttribute="bottom" constant="50" id="Zxw-Vj-wxb"/>
+                            <constraint firstItem="BU4-wQ-2vu" firstAttribute="top" secondItem="SUx-Nn-m5W" secondAttribute="bottom" constant="40" id="Zxw-Vj-wxb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAZ-gj-A8e" secondAttribute="trailing" constant="20" id="d20-jJ-qeW"/>
-                            <constraint firstItem="NY8-jz-2uA" firstAttribute="top" secondItem="BU4-wQ-2vu" secondAttribute="bottom" constant="25" id="eFU-Kp-P3k"/>
+                            <constraint firstItem="NY8-jz-2uA" firstAttribute="top" secondItem="BU4-wQ-2vu" secondAttribute="bottom" constant="15" id="eFU-Kp-P3k"/>
                             <constraint firstItem="mAZ-gj-A8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hFS-3P-UTE"/>
-                            <constraint firstItem="En6-m9-lyQ" firstAttribute="top" secondItem="SUx-Nn-m5W" secondAttribute="bottom" constant="50" id="iKG-cw-03D"/>
                             <constraint firstItem="NY8-jz-2uA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lpa-K8-CVl"/>
                             <constraint firstItem="SUx-Nn-m5W" firstAttribute="top" secondItem="mAZ-gj-A8e" secondAttribute="bottom" constant="30" id="tBd-uE-brR"/>
                             <constraint firstItem="En6-m9-lyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="wvv-4Q-sk1"/>

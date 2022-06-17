@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class PixScreen2ViewModel {
+    
+}

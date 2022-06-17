@@ -181,8 +181,8 @@
 		097C38F12857741800828C1F /* AccountScreen */ = {
 			isa = PBXGroup;
 			children = (
-				097C38F32857748D00828C1F /* View */,
 				097C38F5285774A700828C1F /* ViewModel */,
+				097C38F32857748D00828C1F /* View */,
 				097C38F42857749500828C1F /* Model */,
 			);
 			path = AccountScreen;

@@ -15,9 +15,9 @@ class RegisterScreen1ViewController: UIViewController {
     @IBOutlet weak var rgTextField: UITextField!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-       
-            }
+    }
 
     @IBAction func proceedButton(_ sender: UIButton) {
 
@@ -25,6 +25,7 @@ class RegisterScreen1ViewController: UIViewController {
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {
+        
         self.performSegue(withIdentifier: "RegScreen1ToLogin", sender: self)
     }
 

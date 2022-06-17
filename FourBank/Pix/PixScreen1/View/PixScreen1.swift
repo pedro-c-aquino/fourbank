@@ -14,13 +14,9 @@ class PixScreen1: UIViewController {
     let pixKeyTypesArray = ["Email", "Telefone", "CPF", "CNPJ"]
     var selectedKeyType = ""
     
-
     @IBOutlet weak var balanceLabel: UILabel!
-    
     @IBOutlet weak var amountTextField: UITextField!
-    
     @IBOutlet weak var typeTransferPickerView: UIPickerView!
-    
     
     override func viewDidLoad() {
         
@@ -77,6 +73,5 @@ extension PixScreen1: UIPickerViewDelegate, UIPickerViewDataSource {
         
         selectedKeyType = pixKeyTypesArray[row]
     }
-    
     
 }
