@@ -33,7 +33,7 @@ class Home: UIViewController {
             balanceLabel.isHidden = false
             hiddenBalanceLabel.isHidden = true
             hideBalanceButton.image = UIImage(systemName: "eye.slash.fill")
-            
+            	
         } else {
             
             balanceLabel.isHidden = true

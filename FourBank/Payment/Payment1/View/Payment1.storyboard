@@ -127,11 +127,13 @@
             </objects>
             <point key="canvasLocation" x="1709" y="-24"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Pagamentos-->
         <scene sceneID="KKm-pu-4po">
             <objects>
                 <navigationController storyboardIdentifier="Payment1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BKS-bc-ojm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pagamentos" image="dollarsign.circle" catalog="system" id="iA7-G5-Wy0"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o52-XL-MJN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -150,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>
