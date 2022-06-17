@@ -7,17 +7,12 @@
 
 import UIKit
 
-class TransferScreen3ViewModel: UITableViewCell {
+class TransferScreen3ViewModel {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func getAmountString(amount: Double) -> String {
+        let amountConverted = String(format: "%.2f", amount)
+        let amountString = "R$ " + amountConverted.replacingOccurrences(of: ".", with: ",")
+        
+        return amountString
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
