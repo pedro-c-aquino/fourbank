@@ -118,11 +118,13 @@
             </objects>
             <point key="canvasLocation" x="1650" y="54"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Depósito-->
         <scene sceneID="XO8-Tb-azm">
             <objects>
                 <navigationController storyboardIdentifier="Deposit1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1OV-tv-paQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Depósito" image="list.bullet.rectangle.portrait" catalog="system" id="0cE-RX-yvU"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1WT-yd-0AS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -141,6 +143,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>

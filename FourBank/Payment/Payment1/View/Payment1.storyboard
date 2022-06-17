@@ -15,8 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe o Valor e o Código de Barras do pagamento:" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.85000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="zhe-7s-DDu">
+                                <rect key="frame" x="30" y="118" width="354" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="q5i-WP-A3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Valor" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-PM-qQN">
-                                <rect key="frame" x="30" y="204" width="354" height="34"/>
+                                <rect key="frame" x="30" y="263" width="354" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="EP1-J4-gyH"/>
                                 </constraints>
@@ -24,7 +33,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Código de Barras" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9M-Hh-SIP">
-                                <rect key="frame" x="30" y="258" width="354" height="34"/>
+                                <rect key="frame" x="30" y="317" width="354" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="i8w-Ca-fpN"/>
                                 </constraints>
@@ -32,7 +41,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3D-Tt-hhk">
-                                <rect key="frame" x="154.5" y="342" width="105" height="40"/>
+                                <rect key="frame" x="154.5" y="401" width="105" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Hb8-Dg-v0r"/>
                                     <constraint firstAttribute="width" constant="105" id="Nbh-Q3-pe0"/>
@@ -44,14 +53,28 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RRl-cg-WsF"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informe o Valor e o Código de Barras do pagamento:" textAlignment="natural" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.85000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="zhe-7s-DDu">
-                                <rect key="frame" x="30" y="118" width="354" height="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saldo disponível em conta: R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GpD-28-MOX">
+                                <rect key="frame" x="30" y="213" width="230" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="q5i-WP-A3c"/>
+                                    <constraint firstAttribute="width" constant="230" id="Wjn-rN-Ben"/>
+                                    <constraint firstAttribute="height" constant="21" id="YVN-iZ-90J"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="27"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gBf-Qd-Aub">
+                                <rect key="frame" x="265" y="213" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="cbf-gT-iWg"/>
+                                    <constraint firstAttribute="height" constant="21" id="oZH-GH-EWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -59,14 +82,21 @@
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="zhe-7s-DDu" secondAttribute="trailing" constant="30" id="16w-Zg-7zd"/>
+                            <constraint firstItem="gBf-Qd-Aub" firstAttribute="top" secondItem="zhe-7s-DDu" secondAttribute="bottom" constant="10" id="365-el-a4l"/>
                             <constraint firstItem="c9M-Hh-SIP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="3JD-pe-7Q7"/>
                             <constraint firstItem="P3D-Tt-hhk" firstAttribute="top" secondItem="c9M-Hh-SIP" secondAttribute="bottom" constant="50" id="6U2-tE-JAL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gBf-Qd-Aub" secondAttribute="trailing" constant="20" id="Hmg-9F-ygS"/>
                             <constraint firstItem="zhe-7s-DDu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Mn6-Jx-KvV"/>
                             <constraint firstItem="c9M-Hh-SIP" firstAttribute="top" secondItem="I2d-PM-qQN" secondAttribute="bottom" constant="20" id="RjV-9H-SK2"/>
+                            <constraint firstItem="gBf-Qd-Aub" firstAttribute="leading" secondItem="GpD-28-MOX" secondAttribute="trailing" constant="5" id="Xsg-9r-eEC"/>
+                            <constraint firstItem="gBf-Qd-Aub" firstAttribute="leading" secondItem="GpD-28-MOX" secondAttribute="trailing" constant="5" id="YuN-Z2-nIp"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c9M-Hh-SIP" secondAttribute="trailing" constant="30" id="bG7-6R-vLY"/>
+                            <constraint firstItem="GpD-28-MOX" firstAttribute="top" secondItem="zhe-7s-DDu" secondAttribute="bottom" constant="10" id="el7-X1-kN2"/>
                             <constraint firstItem="zhe-7s-DDu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="hX2-to-BI9"/>
+                            <constraint firstItem="GpD-28-MOX" firstAttribute="leading" secondItem="zhe-7s-DDu" secondAttribute="leading" id="leG-6g-Bif"/>
+                            <constraint firstItem="gBf-Qd-Aub" firstAttribute="leading" secondItem="GpD-28-MOX" secondAttribute="trailing" constant="5" id="mAV-Lw-722"/>
                             <constraint firstItem="P3D-Tt-hhk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nuY-0m-db7"/>
-                            <constraint firstItem="I2d-PM-qQN" firstAttribute="top" secondItem="zhe-7s-DDu" secondAttribute="bottom" constant="20" id="rGr-mj-VZe"/>
+                            <constraint firstItem="I2d-PM-qQN" firstAttribute="top" secondItem="zhe-7s-DDu" secondAttribute="bottom" constant="60" id="rGr-mj-VZe"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="I2d-PM-qQN" secondAttribute="trailing" constant="30" id="uAd-Jp-bgp"/>
                             <constraint firstItem="I2d-PM-qQN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="vy5-ZK-Bmn"/>
                         </constraints>
@@ -79,6 +109,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="I2d-PM-qQN" id="c6g-ts-p7X"/>
+                        <outlet property="balanceLabel" destination="gBf-Qd-Aub" id="373-xq-qxQ"/>
+                        <outlet property="barcodeTextField" destination="c9M-Hh-SIP" id="nNb-Tf-ksT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,11 +127,13 @@
             </objects>
             <point key="canvasLocation" x="1709" y="-24"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Pagamentos-->
         <scene sceneID="KKm-pu-4po">
             <objects>
                 <navigationController storyboardIdentifier="Payment1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BKS-bc-ojm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pagamentos" image="dollarsign.circle" catalog="system" id="iA7-G5-Wy0"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="o52-XL-MJN">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>
