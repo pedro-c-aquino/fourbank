@@ -1,12 +1,12 @@
 //
-//  RegisterScreen3ViewModel.swift
+//  RegisterScreen2ViewModel.swift
 //  FourBank
 //
 //  Created by user220237 on 6/6/22.
 //
 
-import UIKit
+import Foundation
 
 class RegisterScreen3ViewModel {
-
+    
 }

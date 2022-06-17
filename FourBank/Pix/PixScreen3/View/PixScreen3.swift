@@ -18,7 +18,7 @@ class PixScreen3: UIViewController {
         self.transferDataTableView.delegate = self
         self.transferDataTableView.dataSource = self
         
-        self.transferDataTableView.register(UINib(nibName: "transferDataCell", bundle: nil), forCellReuseIdentifier: "transferDataCell")
+        self.transferDataTableView.register(UINib(nibName: "TransferDataCell", bundle: nil), forCellReuseIdentifier: "TransferDataCell")
     }
     
     @IBAction func confirmButton(_ sender: UIButton) {
@@ -44,7 +44,7 @@ extension PixScreen3: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: transferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "transferDataCell", for: indexPath) as? transferDataCell
+        let cell: TransferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "TransferDataCell", for: indexPath) as? TransferDataCell
                
         return cell ?? UITableViewCell()
         

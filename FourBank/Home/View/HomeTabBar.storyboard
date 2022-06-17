@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Payment1-->
+        <!--Payment-->
         <scene sceneID="BIr-G1-abF">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Payment1" storyboardName="Payment1" referencedIdentifier="Payment1" id="E3d-Ez-kmg" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Payment" storyboardName="Payment" referencedIdentifier="Payment" id="E3d-Ez-kmg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="hIi-Xn-Ozx"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwx-om-2cB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1978" y="167"/>
         </scene>
-        <!--Deposit1-->
+        <!--Deposit-->
         <scene sceneID="QLy-fa-JQD">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Deposit1" storyboardName="Deposit1" referencedIdentifier="Deposit1" id="m7Q-i2-JUp" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Deposit" storyboardName="Deposit" referencedIdentifier="Deposit" id="m7Q-i2-JUp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="4xh-ng-WCl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qh-Az-mTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
