@@ -124,6 +124,7 @@
                 <outlet property="accountLabel" destination="Y1B-1j-Zkb" id="YTV-kR-gLY"/>
                 <outlet property="bankOfficeLabel" destination="cdT-Fo-i8x" id="aI1-LD-cbe"/>
                 <outlet property="cpfLabel" destination="YT1-Ez-Eyw" id="84L-qO-DuV"/>
+                <outlet property="cpfTitleLabel" destination="rha-Tg-eSk" id="6uw-3v-3ow"/>
                 <outlet property="nameLabel" destination="Y4F-fb-Ko3" id="9dK-FY-y9P"/>
                 <outlet property="paymentValueLabel" destination="A9F-En-g1j" id="tU4-f2-Qh6"/>
             </connections>

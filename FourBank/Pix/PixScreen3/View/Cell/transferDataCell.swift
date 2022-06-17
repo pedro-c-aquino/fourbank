@@ -10,6 +10,7 @@ import UIKit
 class transferDataCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cpfTitleLabel: UILabel!
     @IBOutlet weak var cpfLabel: UILabel!
     @IBOutlet weak var accountLabel: UILabel!
     @IBOutlet weak var bankOfficeLabel: UILabel!
