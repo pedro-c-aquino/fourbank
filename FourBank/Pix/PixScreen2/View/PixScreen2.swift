@@ -19,12 +19,15 @@ class PixScreen2: UIViewController {
         "Kaue"
     ]
     
+    var selectedKeyType = ""
+    
     var transferAmount: Double = 0.00
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
         print(transferAmount)
+        print(selectedKeyType)
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
         
