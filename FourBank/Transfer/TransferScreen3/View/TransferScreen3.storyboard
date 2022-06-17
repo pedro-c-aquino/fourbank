@@ -44,7 +44,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="cancelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jg8-zp-Pcw"/>
+                                    <segue destination="kYw-dM-dQo" kind="presentation" modalPresentationStyle="fullScreen" id="kH0-UW-7fV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-fk-h6T">
@@ -87,11 +87,20 @@
                     <navigationItem key="navigationItem" title="Transferência - Confirmar" id="Kxo-di-PmB"/>
                     <connections>
                         <outlet property="transferInfoTableView" destination="UjY-UL-kNG" id="z80-GJ-r5f"/>
+                        <segue destination="kYw-dM-dQo" kind="presentation" identifier="TrScreen3ToHome" modalPresentationStyle="fullScreen" id="1pE-AS-AQw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1039.1304347826087" y="79.6875"/>
+        </scene>
+        <!--HomeTabBar-->
+        <scene sceneID="MQn-2d-obs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeTabBar" referencedIdentifier="HomeTabBar" id="kYw-dM-dQo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="REb-Hb-FpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="-46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yzk-jm-6ze">
@@ -115,6 +124,9 @@
             <point key="canvasLocation" x="128.98550724637681" y="79.6875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kH0-UW-7fV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

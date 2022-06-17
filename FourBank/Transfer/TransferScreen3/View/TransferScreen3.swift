@@ -28,10 +28,10 @@ class TransferScreen3: UIViewController {
     }
 
     @IBAction func confirmButton(_ sender: UIButton) {
+        
+        performSegue(withIdentifier: "TrScreen3ToHome", sender: nil)
     }
-    
-    @IBAction func cancelButton(_ sender: UIButton) {
-    }
+
 }
 
 extension TransferScreen3: UITableViewDelegate, UITableViewDataSource {
