@@ -146,11 +146,11 @@
             </objects>
             <point key="canvasLocation" x="1877" y="97"/>
         </scene>
-        <!--Transferências-->
+        <!--Pix-->
         <scene sceneID="kid-2R-eeu">
             <objects>
                 <navigationController storyboardIdentifier="PixScreen1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Del-Sq-I4K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transferências" image="arrow.right.arrow.left" catalog="system" id="8iK-uU-XiT"/>
+                    <tabBarItem key="tabBarItem" title="Pix" image="pixILogo" id="8iK-uU-XiT"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9DZ-VJ-d1V">
@@ -171,7 +171,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.right.arrow.left" catalog="system" width="119" height="128"/>
+        <image name="pixILogo" width="32" height="32"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>
