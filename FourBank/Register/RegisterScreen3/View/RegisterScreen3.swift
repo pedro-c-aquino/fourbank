@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Firebase
 
 class RegisterScreen3: UIViewController {
     

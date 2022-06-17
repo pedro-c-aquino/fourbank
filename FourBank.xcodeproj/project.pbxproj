@@ -19,8 +19,6 @@
 		131E3E9D2858C6F500C7F1BA /* fourBank.json in Resources */ = {isa = PBXBuildFile; fileRef = 131E3E9C2858C6F500C7F1BA /* fourBank.json */; };
 		133D1B01284E789D00EB777C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133D1B00284E789D00EB777C /* UserModel.swift */; };
 		139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */; };
-		139F7FBF2857AA63005F4E22 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 139F7FBE2857AA63005F4E22 /* FirebaseAuth */; };
-		139F7FC12857AB1D005F4E22 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */; };
 		13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */; };
 		13BB52C228522A03002A5769 /* RegisterScreen2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */; };
 		13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */; };
@@ -98,7 +96,6 @@
 		131E3E9C2858C6F500C7F1BA /* fourBank.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourBank.json; sourceTree = "<group>"; };
 		133D1B00284E789D00EB777C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		139ED2C52847E0C000F2C59C /* RegisterScreen1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen1ViewController.swift; sourceTree = "<group>"; };
-		139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13BB52BF2852272E002A5769 /* RegisterScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen1.storyboard; sourceTree = "<group>"; };
 		13BB52C128522A03002A5769 /* RegisterScreen2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen2.storyboard; sourceTree = "<group>"; };
 		13BB52C328522A6D002A5769 /* RegisterScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen3.storyboard; sourceTree = "<group>"; };
@@ -170,7 +167,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				139F7FBF2857AA63005F4E22 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +667,6 @@
 				139ED2CA2847ED2600F2C59C /* LaunchScreen */,
 				CF9ACBB528479684001A2F87 /* Assets.xcassets */,
 				CF9ACBBA28479684001A2F87 /* Info.plist */,
-				139F7FC02857AB1D005F4E22 /* GoogleService-Info.plist */,
 				131E3E9C2858C6F500C7F1BA /* fourBank.json */,
 			);
 			path = FourBank;
@@ -1029,7 +1024,6 @@
 			);
 			name = FourBank;
 			packageProductDependencies = (
-				139F7FBE2857AA63005F4E22 /* FirebaseAuth */,
 			);
 			productName = FourBank;
 			productReference = CF9ACBA928479684001A2F87 /* FourBank.app */;
@@ -1060,7 +1054,6 @@
 			);
 			mainGroup = CF9ACBA028479684001A2F87;
 			packageReferences = (
-				139F7FBD2857AA63005F4E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CF9ACBAA28479684001A2F87 /* Products */;
 			projectDirPath = "";
@@ -1095,7 +1088,6 @@
 				13BB52C428522A6D002A5769 /* RegisterScreen3.storyboard in Resources */,
 				131E3E9D2858C6F500C7F1BA /* fourBank.json in Resources */,
 				CFFCE646285397DB00698B11 /* HomeTabBar.storyboard in Resources */,
-				139F7FC12857AB1D005F4E22 /* GoogleService-Info.plist in Resources */,
 				CFC79EDD285A1B90002C5BB0 /* Deposit1.storyboard in Resources */,
 				CFC79ED6285A1A99002C5BB0 /* Payment2.storyboard in Resources */,
 				CFC79EA9285A15D5002C5BB0 /* TransferScreen1.storyboard in Resources */,
@@ -1368,25 +1360,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		139F7FBD2857AA63005F4E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		139F7FBE2857AA63005F4E22 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 139F7FBD2857AA63005F4E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF9ACBA128479684001A2F87 /* Project object */;
 }
