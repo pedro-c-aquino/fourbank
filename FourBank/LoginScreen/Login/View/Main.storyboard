@@ -98,6 +98,15 @@
                                     <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="19e-HJ-R2V"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NY8-jz-2uA">
+                                <rect key="frame" x="127" y="519" width="160" height="31"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Esqueci minha senha"/>
+                                <connections>
+                                    <segue destination="jWY-fr-Yis" kind="presentation" modalPresentationStyle="fullScreen" id="on5-Jm-nFc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,8 +123,10 @@
                             <constraint firstItem="Koj-Fh-SeG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ZlH-Ey-zl6"/>
                             <constraint firstItem="BU4-wQ-2vu" firstAttribute="top" secondItem="SUx-Nn-m5W" secondAttribute="bottom" constant="50" id="Zxw-Vj-wxb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mAZ-gj-A8e" secondAttribute="trailing" constant="20" id="d20-jJ-qeW"/>
+                            <constraint firstItem="NY8-jz-2uA" firstAttribute="top" secondItem="BU4-wQ-2vu" secondAttribute="bottom" constant="25" id="eFU-Kp-P3k"/>
                             <constraint firstItem="mAZ-gj-A8e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hFS-3P-UTE"/>
                             <constraint firstItem="En6-m9-lyQ" firstAttribute="top" secondItem="SUx-Nn-m5W" secondAttribute="bottom" constant="50" id="iKG-cw-03D"/>
+                            <constraint firstItem="NY8-jz-2uA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lpa-K8-CVl"/>
                             <constraint firstItem="SUx-Nn-m5W" firstAttribute="top" secondItem="mAZ-gj-A8e" secondAttribute="bottom" constant="30" id="tBd-uE-brR"/>
                             <constraint firstItem="En6-m9-lyQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="wvv-4Q-sk1"/>
                         </constraints>
@@ -139,6 +150,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pz4-rW-NME" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="145"/>
+        </scene>
+        <!--ResetPassword-->
+        <scene sceneID="QR9-yg-fI6">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ResetPassword" storyboardName="ResetPassword" referencedIdentifier="ResetPassword" id="jWY-fr-Yis" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYf-kZ-bkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="234"/>
         </scene>
         <!--HomeTabBar-->
         <scene sceneID="vxA-rJ-UwD">
