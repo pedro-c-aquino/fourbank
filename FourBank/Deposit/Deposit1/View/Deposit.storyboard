@@ -10,7 +10,7 @@
         <!--Depósito-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="Deposit1" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="Deposit" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--Depósito-->
         <scene sceneID="XO8-Tb-azm">
             <objects>
-                <navigationController storyboardIdentifier="Deposit1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1OV-tv-paQ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Deposit" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1OV-tv-paQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Depósito" image="list.bullet.rectangle.portrait" catalog="system" id="0cE-RX-yvU"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

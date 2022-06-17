@@ -7,7 +7,7 @@
 
 import UIKit
 
-class transferDataCell: UITableViewCell {
+class TransferDataCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var cpfTitleLabel: UILabel!

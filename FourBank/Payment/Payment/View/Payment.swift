@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Payment1: UIViewController {
+class Payment: UIViewController {
     
     
     @IBOutlet weak var balanceLabel:         UILabel!

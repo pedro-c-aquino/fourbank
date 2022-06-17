@@ -1,5 +1,5 @@
 //
-//  Payment1ViewModel.swift
+//  Deposit1ViewModel.swift
 //  FourBank
 //
 //  Created by user220237 on 6/15/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Payment1ViewModel: UITableViewCell {
+class DepositViewModel: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
