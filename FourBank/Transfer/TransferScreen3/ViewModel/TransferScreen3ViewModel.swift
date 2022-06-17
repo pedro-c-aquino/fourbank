@@ -15,4 +15,5 @@ class TransferScreen3ViewModel {
         
         return amountString
     }
+    
 }
