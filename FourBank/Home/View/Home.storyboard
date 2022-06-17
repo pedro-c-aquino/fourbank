@@ -37,6 +37,14 @@
             </objects>
             <point key="canvasLocation" x="1052" y="-89"/>
         </scene>
+        <!--Deposit1-->
+        <scene sceneID="jav-Mw-PjI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Deposit1" storyboardName="Deposit1" referencedIdentifier="Deposit1" id="JqL-zp-sm1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaG-tL-Pr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1067" y="-23"/>
+        </scene>
         <!--Home-->
         <scene sceneID="wTz-ez-J5V">
             <objects>
@@ -195,13 +203,16 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAx-eM-IvS" customClass="IconButton" customModule="FourBank" customModuleProvider="target">
-                                                                <rect key="frame" x="13" y="8" width="105" height="105"/>
+                                                                <rect key="frame" x="13" y="16" width="105" height="105"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="">
                                                                     <imageReference key="image" image="list.bullet.rectangle.portrait.fill" catalog="system" symbolScale="large"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <segue destination="JqL-zp-sm1" kind="presentation" modalPresentationStyle="fullScreen" id="Ofq-3A-Dr6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
