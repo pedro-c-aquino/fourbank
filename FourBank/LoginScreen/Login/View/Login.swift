@@ -10,9 +10,9 @@ import UIKit
 class Login: UIViewController {
     
     let loginViewModel = LoginViewModel()
+    
     @IBOutlet weak var emailTextField:    UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     
     override func viewDidLoad() {
         
@@ -27,7 +27,6 @@ class Login: UIViewController {
             CurrentUser.currentUserEmail = loginInfo.email
             performSegue(withIdentifier: "toHome", sender: nil)
         }
-        
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
