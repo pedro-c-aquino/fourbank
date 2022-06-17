@@ -1,32 +1,34 @@
 //
-//  RegisterScreen2.swift
+//  RegisterScreen3.swift
 //  FourBank
 //
-//  Created by kauekaj on 6/1/22.
+//  Created by user220237 on 6/1/22.
 //
 
 import UIKit
 
 class RegisterScreen2: UIViewController {
     
-    @IBOutlet weak var streetTextField: UITextField!
-    @IBOutlet weak var cityTextField: UITextField!
-    @IBOutlet weak var stateTextField: UITextField!
-    @IBOutlet weak var neighborhoodTextField: UITextField!
-    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var occupationTextField: UITextField!
+    @IBOutlet weak var incomeTextField: UITextField!
+    @IBOutlet weak var cellphoneTextField: UITextField!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    @IBAction func proceedButton(_ sender: UIButton) {
-
-        performSegue(withIdentifier: "RegScreen3ToRegScreen4", sender: self)
-    }
-    
-    @IBAction func goBackButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "RegScreen3ToRegScreen2", sender: self)
+        super.viewDidLoad()
+        
     }
-
+    
+    @IBAction func registerButton(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "RegScreen2ToRegScreen3", sender: self)
+        
+    }
+    
+    @IBAction func backButton(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "RegScreen2ToRegScreen1", sender: self)
+    }
+    
 }
