@@ -16,6 +16,7 @@ class RegisterScreen3: UIViewController {
     @IBOutlet weak var numberTextField: UITextField!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
     }
     
