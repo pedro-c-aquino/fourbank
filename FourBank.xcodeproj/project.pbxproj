@@ -654,7 +654,9 @@
 		CFC79E8F285A06FE002C5BB0 /* Deposit */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79ED9285A1AFA002C5BB0 /* Deposit1 */,
+				CFC79E99285A084E002C5BB0 /* ViewModel */,
+				CFC79E98285A0845002C5BB0 /* View */,
+				CFC79E9A285A0858002C5BB0 /* Model */,
 			);
 			path = Deposit;
 			sourceTree = "<group>";
@@ -680,7 +682,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = Deposit/Model;
 			sourceTree = "<group>";
 		};
 		CFC79E9B285A09EC002C5BB0 /* Transfer */ = {
@@ -696,7 +699,9 @@
 		CFC79E9C285A0A0E002C5BB0 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79EC9285A196C002C5BB0 /* Payment */,
+				CFC79EA1285A0A42002C5BB0 /* ViewModel */,
+				CFC79EA0285A0A3B002C5BB0 /* View */,
+				CFC79EA2285A0A4A002C5BB0 /* Model */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -746,7 +751,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			name = Model;
+			path = Payment/Model;
 			sourceTree = "<group>";
 		};
 		CFC79EA5285A1579002C5BB0 /* TransferScreen1 */ = {
@@ -825,26 +831,6 @@
 				CFC79EBC285A17FB002C5BB0 /* TransferScreen3ViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		CFC79EC9285A196C002C5BB0 /* Payment */ = {
-			isa = PBXGroup;
-			children = (
-				CFC79EA1285A0A42002C5BB0 /* ViewModel */,
-				CFC79EA0285A0A3B002C5BB0 /* View */,
-				CFC79EA2285A0A4A002C5BB0 /* Model */,
-			);
-			path = Payment;
-			sourceTree = "<group>";
-		};
-		CFC79ED9285A1AFA002C5BB0 /* Deposit1 */ = {
-			isa = PBXGroup;
-			children = (
-				CFC79E99285A084E002C5BB0 /* ViewModel */,
-				CFC79E98285A0845002C5BB0 /* View */,
-				CFC79E9A285A0858002C5BB0 /* Model */,
-			);
-			path = Deposit1;
 			sourceTree = "<group>";
 		};
 		CFC79EED285A1CA5002C5BB0 /* RegisterScreen4 */ = {
