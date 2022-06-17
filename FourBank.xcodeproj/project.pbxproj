@@ -46,6 +46,7 @@
 		CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */; };
 		CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64C3422857870A004DEE54 /* transferDataCell.swift */; };
 		CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF64C3432857870A004DEE54 /* transferDataCell.xib */; };
+		CF8262A9285A6A020011F274 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8262A8285A6A020011F274 /* LoginModel.swift */; };
 		CF9ACBAD28479684001A2F87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAC28479684001A2F87 /* AppDelegate.swift */; };
 		CF9ACBAF28479684001A2F87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */; };
 		CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9ACBB528479684001A2F87 /* Assets.xcassets */; };
@@ -120,6 +121,7 @@
 		CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen3ViewModel.swift; sourceTree = "<group>"; };
 		CF64C3422857870A004DEE54 /* transferDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferDataCell.swift; sourceTree = "<group>"; };
 		CF64C3432857870A004DEE54 /* transferDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transferDataCell.xib; sourceTree = "<group>"; };
+		CF8262A8285A6A020011F274 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		CF9ACBA928479684001A2F87 /* FourBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9ACBAC28479684001A2F87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9ACBAE28479684001A2F87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 		13BB5294285221BD002A5769 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF8262A8285A6A020011F274 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1101,6 +1104,7 @@
 				CF06699E2847EC0800C3FB50 /* PixScreen2.swift in Sources */,
 				CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */,
 				CFC79EB9285A178B002C5BB0 /* TransferScreen3.swift in Sources */,
+				CF8262A9285A6A020011F274 /* LoginModel.swift in Sources */,
 				CFC79EB3285A1702002C5BB0 /* TransferScreen2ViewModel.swift in Sources */,
 				CFC79EA7285A15A8002C5BB0 /* TransferScreen1ViewModel.swift in Sources */,
 				094C0B932857A6E500B7F3E0 /* DataCell.swift in Sources */,
