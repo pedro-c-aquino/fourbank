@@ -29,7 +29,16 @@ class TransferScreen3: UIViewController {
 
     @IBAction func confirmButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "TrScreen3ToHome", sender: nil)
+        let alert = UIAlertController(title: "Confirmação", message: "Transferência efetuada com sucesso!", preferredStyle: .alert)
+        
+        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+            self.performSegue(withIdentifier: "TrScreen3ToHome", sender: self)
+        }
+        
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true, completion: nil)
+        
     }
 
 }
