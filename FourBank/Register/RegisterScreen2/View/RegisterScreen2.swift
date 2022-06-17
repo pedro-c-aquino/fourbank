@@ -17,13 +17,11 @@ class RegisterScreen2: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
     }
     
     @IBAction func registerButton(_ sender: UIButton) {
         
         self.performSegue(withIdentifier: "RegScreen2ToRegScreen3", sender: self)
-        
     }
     
     @IBAction func backButton(_ sender: UIButton) {
