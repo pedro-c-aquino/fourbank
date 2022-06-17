@@ -104,6 +104,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountLabel" destination="Kq6-4r-9vn" id="Mzg-eX-5aD"/>
+                        <outlet property="balanceLabel" destination="0oQ-05-vVD" id="Cir-6l-8Vb"/>
                         <segue destination="cP4-O9-OZg" kind="presentation" identifier="DepositScreenToHome" modalPresentationStyle="fullScreen" id="kcK-MP-zgP"/>
                     </connections>
                 </viewController>
