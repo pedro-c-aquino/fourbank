@@ -21,13 +21,11 @@ class RegisterScreen4: UIViewController{
     @IBAction func registerButton(_ sender: UIButton) {
         
         let alert = UIAlertController(title: "Cadastrado", message: "Cliente cadastrado com sucesso!", preferredStyle: .alert)
-        
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
             self.performSegue(withIdentifier: "RegScreen4ToMain", sender: self)
         }
         
         alert.addAction(ok)
-        
         self.present(alert, animated: true, completion: nil)
     }
     
