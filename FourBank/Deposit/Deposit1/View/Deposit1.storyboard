@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7WZ-0v-QGc">
-                                <rect key="frame" x="156" y="313" width="102.5" height="40"/>
+                                <rect key="frame" x="159" y="313" width="96" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GqZ-RV-tbx"/>
                                 </constraints>
@@ -52,9 +52,11 @@
                                         <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </backgroundConfiguration>
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Prosseguir">
+                                        <fragment content="Confirmar">
                                             <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -102,7 +104,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountLabel" destination="Kq6-4r-9vn" id="Mzg-eX-5aD"/>
-                        <segue destination="tmW-vs-zht" kind="presentation" identifier="DepositScreen1ToDepositScreen2" modalPresentationStyle="fullScreen" id="KXm-1E-8Gu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -116,14 +117,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0e-BV-mjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1650" y="54"/>
-        </scene>
-        <!--Deposit2-->
-        <scene sceneID="6PP-y2-Xcn">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Deposit2" storyboardName="Deposit2" referencedIdentifier="Deposit2" id="tmW-vs-zht" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8HB-fY-LYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1634" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XO8-Tb-azm">

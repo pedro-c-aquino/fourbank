@@ -27,13 +27,15 @@ class Home: UIViewController {
     }
     
     func hideButtonTapped() {
+        
         if balanceLabel.isHidden {
+            
             balanceLabel.isHidden = false
             hiddenBalanceLabel.isHidden = true
             hideBalanceButton.image = UIImage(systemName: "eye.slash.fill")
             
-
         } else {
+            
             balanceLabel.isHidden = true
             hiddenBalanceLabel.isHidden = false
             hideBalanceButton.image = UIImage(systemName: "eye.fill")

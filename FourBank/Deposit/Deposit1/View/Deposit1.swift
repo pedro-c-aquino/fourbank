@@ -22,7 +22,7 @@ class Deposit1: UIViewController {
     
     @IBAction func continueButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "DepositScreen1ToDepositScreen2", sender: nil)
+        
     }
     
 
