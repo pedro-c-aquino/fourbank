@@ -10,7 +10,7 @@
         <!--Pagamento-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="Payment1" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="Payment" customModule="FourBank" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +131,7 @@
         <!--Pagamentos-->
         <scene sceneID="KKm-pu-4po">
             <objects>
-                <navigationController storyboardIdentifier="Payment1" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BKS-bc-ojm" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Payment" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BKS-bc-ojm" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Pagamentos" image="dollarsign.circle" catalog="system" id="iA7-G5-Wy0"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

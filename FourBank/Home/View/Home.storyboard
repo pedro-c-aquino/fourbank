@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="1051" y="-138"/>
         </scene>
-        <!--Deposit1-->
+        <!--Deposit-->
         <scene sceneID="jav-Mw-PjI">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Deposit1" storyboardName="Deposit1" referencedIdentifier="Deposit1" id="JqL-zp-sm1" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Deposit" storyboardName="Deposit" referencedIdentifier="Deposit" id="JqL-zp-sm1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VaG-tL-Pr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037" y="-50"/>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Deposit1: UIViewController {
+class Deposit: UIViewController {
     
     
     @IBOutlet weak var balanceLabel:     UILabel!

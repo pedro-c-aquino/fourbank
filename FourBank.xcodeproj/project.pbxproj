@@ -61,12 +61,12 @@
 		CFC79EB9285A178B002C5BB0 /* TransferScreen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EB8285A178B002C5BB0 /* TransferScreen3.swift */; };
 		CFC79EBB285A17AE002C5BB0 /* TransferScreen3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EBA285A17AE002C5BB0 /* TransferScreen3.storyboard */; };
 		CFC79EBD285A17FB002C5BB0 /* TransferScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EBC285A17FB002C5BB0 /* TransferScreen3ViewModel.swift */; };
-		CFC79ECE285A19CD002C5BB0 /* Payment1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ECD285A19CD002C5BB0 /* Payment1.swift */; };
-		CFC79ED0285A19F5002C5BB0 /* Payment1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79ECF285A19F5002C5BB0 /* Payment1.storyboard */; };
-		CFC79ED2285A1A25002C5BB0 /* Payment1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ED1285A1A25002C5BB0 /* Payment1ViewModel.swift */; };
-		CFC79EDB285A1B80002C5BB0 /* Deposit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EDA285A1B80002C5BB0 /* Deposit1.swift */; };
-		CFC79EDD285A1B90002C5BB0 /* Deposit1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EDC285A1B90002C5BB0 /* Deposit1.storyboard */; };
-		CFC79EDF285A1BD1002C5BB0 /* Deposit1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EDE285A1BD1002C5BB0 /* Deposit1ViewModel.swift */; };
+		CFC79ECE285A19CD002C5BB0 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ECD285A19CD002C5BB0 /* Payment.swift */; };
+		CFC79ED0285A19F5002C5BB0 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79ECF285A19F5002C5BB0 /* Payment.storyboard */; };
+		CFC79ED2285A1A25002C5BB0 /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79ED1285A1A25002C5BB0 /* PaymentViewModel.swift */; };
+		CFC79EDB285A1B80002C5BB0 /* Deposit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EDA285A1B80002C5BB0 /* Deposit.swift */; };
+		CFC79EDD285A1B90002C5BB0 /* Deposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EDC285A1B90002C5BB0 /* Deposit.storyboard */; };
+		CFC79EDF285A1BD1002C5BB0 /* DepositViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EDE285A1BD1002C5BB0 /* DepositViewModel.swift */; };
 		CFC79EF2285A1D09002C5BB0 /* RegisterScreen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EF1285A1D09002C5BB0 /* RegisterScreen4.swift */; };
 		CFC79EF4285A1D21002C5BB0 /* RegisterScreen4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC79EF3285A1D21002C5BB0 /* RegisterScreen4.storyboard */; };
 		CFC79EF6285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC79EF5285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift */; };
@@ -130,12 +130,12 @@
 		CFC79EB8285A178B002C5BB0 /* TransferScreen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3.swift; sourceTree = "<group>"; };
 		CFC79EBA285A17AE002C5BB0 /* TransferScreen3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransferScreen3.storyboard; sourceTree = "<group>"; };
 		CFC79EBC285A17FB002C5BB0 /* TransferScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferScreen3ViewModel.swift; sourceTree = "<group>"; };
-		CFC79ECD285A19CD002C5BB0 /* Payment1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment1.swift; sourceTree = "<group>"; };
-		CFC79ECF285A19F5002C5BB0 /* Payment1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment1.storyboard; sourceTree = "<group>"; };
-		CFC79ED1285A1A25002C5BB0 /* Payment1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment1ViewModel.swift; sourceTree = "<group>"; };
-		CFC79EDA285A1B80002C5BB0 /* Deposit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit1.swift; sourceTree = "<group>"; };
-		CFC79EDC285A1B90002C5BB0 /* Deposit1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deposit1.storyboard; sourceTree = "<group>"; };
-		CFC79EDE285A1BD1002C5BB0 /* Deposit1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit1ViewModel.swift; sourceTree = "<group>"; };
+		CFC79ECD285A19CD002C5BB0 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		CFC79ECF285A19F5002C5BB0 /* Payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		CFC79ED1285A1A25002C5BB0 /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		CFC79EDA285A1B80002C5BB0 /* Deposit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deposit.swift; sourceTree = "<group>"; };
+		CFC79EDC285A1B90002C5BB0 /* Deposit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deposit.storyboard; sourceTree = "<group>"; };
+		CFC79EDE285A1BD1002C5BB0 /* DepositViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositViewModel.swift; sourceTree = "<group>"; };
 		CFC79EF1285A1D09002C5BB0 /* RegisterScreen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen4.swift; sourceTree = "<group>"; };
 		CFC79EF3285A1D21002C5BB0 /* RegisterScreen4.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterScreen4.storyboard; sourceTree = "<group>"; };
 		CFC79EF5285A1D3A002C5BB0 /* RegisterScreen4ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen4ViewModel.swift; sourceTree = "<group>"; };
@@ -662,8 +662,8 @@
 		CFC79E98285A0845002C5BB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79EDA285A1B80002C5BB0 /* Deposit1.swift */,
-				CFC79EDC285A1B90002C5BB0 /* Deposit1.storyboard */,
+				CFC79EDA285A1B80002C5BB0 /* Deposit.swift */,
+				CFC79EDC285A1B90002C5BB0 /* Deposit.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -671,7 +671,7 @@
 		CFC79E99285A084E002C5BB0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79EDE285A1BD1002C5BB0 /* Deposit1ViewModel.swift */,
+				CFC79EDE285A1BD1002C5BB0 /* DepositViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -696,7 +696,7 @@
 		CFC79E9C285A0A0E002C5BB0 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79EC9285A196C002C5BB0 /* Payment1 */,
+				CFC79EC9285A196C002C5BB0 /* Payment */,
 			);
 			path = Payment;
 			sourceTree = "<group>";
@@ -728,8 +728,8 @@
 		CFC79EA0285A0A3B002C5BB0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79ECD285A19CD002C5BB0 /* Payment1.swift */,
-				CFC79ECF285A19F5002C5BB0 /* Payment1.storyboard */,
+				CFC79ECD285A19CD002C5BB0 /* Payment.swift */,
+				CFC79ECF285A19F5002C5BB0 /* Payment.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -737,7 +737,7 @@
 		CFC79EA1285A0A42002C5BB0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CFC79ED1285A1A25002C5BB0 /* Payment1ViewModel.swift */,
+				CFC79ED1285A1A25002C5BB0 /* PaymentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -827,14 +827,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		CFC79EC9285A196C002C5BB0 /* Payment1 */ = {
+		CFC79EC9285A196C002C5BB0 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
 				CFC79EA1285A0A42002C5BB0 /* ViewModel */,
 				CFC79EA0285A0A3B002C5BB0 /* View */,
 				CFC79EA2285A0A4A002C5BB0 /* Model */,
 			);
-			path = Payment1;
+			path = Payment;
 			sourceTree = "<group>";
 		};
 		CFC79ED9285A1AFA002C5BB0 /* Deposit1 */ = {
@@ -945,7 +945,7 @@
 			files = (
 				CF9ACBB928479684001A2F87 /* LaunchScreen.storyboard in Resources */,
 				CF7905C1285CC61100D7109B /* ResetPassword.storyboard in Resources */,
-				CFC79ED0285A19F5002C5BB0 /* Payment1.storyboard in Resources */,
+				CFC79ED0285A19F5002C5BB0 /* Payment.storyboard in Resources */,
 				13BB52C02852272E002A5769 /* RegisterScreen1.storyboard in Resources */,
 				13BB52CA28522B34002A5769 /* PixScreen1.storyboard in Resources */,
 				13BB52C628522AD1002A5769 /* Home.storyboard in Resources */,
@@ -959,7 +959,7 @@
 				098372122847E57700A4FAC1 /* Main.storyboard in Resources */,
 				13BB52C428522A6D002A5769 /* RegisterScreen2.storyboard in Resources */,
 				CFFCE646285397DB00698B11 /* HomeTabBar.storyboard in Resources */,
-				CFC79EDD285A1B90002C5BB0 /* Deposit1.storyboard in Resources */,
+				CFC79EDD285A1B90002C5BB0 /* Deposit.storyboard in Resources */,
 				CFC79EA9285A15D5002C5BB0 /* TransferScreen1.storyboard in Resources */,
 				09247BC12853881400FC3606 /* BalanceCell.xib in Resources */,
 				13BB52C228522A03002A5769 /* RegisterScreen3.storyboard in Resources */,
@@ -982,7 +982,7 @@
 				CF4A58B3284E82E000ECA3FC /* HomeViewModel.swift in Sources */,
 				CF4A58B5284E830100ECA3FC /* StatementScreenViewModel.swift in Sources */,
 				CF4A58AF284E82A700ECA3FC /* RegisterScreen2ViewModel.swift in Sources */,
-				CFC79EDF285A1BD1002C5BB0 /* Deposit1ViewModel.swift in Sources */,
+				CFC79EDF285A1BD1002C5BB0 /* DepositViewModel.swift in Sources */,
 				CF0669962847EBAB00C3FB50 /* StatementScreen.swift in Sources */,
 				139ED2C62847E0C000F2C59C /* RegisterScreen1ViewController.swift in Sources */,
 				CF7905C3285CC62500D7109B /* ResetPasswordViewModel.swift in Sources */,
@@ -990,9 +990,9 @@
 				CF4A58AD284E829900ECA3FC /* RegisterScreen3ViewModel.swift in Sources */,
 				CFC79EF2285A1D09002C5BB0 /* RegisterScreen4.swift in Sources */,
 				09247BC02853881400FC3606 /* BalanceCell.swift in Sources */,
-				CFC79ED2285A1A25002C5BB0 /* Payment1ViewModel.swift in Sources */,
+				CFC79ED2285A1A25002C5BB0 /* PaymentViewModel.swift in Sources */,
 				CF0669A22847EC1D00C3FB50 /* PixScreen3.swift in Sources */,
-				CFC79ECE285A19CD002C5BB0 /* Payment1.swift in Sources */,
+				CFC79ECE285A19CD002C5BB0 /* Payment.swift in Sources */,
 				CFC79EA4285A155D002C5BB0 /* TransferScreen1.swift in Sources */,
 				CF4A58B7284E832600ECA3FC /* PixScreen1ViewModel.swift in Sources */,
 				CF06698E2847EA5300C3FB50 /* RegisterScreen2.swift in Sources */,
@@ -1004,7 +1004,7 @@
 				CF9ACBC4284797A8001A2F87 /* RegisterScreen3.swift in Sources */,
 				CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */,
 				097C38FB2857756F00828C1F /* AccountScreen.swift in Sources */,
-				CFC79EDB285A1B80002C5BB0 /* Deposit1.swift in Sources */,
+				CFC79EDB285A1B80002C5BB0 /* Deposit.swift in Sources */,
 				CF7905BF285CC60000D7109B /* ResetPassword.swift in Sources */,
 				133D1B01284E789D00EB777C /* UserModel.swift in Sources */,
 				CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */,
