@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,10 +15,79 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UjY-UL-kNG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="350"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="IJh-AX-mjU"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6M-2c-h1E">
+                                <rect key="frame" x="77" y="458" width="120" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="aLC-oD-xDg"/>
+                                    <constraint firstAttribute="height" constant="55" id="ify-7c-beK"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Cancelar">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cancelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jg8-zp-Pcw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMk-fk-h6T">
+                                <rect key="frame" x="217" y="458" width="120" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="bUq-Td-IRW"/>
+                                    <constraint firstAttribute="height" constant="55" id="wAx-3T-IiU"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.18823529410000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Confirmar">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Arial-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4Tc-Bx-dtR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D6M-2c-h1E" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="-70" id="2KM-1Q-qVh"/>
+                            <constraint firstItem="D6M-2c-h1E" firstAttribute="top" secondItem="UjY-UL-kNG" secondAttribute="bottom" constant="20" id="V8k-F4-F8w"/>
+                            <constraint firstItem="UjY-UL-kNG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mYv-sC-mSx"/>
+                            <constraint firstItem="mMk-fk-h6T" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="70" id="rDP-cP-aNU"/>
+                            <constraint firstItem="mMk-fk-h6T" firstAttribute="top" secondItem="D6M-2c-h1E" secondAttribute="top" id="u8V-OX-yEh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UjY-UL-kNG" secondAttribute="trailing" id="vlS-yE-4OQ"/>
+                            <constraint firstItem="UjY-UL-kNG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xrO-C0-E9S"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transferência - Confirmar" id="Kxo-di-PmB"/>
+                    <connections>
+                        <outlet property="transferInfoTableView" destination="UjY-UL-kNG" id="z80-GJ-r5f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,4 +115,9 @@
             <point key="canvasLocation" x="128.98550724637681" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
