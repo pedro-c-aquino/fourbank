@@ -28,12 +28,11 @@ class TransferScreen2: UIViewController {
         name = nameTextField.text ?? ""
         bankOffice = bankOfficeTextField.text ?? ""
         bankAccount = bankAccountTextField.text ?? ""
-        
         performSegue(withIdentifier: "TrScreen2ToTrScreen3", sender: self)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let vc = segue.destination as? TransferScreen3
         vc?.name = name
         vc?.bankOffice = bankOffice

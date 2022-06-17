@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-Mx-PoT">
-                                <rect key="frame" x="77" y="458" width="120" height="55"/>
+                                <rect key="frame" x="84.5" y="458" width="105" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="ak6-LV-asn"/>
-                                    <constraint firstAttribute="height" constant="55" id="gIq-5c-67j"/>
+                                    <constraint firstAttribute="width" constant="105" id="ak6-LV-asn"/>
+                                    <constraint firstAttribute="height" constant="40" id="gIq-5c-67j"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
@@ -40,10 +40,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PR1-7k-7hL">
-                                <rect key="frame" x="217" y="458" width="120" height="55"/>
+                                <rect key="frame" x="224.5" y="458" width="105" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="FzT-c0-1R1"/>
-                                    <constraint firstAttribute="height" constant="55" id="ZFc-l1-4cM"/>
+                                    <constraint firstAttribute="width" constant="105" id="FzT-c0-1R1"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZFc-l1-4cM"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
