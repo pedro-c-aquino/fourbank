@@ -41,8 +41,8 @@
 		CF4A58B7284E832600ECA3FC /* PixScreen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B6284E832600ECA3FC /* PixScreen1ViewModel.swift */; };
 		CF4A58B9284E833A00ECA3FC /* PixScreen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58B8284E833A00ECA3FC /* PixScreen2ViewModel.swift */; };
 		CF4A58BB284E834A00ECA3FC /* PixScreen3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */; };
-		CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64C3422857870A004DEE54 /* transferDataCell.swift */; };
-		CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF64C3432857870A004DEE54 /* transferDataCell.xib */; };
+		CF64C3442857870A004DEE54 /* TransferDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64C3422857870A004DEE54 /* TransferDataCell.swift */; };
+		CF64C3452857870A004DEE54 /* TransferDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF64C3432857870A004DEE54 /* TransferDataCell.xib */; };
 		CF7905BF285CC60000D7109B /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7905BE285CC60000D7109B /* ResetPassword.swift */; };
 		CF7905C1285CC61100D7109B /* ResetPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF7905C0285CC61100D7109B /* ResetPassword.storyboard */; };
 		CF7905C3285CC62500D7109B /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */; };
@@ -108,8 +108,8 @@
 		CF4A58B6284E832600ECA3FC /* PixScreen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen1ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58B8284E833A00ECA3FC /* PixScreen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen2ViewModel.swift; sourceTree = "<group>"; };
 		CF4A58BA284E834A00ECA3FC /* PixScreen3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixScreen3ViewModel.swift; sourceTree = "<group>"; };
-		CF64C3422857870A004DEE54 /* transferDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transferDataCell.swift; sourceTree = "<group>"; };
-		CF64C3432857870A004DEE54 /* transferDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = transferDataCell.xib; sourceTree = "<group>"; };
+		CF64C3422857870A004DEE54 /* TransferDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferDataCell.swift; sourceTree = "<group>"; };
+		CF64C3432857870A004DEE54 /* TransferDataCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferDataCell.xib; sourceTree = "<group>"; };
 		CF7905BE285CC60000D7109B /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		CF7905C0285CC61100D7109B /* ResetPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResetPassword.storyboard; sourceTree = "<group>"; };
 		CF7905C2285CC62500D7109B /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
@@ -564,8 +564,8 @@
 		CF64C34628578713004DEE54 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CF64C3422857870A004DEE54 /* transferDataCell.swift */,
-				CF64C3432857870A004DEE54 /* transferDataCell.xib */,
+				CF64C3422857870A004DEE54 /* TransferDataCell.swift */,
+				CF64C3432857870A004DEE54 /* TransferDataCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -950,7 +950,7 @@
 				13BB52CA28522B34002A5769 /* PixScreen1.storyboard in Resources */,
 				13BB52C628522AD1002A5769 /* Home.storyboard in Resources */,
 				CF9ACBB628479684001A2F87 /* Assets.xcassets in Resources */,
-				CF64C3452857870A004DEE54 /* transferDataCell.xib in Resources */,
+				CF64C3452857870A004DEE54 /* TransferDataCell.xib in Resources */,
 				13BB52C828522B15002A5769 /* StatementScreen.storyboard in Resources */,
 				CFC79EB1285A16E4002C5BB0 /* TransferScreen2.storyboard in Resources */,
 				094C0B942857A6E500B7F3E0 /* DataCell.xib in Resources */,
@@ -1010,7 +1010,7 @@
 				CF4A58B1284E82B800ECA3FC /* LoginViewModel.swift in Sources */,
 				CF4A58B9284E833A00ECA3FC /* PixScreen2ViewModel.swift in Sources */,
 				CF06699E2847EC0800C3FB50 /* PixScreen2.swift in Sources */,
-				CF64C3442857870A004DEE54 /* transferDataCell.swift in Sources */,
+				CF64C3442857870A004DEE54 /* TransferDataCell.swift in Sources */,
 				CFC79EB9285A178B002C5BB0 /* TransferScreen3.swift in Sources */,
 				CF8262A9285A6A020011F274 /* LoginModel.swift in Sources */,
 				CFC79EB3285A1702002C5BB0 /* TransferScreen2ViewModel.swift in Sources */,

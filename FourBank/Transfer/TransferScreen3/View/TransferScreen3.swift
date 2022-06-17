@@ -24,7 +24,7 @@ class TransferScreen3: UIViewController {
         
         transferInfoTableView.delegate = self
         transferInfoTableView.dataSource = self
-        transferInfoTableView.register(UINib(nibName: "transferDataCell", bundle: nil), forCellReuseIdentifier: "transferDataCell")
+        transferInfoTableView.register(UINib(nibName: "TransferDataCell", bundle: nil), forCellReuseIdentifier: "TransferDataCell")
     }
 
     @IBAction func confirmButton(_ sender: UIButton) {
@@ -50,7 +50,7 @@ extension TransferScreen3: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell: transferDataCell? = transferInfoTableView.dequeueReusableCell(withIdentifier: "transferDataCell", for: indexPath) as? transferDataCell
+        let cell: TransferDataCell? = transferInfoTableView.dequeueReusableCell(withIdentifier: "TransferDataCell", for: indexPath) as? TransferDataCell
         cell?.cpfLabel.isHidden = true
         cell?.cpfTitleLabel.isHidden = true
         cell?.nameLabel.text = name
