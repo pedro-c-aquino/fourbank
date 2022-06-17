@@ -9,12 +9,9 @@ import UIKit
 
 class Deposit: UIViewController {
     
+    @IBOutlet weak var balanceLabel: UILabel!
+    @IBOutlet weak var amountLabel: UITextField!
     
-    @IBOutlet weak var balanceLabel:     UILabel!
-    
-    @IBOutlet weak var amountLabel:  UITextField!
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,13 +20,10 @@ class Deposit: UIViewController {
     @IBAction func confirmButton(_ sender: UIButton) {
         
         let alert = UIAlertController(title: "Confirmação", message: "Depósito efetuado com sucesso!", preferredStyle: .alert)
-        
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
             self.performSegue(withIdentifier: "DepositScreenToHome", sender: self)
         }
-        
         alert.addAction(ok)
-        
         self.present(alert, animated: true, completion: nil)
     }
     

@@ -26,8 +26,9 @@ class TransferScreen1: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         let vc = segue.destination as? TransferScreen2
         vc?.transferAmount = transferAmount
-        
     }
+    
 }
