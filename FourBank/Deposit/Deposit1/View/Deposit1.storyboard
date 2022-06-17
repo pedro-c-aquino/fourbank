@@ -63,7 +63,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="continueButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PA2-7W-HGy"/>
+                                    <action selector="confirmButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5v0-AH-7aP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0oQ-05-vVD">
@@ -104,6 +104,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountLabel" destination="Kq6-4r-9vn" id="Mzg-eX-5aD"/>
+                        <segue destination="cP4-O9-OZg" kind="presentation" identifier="DepositScreenToHome" modalPresentationStyle="fullScreen" id="kcK-MP-zgP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -142,6 +143,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kcK-MP-zgP"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="xmark" catalog="system" width="128" height="113"/>

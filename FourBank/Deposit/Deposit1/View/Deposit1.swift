@@ -20,10 +20,17 @@ class Deposit1: UIViewController {
         
     }
     
-    @IBAction func continueButton(_ sender: UIButton) {
+    @IBAction func confirmButton(_ sender: UIButton) {
         
+        let alert = UIAlertController(title: "Confirmação", message: "Depósito efetuado com sucesso!", preferredStyle: .alert)
         
+        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+            self.performSegue(withIdentifier: "DepositScreenToHome", sender: self)
+        }
+        
+        alert.addAction(ok)
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
-
 }

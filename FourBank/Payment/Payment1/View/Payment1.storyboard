@@ -113,6 +113,7 @@
                         <outlet property="amountTextField" destination="I2d-PM-qQN" id="c6g-ts-p7X"/>
                         <outlet property="balanceLabel" destination="gBf-Qd-Aub" id="373-xq-qxQ"/>
                         <outlet property="barcodeTextField" destination="c9M-Hh-SIP" id="nNb-Tf-ksT"/>
+                        <segue destination="VUO-te-qS9" kind="presentation" identifier="PaymentScreenToHome" modalPresentationStyle="fullScreen" id="kMp-4R-KN9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -151,6 +152,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kMp-4R-KN9"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
