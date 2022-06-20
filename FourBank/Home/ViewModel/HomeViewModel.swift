@@ -9,8 +9,11 @@ import UIKit
 
 class HomeViewModel: UIViewController {
     
-    override func viewDidLoad() {
-        		
-        super.viewDidLoad()
+    func getAmount(amountText: String?) -> String {
+        
+        let amountString = amountText ?? "0.00"
+        let convertedString = amountString.replacingOccurrences(of: ".", with: ",")
+        let amount = convertedString
+        return amount
     }
 }
