@@ -7,6 +7,21 @@
 
 import Foundation
 
+struct AccountModel: Codable {
+    var account: String
+    var agency: String
+    var cellphoneNumber: String
+    var cep: String
+    var city: String
+    var cpf: String
+    var email: String
+    var name: String
+    var neighborhood: String
+    var rg: String
+    var street: String
+    var state: String
+}
+
 struct CurrentUser {
     
     static var currentUserEmail = ""

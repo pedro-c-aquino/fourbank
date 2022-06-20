@@ -9,28 +9,27 @@ import Foundation
 
 class AccountScreenViewModel {
     
-    func getUser() -> [String: Any]? {
-        var userDict: [String: Any]?
-        guard let url = URL(string: "https://api.chucknorris.io/jokes/random") else {
+    func networkUser(completionHandler: @escaping ([AccountModel]?, Error?) -> Void) -> Void {
+       
+        guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2") else {
             print("Invalid URL")
-            return nil
+            return
         }
+        
         let session = URLSession.shared
-        session.dataTask(with: url) { data, response, error in
+        let task = session.dataTask(with: url) { data, response, error in
             if let data = data {
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: [])
-                    if let dict = json as? [String: Any] {
-                        //FOR SINGLE VALUES
-                            DispatchQueue.main.async {
-                                userDict = dict
-                            }
-                    }
+                    
+                    let jsonArray = try JSONDecoder().decode([AccountModel].self, from: data)
+                    completionHandler(jsonArray, nil)
+                    
                 } catch {
-                    print(error)
+                    completionHandler(nil, error)
                 }
             }
-        }.resume()
-        return userDict
+        }
+        task.resume()
     }
 }
+
