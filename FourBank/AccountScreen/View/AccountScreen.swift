@@ -11,9 +11,9 @@ class AccountScreen: UIViewController {
     
     let accountScreenVM = AccountScreenViewModel()
     
-    @IBOutlet weak var usernameLabel:             UILabel!
-    @IBOutlet weak var agencyLabel:               UILabel!
-    @IBOutlet weak var accountLabel:              UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var agencyLabel: UILabel!
+    @IBOutlet weak var accountLabel: UILabel!
     @IBOutlet weak var personalDataTableView: UITableView!
     
     override func viewDidLoad() {
