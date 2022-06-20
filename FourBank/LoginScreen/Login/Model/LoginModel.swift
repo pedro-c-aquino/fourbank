@@ -44,7 +44,7 @@ enum Type: Codable {
     }
 
 struct Address: Codable {
-    var street: Int
+    var street: String	
     var number: String
     var cep: String
     var neighborhood: String
