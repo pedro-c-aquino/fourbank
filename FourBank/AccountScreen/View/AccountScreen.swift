@@ -9,7 +9,7 @@ import UIKit
 
 class AccountScreen: UIViewController {
     
-    let accountScreenVM = AccountScreenViewModel()
+    let network = Network()
     
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var agencyLabel: UILabel!
@@ -40,7 +40,7 @@ extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let dataCell: DataCell? = personalDataTableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as? DataCell
-        accountScreenVM.networkUser { userArray, error in
+        network.networkUser { userArray, error in
             
             if let user = userArray?[0] {
                 DispatchQueue.main.async {
