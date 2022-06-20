@@ -54,7 +54,7 @@ extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
                     dataCell?.stateLabel.text = user.state
                     dataCell?.identityLabel.text = user.rg
                     dataCell?.addressLabel.text = "Rua \(user.street), \(user.neighborhood)"
-                    dataCell?.passwordLabel.text = user.cellphoneNumber
+                    dataCell?.cellphoneLabel.text = user.cellphoneNumber
             }
             
             }
