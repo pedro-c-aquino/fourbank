@@ -41,13 +41,22 @@ extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
         
         let dataCell: DataCell? = personalDataTableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as? DataCell
         accountScreenVM.networkUser { userArray, error in
-            DispatchQueue.main.async {
-                self.agencyLabel.text = userArray?[0].agency
-                self.accountLabel.text = userArray?[0].account
-                self.usernameLabel.text = userArray?[0].name
-                dataCell?.cpfLabel.text = userArray?[0].cpf
-                dataCell?.cityLabel.text = userArray?[0].city
-
+            
+            if let user = userArray?[0] {
+                DispatchQueue.main.async {
+                    self.agencyLabel.text = user.agency
+                    self.accountLabel.text = user.account
+                    self.usernameLabel.text = user.name
+                    dataCell?.cpfLabel.text = user.city
+                    dataCell?.cepLabel.text = user.cep
+                    dataCell?.emailLabel.text = user.email
+                    dataCell?.fullnameLabel.text = user.name
+                    dataCell?.stateLabel.text = user.state
+                    dataCell?.identityLabel.text = user.rg
+                    dataCell?.addressLabel.text = "Rua \(user.street), \(user.neighborhood)"
+                    dataCell?.passwordLabel.text = user.cellphoneNumber
+            }
+            
             }
         }
         return dataCell ?? UITableViewCell ()
