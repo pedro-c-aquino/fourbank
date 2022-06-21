@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AccountModel: Codable {
+struct UserModel: Codable {
     
     var account: String
     var agency: String
