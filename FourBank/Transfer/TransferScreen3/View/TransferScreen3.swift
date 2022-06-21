@@ -10,7 +10,6 @@ import UIKit
 class TransferScreen3: UIViewController {
     
     let trScreen3VM = TransferScreen3ViewModel()
-    let network = Network()
     var name: String = ""
     var transferAmount: Double = 0.0
     var bankAccount: String = ""
@@ -28,38 +27,8 @@ class TransferScreen3: UIViewController {
 
     @IBAction func confirmButton(_ sender: UIButton) {
         
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                var transferOk = false
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        if self.transferAmount <= Double(user.accountBalance) {
-                            
-                            self.network.trasnferAmount(accountBalance: user.accountBalance - Int(self.transferAmount), id: user.id)
-                            transferOk = true
-                        }
-                    }
-                }
-                
-                if transferOk {
-                    
-                    for receivingUser in userArray {
-                        
-                        if self.bankOffice == receivingUser.agency {
-                            
-                            if self.bankAccount == receivingUser.account {
-                                
-                                self.network.trasnferAmount(accountBalance: receivingUser.accountBalance + Int(self.transferAmount), id: receivingUser.id)
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
+        trScreen3VM.makeTransfer(amount: transferAmount, agency: bankOffice, account: bankAccount)
         
         let alert = UIAlertController(title: "Confirmação", message: "Transferência efetuada com sucesso!", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
