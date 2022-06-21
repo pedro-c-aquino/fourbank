@@ -8,7 +8,7 @@
 import UIKit
 
 class Home: UIViewController {
-
+    
     var network = Network()
     var homeVM = HomeViewModel()
     
@@ -20,16 +20,24 @@ class Home: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
         balanceLabel.isHidden = true
         hiddenBalanceLabel.isHidden = false
         
         network.networkUser { userArray, error in
-            if let user = userArray?[0] {
-                DispatchQueue.main.async {
-                    self.nameLabel.text = "Olá, \(user.name)"
-//                    self.balanceLabel.text = self.homeVM.getAmount(amountDouble: Double(user.accountBalance))
-                    self.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        DispatchQueue.main.async {
+                            self.nameLabel.text = "Olá, \(user.name)"
+                            self.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
+                            //self.balanceLabel.text = self.homeVM.getAmount(amountDouble: Double(user.accountBalance))
+                        }
+                    }
                 }
             }
         }
@@ -55,5 +63,5 @@ class Home: UIViewController {
             hideBalanceButton.image = UIImage(systemName: "eye.fill")
         }
     }
-
+    
 }
