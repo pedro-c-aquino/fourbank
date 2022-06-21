@@ -19,7 +19,7 @@ class AccountScreen: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        self.personalDataTableView.delegate   = self
+        self.personalDataTableView.delegate = self
         self.personalDataTableView.dataSource = self
         self.personalDataTableView.register(UINib(nibName: "DataCell", bundle: nil), forCellReuseIdentifier: "DataCell")
     }
@@ -34,6 +34,7 @@ class AccountScreen: UIViewController {
 extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         1
     }
     
@@ -47,18 +48,19 @@ extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
                     self.agencyLabel.text = user.agency
                     self.accountLabel.text = user.account
                     self.usernameLabel.text = user.name
-                    dataCell?.cpfLabel.text = user.city
-                    dataCell?.cepLabel.text = user.cep
-                    dataCell?.emailLabel.text = user.email
                     dataCell?.fullnameLabel.text = user.name
-                    dataCell?.stateLabel.text = user.state
+                    dataCell?.cpfLabel.text = user.cpf
                     dataCell?.identityLabel.text = user.rg
                     dataCell?.addressLabel.text = "Rua \(user.street), \(user.neighborhood)"
+                    dataCell?.cityLabel.text = user.city
+                    dataCell?.stateLabel.text = user.state
+                    dataCell?.cepLabel.text = user.cep
+                    dataCell?.emailLabel.text = user.email
                     dataCell?.cellphoneLabel.text = user.cellphoneNumber
-            }
-            
+                }
             }
         }
+        
         return dataCell ?? UITableViewCell ()
     }
 }
