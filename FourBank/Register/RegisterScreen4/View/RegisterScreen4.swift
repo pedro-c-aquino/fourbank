@@ -9,8 +9,6 @@ import UIKit
 
 class RegisterScreen4: UIViewController{
     
-    let network = Network()
-    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
@@ -20,7 +18,7 @@ class RegisterScreen4: UIViewController{
     }
 
     @IBAction func registerButton(_ sender: UIButton) {
-        //network.registerUser(name: <#T##String#>, birthDate: <#T##String#>, cpf: <#T##String#>, rg: <#T##String#>, email: <#T##String#>, occupation: <#T##String#>, income: <#T##String#>, cellphoneNumber: <#T##String#>, street: <#T##String#>, number: <#T##String#>, neighborhood: <#T##String#>, city: <#T##String#>, state: <#T##String#>, password: <#T##String#>)
+
         
         let alert = UIAlertController(title: "Cadastrado", message: "Cliente cadastrado com sucesso!", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
