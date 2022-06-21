@@ -9,6 +9,7 @@ import Foundation
 
 class Network {
     
+    var userModel: [UserModel] = []
     func networkUser(completionHandler: @escaping ([UserModel]?, Error?) -> Void) -> Void {
        
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2") else {
@@ -22,6 +23,7 @@ class Network {
                 do {
                     
                     let jsonArray: [UserModel] = try JSONDecoder().decode([UserModel].self, from: data)
+                    self.userModel = jsonArray
                     completionHandler(jsonArray, nil)
                     
                 } catch {
