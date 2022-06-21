@@ -96,6 +96,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amountTextField" destination="fGq-sl-EuB" id="bRw-6f-iug"/>
+                        <outlet property="balanceLabel" destination="8ZZ-gU-dhQ" id="zry-cy-u3p"/>
                         <segue destination="FTf-iS-BxU" kind="show" identifier="TrScreen1ToTrScreen2" id="4gt-q8-0qV"/>
                     </connections>
                 </viewController>
