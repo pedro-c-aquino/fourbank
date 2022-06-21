@@ -29,6 +29,7 @@ struct UserModel: Codable {
     var cpfPix: String
     var emailPix: String
     var cellphonePix: String
+    var id: String
 }
 
 //==================

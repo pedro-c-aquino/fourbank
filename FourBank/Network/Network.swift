@@ -35,8 +35,8 @@ class Network {
     func registerUser(name: String, birthDate: String, cpf: String, rg: String, email: String, occupation: String, income: String, cellphoneNumber: String, street: String, number: String, neighborhood: String, city: String, state: String, password:String) {
         
         let params = [
-            "account": "547363-8",
-            "agency": "2036",
+            "account": "369874-5",
+            "agency": "2040",
             "bank": "Fourbank",
             "cellphoneNumber": cellphoneNumber,
             "city": city,
