@@ -10,6 +10,8 @@ import UIKit
 class Payment: UIViewController {
     
     var network = Network()
+    var payVM = PaymentViewModel()
+    var paymentAmount: Double = 0.0
     
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var amountTextField: UITextField!
@@ -37,6 +39,23 @@ class Payment: UIViewController {
     }
     
     @IBAction func confirmButton(_ sender: UIButton) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        if self.paymentAmount <= Double(user.accountBalance) {
+                            
+                            self.network.trasnferAmount(accountBalance: user.accountBalance - Int(self.paymentAmount), id: user.id)
+                        }
+                    }
+                }
+            }
+        }
         
         let alert = UIAlertController(title: "Confirmação", message: "Pagamento efetuado com sucesso!", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in

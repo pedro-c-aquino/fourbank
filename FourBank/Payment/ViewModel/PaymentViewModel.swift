@@ -8,5 +8,11 @@
 import UIKit
 
 class PaymentViewModel {
-
+    
+    func getAmountString(amount: Double) -> String {
+        let amountConverted = String(format: "%.2f", amount)
+        let amountString = "R$ " + amountConverted.replacingOccurrences(of: ".", with: ",")
+        
+        return amountString
+    }
 }
