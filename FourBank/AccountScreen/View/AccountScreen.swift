@@ -51,10 +51,10 @@ extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
                     dataCell?.fullnameLabel.text = user.name
                     dataCell?.cpfLabel.text = user.cpf
                     dataCell?.identityLabel.text = user.rg
-                    dataCell?.addressLabel.text = "Rua \(user.street), \(user.neighborhood)"
+                    dataCell?.addressLabel.text = "Rua \(user.street)"
                     dataCell?.cityLabel.text = user.city
                     dataCell?.stateLabel.text = user.state
-                    dataCell?.cepLabel.text = user.cep
+                    dataCell?.neighborhoodLabel.text = user.neighborhood
                     dataCell?.emailLabel.text = user.email
                     dataCell?.cellphoneLabel.text = user.cellphoneNumber
                 }
