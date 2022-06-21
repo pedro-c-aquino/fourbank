@@ -28,8 +28,8 @@ class Home: UIViewController {
             if let user = userArray?[0] {
                 DispatchQueue.main.async {
                     self.nameLabel.text = "Olá, \(user.name)"
-                    //self.balanceLabel.text = self.homeVM.getAmount(amountText: "R$ \(Double(user.accountBalance))")
-                    self.balanceLabel.text = "R$ \(Double(user.accountBalance))".replacingOccurrences(of: ".", with: ",")
+//                    self.balanceLabel.text = self.homeVM.getAmount(amountDouble: Double(user.accountBalance))
+                    self.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
                 }
             }
         }

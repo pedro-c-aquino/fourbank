@@ -8,6 +8,21 @@
 import UIKit
 
 class RegisterScreen4: UIViewController{
+    
+    var name: String? = nil
+    var birthDay: String? = nil
+    var cpf: String? = nil
+    var rg: String? = nil
+    var email: String? = nil
+    var occupation: String? = nil
+    var income: String? = nil
+    var cellphone: String? = nil
+    var street: String? = nil
+    var number: String? = nil
+    var neighborhood: String? = nil
+    var city: String? = nil
+    var state: String? = nil
+    var password: String? = nil
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!

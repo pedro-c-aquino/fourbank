@@ -28,5 +28,17 @@ class RegisterScreen1ViewController: UIViewController {
         
         self.performSegue(withIdentifier: "RegScreen1ToLogin", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "RegScreen1ToRegScreen2" {
+            
+            let vc = segue.destination as? RegisterScreen2
+            vc?.name = nameTextField.text
+            vc?.birthDay = birthdayTextField.text
+            vc?.rg = rgTextField.text
+            vc?.cpf = cpfTextField.text
+        }
+    }
 
 }
