@@ -43,7 +43,7 @@ extension AccountScreen: UITableViewDelegate, UITableViewDataSource{
         let dataCell: DataCell? = personalDataTableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as? DataCell
         network.networkUser { userArray, error in
             
-            if let user = userArray?[0] {
+            if let user = userArray?[1] {
                 DispatchQueue.main.async {
                     self.agencyLabel.text = user.agency
                     self.accountLabel.text = user.account

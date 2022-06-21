@@ -83,10 +83,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFj-4x-28M">
-                                <rect key="frame" x="183" y="155.5" width="40" height="22"/>
+                                <rect key="frame" x="183" y="155.5" width="45" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="1s1-v3-0R3"/>
-                                    <constraint firstAttribute="width" constant="40" id="3XJ-4r-TLX"/>
+                                    <constraint firstAttribute="width" constant="45" id="3XJ-4r-TLX"/>
                                     <constraint firstAttribute="height" constant="22" id="Vqf-ee-ENh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -94,7 +94,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haK-8f-niV">
-                                <rect key="frame" x="238" y="155.5" width="50.5" height="22"/>
+                                <rect key="frame" x="243" y="155.5" width="50.5" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="0Ya-ue-4eJ"/>
                                     <constraint firstAttribute="height" constant="22" id="kmc-OY-oAn"/>
@@ -111,7 +111,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-Ac-55k">
-                                <rect key="frame" x="293.5" y="155.5" width="59" height="22"/>
+                                <rect key="frame" x="298.5" y="155.5" width="59" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Ocb-ub-qhj"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="vQe-cL-Q5q"/>
