@@ -31,6 +31,7 @@ class TransferScreen3: UIViewController {
         network.networkUser { userArray, error in
             
             if let userArray = userArray {
+                
                 var transferOk = false
                 for user in userArray {
                     
