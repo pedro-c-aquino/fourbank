@@ -9,6 +9,8 @@ import UIKit
 
 class RegisterScreen4: UIViewController{
     
+    let registerScreen4VM = RegisterScreen4ViewModel()
+    let network = Network()
     var name: String? = nil
     var birthDay: String? = nil
     var cpf: String? = nil
@@ -33,6 +35,13 @@ class RegisterScreen4: UIViewController{
     }
 
     @IBAction func registerButton(_ sender: UIButton) {
+        
+        if let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text {
+            
+            if registerScreen4VM.checkPassword(password: password, confirmPassword: confirmPassword) {
+                network.registerUser(name: name ?? "", birthDate: birthDay ?? "", cpf: cpf ?? "", rg: rg ?? "", email: email ?? "", occupation: occupation ?? "", income: income ?? "", cellphoneNumber: cellphone ?? "", street: street ?? "", number: number ?? "", neighborhood: neighborhood ?? "", city: city ?? "", state: state ?? "", password: password)
+            }
+        }
         
         let alert = UIAlertController(title: "Cadastrado", message: "Cliente cadastrado com sucesso!", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
