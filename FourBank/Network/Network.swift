@@ -21,7 +21,7 @@ class Network {
             if let data = data {
                 do {
                     
-                    let jsonArray = try JSONDecoder().decode([UserModel].self, from: data)
+                    let jsonArray: [UserModel] = try JSONDecoder().decode([UserModel].self, from: data)
                     completionHandler(jsonArray, nil)
                     
                 } catch {

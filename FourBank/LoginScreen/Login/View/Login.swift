@@ -26,7 +26,22 @@ class Login: UIViewController {
         if loginInfo.validation {
             
             CurrentUser.currentUserEmail = loginInfo.email
-            performSegue(withIdentifier: "toHome", sender: nil)
+            network.networkUser { userArray, error in
+                if let userArray = userArray {
+                    for user in userArray {
+                        if CurrentUser.currentUserEmail == user.email {
+                            if loginInfo.password == user.password {
+                                DispatchQueue.main.async {
+                                    self.performSegue(withIdentifier: "toHome", sender: nil)
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
         }
     }
     
