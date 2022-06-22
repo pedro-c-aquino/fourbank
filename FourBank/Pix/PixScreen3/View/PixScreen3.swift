@@ -28,15 +28,15 @@ class PixScreen3: UIViewController {
     
     @IBAction func confirmButton(_ sender: UIButton) {
         
-        pixScreen3VM.pixTransfer(amount: transferAmount, pixKey: pixKey)
+        pixScreen3VM.pixTransfer(amount: transferAmount, pixKey: pixKey, vc: self)
         
-        let alert = UIAlertController(title: "Confirmação", message: "PIX efetuado com sucesso!", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-            
-            self.performSegue(withIdentifier: "PixScreenToHome", sender: self)
-        }
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "Confirmação", message: "PIX efetuado com sucesso!", preferredStyle: .alert)
+//        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+//
+//            self.performSegue(withIdentifier: "PixScreenToHome", sender: self)
+//        }
+//        alert.addAction(ok)
+//        self.present(alert, animated: true, completion: nil)
     }
 
 }

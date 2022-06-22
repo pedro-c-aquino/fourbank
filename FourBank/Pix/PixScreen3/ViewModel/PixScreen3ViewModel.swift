@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
-class PixScreen3ViewModel {
+
+class PixScreen3ViewModel: UIViewController {
     
     let network = Network()
     
@@ -20,7 +22,7 @@ class PixScreen3ViewModel {
         return amount 
     }
     
-    func pixTransfer(amount: Double, pixKey: String) {
+    func pixTransfer(amount: Double, pixKey: String, vc: UIViewController) {
         
         self.network.networkUser { userArray, error in
             
@@ -35,6 +37,25 @@ class PixScreen3ViewModel {
                             
                             self.network.trasnferAmount(accountBalance: user.accountBalance - Int(amount), id: user.id)
                             transferOk = true
+                            
+                            DispatchQueue.main.async {
+                            
+                                let alert = UIAlertController(title: "Transferência ok", message: "Transferência ok.", preferredStyle: .alert)
+                                let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+                                                vc.performSegue(withIdentifier: "PixScreenToHome", sender: self)
+                                            }
+                                alert.addAction(ok)
+                                vc.present(alert, animated: true, completion: nil)
+                            
+                            }
+                        } else {
+                            DispatchQueue.main.async {
+                                
+                                let alert = UIAlertController(title: "Saldo Insuficiente", message: "Saldo Insuficiente", preferredStyle: .alert)
+                                let ok = UIAlertAction(title: "Ok", style: .default)
+                                alert.addAction(ok)
+                                vc.present(alert, animated: true, completion: nil)
+                            }
                         }
                     }
                 }
