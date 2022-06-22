@@ -31,10 +31,29 @@ class Login: UIViewController {
                     for user in userArray {
                         if CurrentUser.currentUserEmail == user.email {
                             if loginInfo.password == user.password {
+                                
                                 DispatchQueue.main.async {
+                                    
                                     self.performSegue(withIdentifier: "toHome", sender: nil)
                                 }
+                            } else {
                                 
+                                DispatchQueue.main.async {
+                                    
+                                    let alert = UIAlertController(title: "Senha inválida", message: "A senha digitada não confere com a senha cadastrada para este usuário.", preferredStyle: .alert)
+                                    let ok = UIAlertAction(title: "Ok", style: .default)
+                                    alert.addAction(ok)
+                                    self.present(alert, animated: true, completion: nil)
+                                }
+                            }
+                        } else {
+                            
+                            DispatchQueue.main.async {
+                                
+                                let alert = UIAlertController(title: "Usuário não cadastrado.", message: "Este usuário não foi encontrado no sistema, cadastre-se para acessar o app.", preferredStyle: .alert)
+                                let ok = UIAlertAction(title: "Ok", style: .default)
+                                alert.addAction(ok)
+                                self.present(alert, animated: true, completion: nil)
                             }
                         }
                     }
