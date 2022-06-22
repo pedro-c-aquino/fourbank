@@ -40,14 +40,9 @@ class Payment: UIViewController {
     
     @IBAction func confirmButton(_ sender: UIButton) {
         
-        payVM.makePayment(amount: amountTextField.text ?? "")
+        payVM.makePayment(amount: amountTextField.text ?? "", codBar: barcodeTextField.text ?? "", vc: self)
         
-        let alert = UIAlertController(title: "Confirmação", message: "Pagamento efetuado com sucesso!", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-            self.performSegue(withIdentifier: "PaymentScreenToHome", sender: self)
-        }
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+        
     }
     
 }
