@@ -74,4 +74,28 @@ class PixScreen3ViewModel: UIViewController {
             }
         }
     }
+    
+    func setTransferData(pixKey: String?, cell: TransferDataCell?, vc: PixScreen3 ) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for receivingUser in userArray {
+                    
+                    if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber {
+                        
+                        DispatchQueue.main.async {
+                            
+                            cell?.nameLabel.text = receivingUser.name
+                            cell?.cpfLabel.text = receivingUser.email
+                            cell?.accountLabel.text = receivingUser.account
+                            cell?.bankOfficeLabel.text = receivingUser.agency
+                            cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
