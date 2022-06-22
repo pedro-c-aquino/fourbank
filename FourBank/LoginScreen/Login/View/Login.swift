@@ -10,7 +10,6 @@ import UIKit
 class Login: UIViewController {
     
     let loginViewModel = LoginViewModel()
-    let network = Network()
     
     @IBOutlet weak var emailTextField:    UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
