@@ -9,7 +9,6 @@ import UIKit
 
 class ResetPAssword: UIViewController {
     
-    let network = Network()
     let resetViewModel = ResetPasswordViewModel()
     
     @IBOutlet weak var cpfTextField: UITextField!
@@ -23,48 +22,8 @@ class ResetPAssword: UIViewController {
     
     @IBAction func resetPasswordButton(_ sender: UIButton) {
         
-        let passwordInfo = resetViewModel.validatePassword(password: passwordTextField.text)
-        if passwordInfo.validation {
+        resetViewModel.validatePassword(cpf: cpfTextField.text, password: passwordTextField.text, confirm: confirmPasswordTextField.text, vc: self)
             
-            network.networkUser { userArray, error in
-                if let userArray = userArray {
-                    for user in userArray {
-                        if self.passwordTextField.text == user.password {
-                                
-                                DispatchQueue.main.async {
-                                    
-                                    let alert = UIAlertController(title: "Senha inválida", message: "A senha digitada é a mesma que a senha atual.", preferredStyle: .alert)
-                                    let ok = UIAlertAction(title: "Ok", style: .default)
-                                    alert.addAction(ok)
-                                    self.present(alert, animated: true, completion: nil)
-                                }
-                            
-                        } else if self.passwordTextField.text != self.confirmPasswordTextField.text{
-                                
-                                DispatchQueue.main.async {
-                                    
-                                    let alert = UIAlertController(title: "Senha inválida", message: "As senhas não estão condizentes.", preferredStyle: .alert)
-                                    let ok = UIAlertAction(title: "Ok", style: .default)
-                                    alert.addAction(ok)
-                                    self.present(alert, animated: true, completion: nil)
-                                }
-                            
-                        } else {
-                            
-                            DispatchQueue.main.async {
-
-                                let alert = UIAlertController(title: "Confirmação", message: "Senha alterada com sucesso!", preferredStyle: .alert)
-                                let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-                                    
-                                    self.performSegue(withIdentifier: "resetPasswordToLogin", sender: self)
-                                }
-                                alert.addAction(ok)
-                                self.present(alert, animated: true, completion: nil)
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        
     }
 }
