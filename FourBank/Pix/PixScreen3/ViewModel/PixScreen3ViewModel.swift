@@ -16,10 +16,11 @@ class PixScreen3ViewModel: UIViewController {
     func getAmount(amountValue: Double?) -> String {
         
         let amountDouble = amountValue ?? 0.00
-        let amountString = String(amountDouble)
+        let amountString = String(format: "%.2f", Double(amountDouble))
         let convertedString = amountString.replacingOccurrences(of: ",", with: ".")
         let amount = "R$ \(convertedString)"
-        return amount 
+        return amount
+        
     }
     
     func pixTransfer(amount: Double, pixKey: String, vc: UIViewController) {

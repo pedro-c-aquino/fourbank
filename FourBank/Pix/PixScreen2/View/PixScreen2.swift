@@ -15,6 +15,7 @@ class PixScreen2: UIViewController {
     var pixKey: String = "Valor Inicial"
     
     let network = Network()
+    let pixScreen2VM = PixScreen2ViewModel()
     
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var pixKeyTextField: UITextField!
@@ -23,53 +24,15 @@ class PixScreen2: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        DispatchQueue.main.async {
-                            
-                            self.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
-                        }
-                    }
-                }
-            }
-        }
-        
-        switch selectedKeyType {
-        case "CPF":
-            pixKeyTextField.placeholder = "Digite a chave Pix CPF"
-        case "Email":
-            pixKeyTextField.placeholder = "Digite a chave Pix Email"
-        case "Telefone":
-            pixKeyTextField.placeholder = "Digite a chave Pix Telefone"
-        default:
-            print("Erro no keyType")
-        }
-        
+        pixScreen2VM.showBalance(vc: self)
+        pixScreen2VM.keyType(keyType: selectedKeyType, vc: self)
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
     }
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        if pixKeyTextField.text != "" {
-            
-            pixKey = pixKeyTextField.text ?? ""
-            print(pixKey)
-            performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
-        } else {
-            
-            let alert = UIAlertController(title: "Atenção", message: "Informar a chave Pix", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "Ok", style: .default)
-            alert.addAction(ok)
-            self.present(alert, animated: true, completion: nil)
-        }
+        pixScreen2VM.validateAmount(pixKey: pixKeyTextField.text ?? "", vc: self)
         
     }
     
