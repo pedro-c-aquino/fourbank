@@ -9,10 +9,14 @@ import UIKit
 
 class Deposit: UIViewController {
     
-    var network = Network()
+    let network = Network()
+    var depVM = DepositViewModel()
+    var depositAmount: Double = 0.0
+    var bankAccount: String = ""
+    var bankOffice: String = ""
     
     @IBOutlet weak var balanceLabel: UILabel!
-    @IBOutlet weak var amountLabel: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,8 @@ class Deposit: UIViewController {
     }
     
     @IBAction func confirmButton(_ sender: UIButton) {
+        
+        depVM.makeDeposit(amount: amountTextField.text ?? "")
         
         let alert = UIAlertController(title: "Confirmação", message: "Depósito efetuado com sucesso!", preferredStyle: .alert)
         let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in

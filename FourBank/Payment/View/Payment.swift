@@ -9,7 +9,7 @@ import UIKit
 
 class Payment: UIViewController {
     
-    var network = Network()
+    let network = Network()
     var payVM = PaymentViewModel()
     var paymentAmount: Double = 0.0
     
