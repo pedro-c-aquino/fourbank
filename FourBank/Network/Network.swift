@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Network {
     
@@ -34,7 +35,7 @@ class Network {
         task.resume()
     }
     
-    func registerUser(name: String, birthDate: String, cpf: String, rg: String, email: String, occupation: String, income: String, cellphoneNumber: String, street: String, number: String, neighborhood: String, city: String, state: String, password:String) {
+    func registerUser(name: String, birthDate: String, cpf: String, rg: String, email: String, occupation: String, income: String, cellphoneNumber: String, street: String, number: String, neighborhood: String, city: String, state: String, password:String, vc: UIViewController) {
         
         let params = [
             "account": "896874-99",
@@ -67,13 +68,33 @@ class Network {
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
         
         let session = URLSession.shared.dataTask(with: request) { data, response, error in
+                        
             if let error = error {
-                print("The error was: \(error.localizedDescription)")
+                
+                DispatchQueue.main.async {
+                    
+                    let alert = UIAlertController(title: "Erro ao cadastrar", message: "\(error.localizedDescription)", preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "Ok", style: .default)
+                    alert.addAction(ok)
+                    vc.present(alert, animated: true, completion: nil)
+                }
+
             } else {
-                print(response)
-                print(url)
-                let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
-                print("Response json is: \(jsonRes)")
+                    
+                    print(url)
+                    let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
+                    print("Response json is: \(jsonRes)")
+                
+                DispatchQueue.main.async {
+                    
+                    let alert = UIAlertController(title: "Cadastrado", message: "Cliente cadastrado com sucesso!", preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+            
+                        vc.performSegue(withIdentifier: "RegScreen4ToMain", sender: self)
+                    }
+                    alert.addAction(ok)
+                    vc.present(alert, animated: true, completion: nil)
+                }
             }
         }.resume()
     }
