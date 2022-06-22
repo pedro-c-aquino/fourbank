@@ -11,7 +11,6 @@ class TransferScreen1: UIViewController {
     
     var transferAmount: Double = 0.0
     let trScreen1VM = TransferScreen1ViewModel()
-    let network = Network()
 
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var balanceLabel: UILabel!
@@ -19,22 +18,7 @@ class TransferScreen1: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        DispatchQueue.main.async {
-                            
-                            self.balanceLabel.text = String(format: "%.2f", Double(user.accountBalance)).replacingOccurrences(of: ".", with: ",")
-                        }
-                    }
-                }
-            }
-        }
+        trScreen1VM.changeBalance(vc: self)
     }
 
     @IBAction func proceedButton(_ sender: UIButton) {
