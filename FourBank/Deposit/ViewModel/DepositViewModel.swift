@@ -18,7 +18,27 @@ class DepositViewModel {
         return amountString
     }
     
-    func makeDeposit(amount: String) {
+    func formatBalance(balance: String?, vc: Deposit) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        DispatchQueue.main.async {
+                            
+                            vc.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    func makeDeposit(amount: String, vc: UIViewController) {
         
         let amountD = Double(amount) ?? 0.00
         self.network.networkUser { userArray, error in
@@ -29,9 +49,31 @@ class DepositViewModel {
                     
                     if CurrentUser.currentUserEmail == user.email {
                         
-                        if amountD <= Double(user.accountBalance) {
+                        if amount == "" {
                             
-                            self.network.trasnferAmount(accountBalance: user.accountBalance + Int(amountD), id: user.id)
+                            DispatchQueue.main.async {
+                                
+                                let alert = UIAlertController(title: "Atenção", message: "O campo não foi preenchido.", preferredStyle: .alert)
+                                let ok = UIAlertAction(title: "Ok", style: .default)
+                                alert.addAction(ok)
+                                vc.present(alert, animated: true, completion: nil)
+                            }
+                        } else {
+                        
+                            if amountD <= Double(user.accountBalance) {
+                                
+                                self.network.trasnferAmount(accountBalance: user.accountBalance + Int(amountD), id: user.id)
+                            }
+                            
+                            DispatchQueue.main.async {
+                                
+                                let alert = UIAlertController(title: "Confirmação", message: "Depósito efetuado com sucesso!", preferredStyle: .alert)
+                                let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+                                    vc.performSegue(withIdentifier: "DepositScreenToHome", sender: self)
+                                }
+                                alert.addAction(ok)
+                                vc.present(alert, animated: true, completion: nil)
+                            }
                         }
                     }
                 }
