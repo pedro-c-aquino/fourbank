@@ -21,34 +21,11 @@ class Deposit: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        DispatchQueue.main.async {
-                            
-                            self.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
-                        }
-                    }
-                }
-            }
-        }
+        depVM.formatBalance(balance: balanceLabel.text ?? "", vc: self)
     }
     
     @IBAction func confirmButton(_ sender: UIButton) {
         
-        depVM.makeDeposit(amount: amountTextField.text ?? "")
-        
-        let alert = UIAlertController(title: "Confirmação", message: "Depósito efetuado com sucesso!", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-            self.performSegue(withIdentifier: "DepositScreenToHome", sender: self)
-        }
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+        depVM.makeDeposit(amount: amountTextField.text ?? "", vc: self)
     }
-    
 }
