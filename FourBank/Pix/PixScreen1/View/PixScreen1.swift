@@ -14,7 +14,6 @@ class PixScreen1: UIViewController {
     let pixKeyTypesArray = ["Email", "Telefone", "CPF", "CNPJ"]
     var selectedKeyType = "Email"
     
-    let network = Network()
     let pixScreen1VM = PixScreen1ViewModel()
     
     @IBOutlet weak var balanceLabel: UILabel!
@@ -28,22 +27,7 @@ class PixScreen1: UIViewController {
         typeTransferPickerView.delegate = self
         typeTransferPickerView.setValue(UIColor(red: 1, green: 1, blue: 1, alpha: 1), forKey: "textColor")
         
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        DispatchQueue.main.async {
-                            
-                            self.balanceLabel.text = "\(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
-                        }
-                    }
-                }
-            }
-        }
+        pixScreen1VM.showBalance(vc: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,24 +36,9 @@ class PixScreen1: UIViewController {
         amountTextField.becomeFirstResponder()
     }
     
-    @IBAction func closeButton(_ sender: UIBarButtonItem) {
-        
-    }
-    
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        if amountTextField.text != "" {
-            
-            let amountString = amountTextField.text
-            transferAmount = pixScreen1VM.getAmount(amountText: amountString)
-            performSegue(withIdentifier: "PixScreen1ToPixScreen2", sender: self)
-        } else {
-            
-            let alert = UIAlertController(title: "Atenção", message: "Informar o valor do Pix", preferredStyle: .alert)
-            let ok = UIAlertAction(title: "Ok", style: .default)
-            alert.addAction(ok)
-            self.present(alert, animated: true, completion: nil)
-        }
+        pixScreen1VM.validateAmount(amount: amountTextField.text ?? "", vc: self)
         
     }
     

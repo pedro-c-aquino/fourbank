@@ -10,7 +10,6 @@ import UIKit
 class PixScreen3: UIViewController {
     
     let pixScreen3VM = PixScreen3ViewModel()
-    let network = Network()
     
     var pixKey: String = ""
     var transferAmount: Double = 0.00
@@ -19,7 +18,7 @@ class PixScreen3: UIViewController {
     @IBOutlet weak var transferDataTableView: UITableView!
     
     override func viewDidLoad() {
-        print(pixKey)
+    
         super.viewDidLoad()
         self.transferDataTableView.delegate = self
         self.transferDataTableView.dataSource = self
@@ -46,7 +45,7 @@ extension PixScreen3: UITableViewDelegate, UITableViewDataSource {
         let cell: TransferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "TransferDataCell", for: indexPath) as? TransferDataCell
         
         pixScreen3VM.setTransferData(pixKey: pixKey, cell: cell, vc: self)
-        
+
         return cell ?? UITableViewCell()
     }
     
