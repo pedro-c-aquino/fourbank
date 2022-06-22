@@ -10,7 +10,6 @@ import UIKit
 class PixScreen3: UIViewController {
     
     let pixScreen3VM = PixScreen3ViewModel()
-    let network = Network()
     
     var pixKey: String = ""
     var transferAmount: Double = 0.00

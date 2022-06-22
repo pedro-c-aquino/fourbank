@@ -14,7 +14,6 @@ class PixScreen1: UIViewController {
     let pixKeyTypesArray = ["Email", "Telefone", "CPF", "CNPJ"]
     var selectedKeyType = "Email"
     
-    let network = Network()
     let pixScreen1VM = PixScreen1ViewModel()
     
     @IBOutlet weak var balanceLabel: UILabel!

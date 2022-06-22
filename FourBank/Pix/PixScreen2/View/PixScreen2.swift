@@ -14,7 +14,6 @@ class PixScreen2: UIViewController {
     var transferAmount: Double = 0.00
     var pixKey: String = "Valor Inicial"
     
-    let network = Network()
     let pixScreen2VM = PixScreen2ViewModel()
     
     @IBOutlet weak var balanceLabel: UILabel!
