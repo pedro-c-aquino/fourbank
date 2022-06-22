@@ -31,7 +31,7 @@ class PixScreen2: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        pixScreen2VM.validateAmount(pixKey: pixKeyTextField.text ?? "", vc: self)
+        pixScreen2VM.validatePixKey(pixKey: pixKeyTextField.text ?? "", vc: self)
         
     }
     
