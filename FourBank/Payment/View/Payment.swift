@@ -18,7 +18,7 @@ class Payment: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        payVM.formatBalance(balance: balanceLabel.text ?? "", vc: Payment())
+        payVM.formatBalance(balance: balanceLabel.text ?? "", vc: self)
     }
     
     @IBAction func confirmButton(_ sender: UIButton) {

@@ -20,7 +20,7 @@ class PaymentViewModel {
         return amountString
     }
     
-    func formatBalance(balance: String?, vc: UIViewController) {
+    func formatBalance(balance: String?, vc: Payment) {
         
         network.networkUser { userArray, error in
             
