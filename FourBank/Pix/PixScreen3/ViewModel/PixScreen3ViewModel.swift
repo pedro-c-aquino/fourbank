@@ -11,12 +11,13 @@ class PixScreen3ViewModel {
     
     let network = Network()
     
-    func getAmount(amountText: String?) -> Double {
+    func getAmount(amountValue: Double?) -> String {
         
-        let amountString = amountText ?? "0.00"
+        let amountDouble = amountValue ?? 0.00
+        let amountString = String(amountDouble)
         let convertedString = amountString.replacingOccurrences(of: ",", with: ".")
-        let amount = Double(convertedString)
-        return amount ?? 0.00
+        let amount = "R$ \(convertedString)"
+        return amount 
     }
     
     func pixTransfer(amount: Double, pixKey: String) {

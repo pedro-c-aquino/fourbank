@@ -15,13 +15,11 @@ class PixScreen3: UIViewController {
     var pixKey: String = ""
     var transferAmount: Double = 0.00
     var cpfPix: String = ""
-    var emailPix: String = ""
-    var cellphonePix: String = ""
     
     @IBOutlet weak var transferDataTableView: UITableView!
     
     override func viewDidLoad() {
-    
+        print(pixKey)
         super.viewDidLoad()
         self.transferDataTableView.delegate = self
         self.transferDataTableView.dataSource = self
@@ -60,22 +58,20 @@ extension PixScreen3: UITableViewDelegate, UITableViewDataSource {
                 
                 for receivingUser in userArray {
                     
-                    if self.emailPix == receivingUser.email || self.cpfPix == receivingUser.cpf || self.cellphonePix == receivingUser.cellphoneNumber {
+                    if self.pixKey == receivingUser.email || self.pixKey == receivingUser.cpf || self.pixKey == receivingUser.cellphoneNumber {
                         
                         DispatchQueue.main.async {
+                            
                             cell?.nameLabel.text = receivingUser.name
-                            cell?.cpfLabel.text = receivingUser.self.emailPix
+                            cell?.cpfLabel.text = receivingUser.email
                             cell?.accountLabel.text = receivingUser.account
                             cell?.bankOfficeLabel.text = receivingUser.agency
-                            cell?.paymentValueLabel.text = String(self.transferAmount)
-                            
+                            cell?.paymentValueLabel.text = self.pixScreen3VM.getAmount(amountValue: self.transferAmount)
                         }
-                    }
+                    } 
                 }
             }
         }
-
-        
         return cell ?? UITableViewCell()
     }
     

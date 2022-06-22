@@ -12,12 +12,10 @@ class PixScreen2: UIViewController {
     var contatos: [String] = ["Pedro", "Henrique", "Kaue"]
     var selectedKeyType = ""
     var transferAmount: Double = 0.00
-    var pixKey: String = ""
-    var cpfPix: String = ""
-    var emailPix: String = ""
-    var cellphonePix: String = ""
-
-
+    var pixKey: String = "Valor Inicial"
+    
+    let network = Network()
+    
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var pixKeyTextField: UITextField!
     @IBOutlet weak var contactsTableView: UITableView!
@@ -25,18 +23,31 @@ class PixScreen2: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        print(transferAmount)
-        print(selectedKeyType)
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        DispatchQueue.main.async {
+                            
+                            self.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
+                        }
+                    }
+                }
+            }
+        }
+        
         switch selectedKeyType {
         case "CPF":
             pixKeyTextField.placeholder = "Digite a chave Pix CPF"
-            cpfPix = pixKeyTextField.text ?? ""
         case "Email":
             pixKeyTextField.placeholder = "Digite a chave Pix Email"
-            emailPix = pixKeyTextField.text ?? ""
         case "Telefone":
             pixKeyTextField.placeholder = "Digite a chave Pix Telefone"
-            cellphonePix = pixKeyTextField.text ?? ""
         default:
             print("Erro no keyType")
         }
@@ -47,6 +58,7 @@ class PixScreen2: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         pixKey = pixKeyTextField.text ?? ""
+        print(pixKey)
         performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
     }
     
@@ -55,12 +67,8 @@ class PixScreen2: UIViewController {
         let vc = segue.destination as? PixScreen3
         vc?.transferAmount = transferAmount
         vc?.pixKey = pixKey
-        vc?.cpfPix = cpfPix
-        vc?.emailPix = emailPix
-        vc?.cellphonePix = cellphonePix
-        
     }
-
+    
 }
 
 extension PixScreen2: UITableViewDelegate, UITableViewDataSource {
@@ -79,7 +87,7 @@ extension PixScreen2: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "TrScreen2ToTrScreen3", sender: self)
+        performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
     }
     
 }
