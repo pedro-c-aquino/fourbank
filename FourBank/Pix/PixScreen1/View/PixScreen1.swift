@@ -58,9 +58,19 @@ class PixScreen1: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        let amountString = amountTextField.text
-        transferAmount = pixScreen1VM.getAmount(amountText: amountString)
-        performSegue(withIdentifier: "PixScreen1ToPixScreen2", sender: self)
+        if amountTextField.text != "" {
+            
+            let amountString = amountTextField.text
+            transferAmount = pixScreen1VM.getAmount(amountText: amountString)
+            performSegue(withIdentifier: "PixScreen1ToPixScreen2", sender: self)
+        } else {
+            
+            let alert = UIAlertController(title: "Atenção", message: "Informar o valor do Pix", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(ok)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

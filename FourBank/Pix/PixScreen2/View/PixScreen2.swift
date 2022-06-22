@@ -57,9 +57,20 @@ class PixScreen2: UIViewController {
     }
     
     @IBAction func proceedButton(_ sender: UIButton) {
-        pixKey = pixKeyTextField.text ?? ""
-        print(pixKey)
-        performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
+        
+        if pixKeyTextField.text != "" {
+            
+            pixKey = pixKeyTextField.text ?? ""
+            print(pixKey)
+            performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
+        } else {
+            
+            let alert = UIAlertController(title: "Atenção", message: "Informar a chave Pix", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(ok)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
