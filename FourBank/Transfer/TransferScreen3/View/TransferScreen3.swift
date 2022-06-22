@@ -28,14 +28,7 @@ class TransferScreen3: UIViewController {
     @IBAction func confirmButton(_ sender: UIButton) {
         
         
-        trScreen3VM.makeTransfer(amount: transferAmount, agency: bankOffice, account: bankAccount)
-        
-        let alert = UIAlertController(title: "Confirmação", message: "Transferência efetuada com sucesso!", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-            self.performSegue(withIdentifier: "TrScreen3ToHome", sender: self)
-        }
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+        trScreen3VM.makeTransfer(amount: transferAmount, agency: bankOffice, account: bankAccount, vc: self)
     }
 
 }
@@ -50,12 +43,8 @@ extension TransferScreen3: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: TransferDataCell? = transferInfoTableView.dequeueReusableCell(withIdentifier: "TransferDataCell", for: indexPath) as? TransferDataCell
-        cell?.cpfLabel.isHidden = true
-        cell?.cpfTitleLabel.isHidden = true
-        cell?.nameLabel.text = name
-        cell?.accountLabel.text = bankAccount
-        cell?.paymentValueLabel.text = trScreen3VM.getAmountString(amount: transferAmount)
-        cell?.bankOfficeLabel.text = bankOffice
+        trScreen3VM.showTransferData(cell: cell, amount: transferAmount, name: name, bankAccount: bankAccount, bankOffice: bankOffice)
+        
         return cell ?? UITableViewCell()
     }
     
