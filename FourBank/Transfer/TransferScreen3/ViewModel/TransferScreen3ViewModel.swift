@@ -18,6 +18,16 @@ class TransferScreen3ViewModel {
         return amountString
     }
     
+    func showTransferData(cell: TransferDataCell?, amount: Double, name: String, bankAccount: String, bankOffice: String) {
+        
+        cell?.cpfLabel.isHidden = true
+        cell?.cpfTitleLabel.isHidden = true
+        cell?.nameLabel.text = name
+        cell?.accountLabel.text = bankAccount
+        cell?.paymentValueLabel.text = getAmountString(amount: amount)
+        cell?.bankOfficeLabel.text = bankOffice
+    }
+    
     func makeTransfer(amount: Double, agency: String, account: String, vc: UIViewController) {
         
         self.network.networkUser { userArray, error in
