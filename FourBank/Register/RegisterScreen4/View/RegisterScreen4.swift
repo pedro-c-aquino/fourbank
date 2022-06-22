@@ -39,17 +39,9 @@ class RegisterScreen4: UIViewController{
         if let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text {
             
             if registerScreen4VM.checkPassword(password: password, confirmPassword: confirmPassword) {
-                network.registerUser(name: name ?? "", birthDate: birthDay ?? "", cpf: cpf ?? "", rg: rg ?? "", email: email ?? "", occupation: occupation ?? "", income: income ?? "", cellphoneNumber: cellphone ?? "", street: street ?? "", number: number ?? "", neighborhood: neighborhood ?? "", city: city ?? "", state: state ?? "", password: password)
+                network.registerUser(name: name ?? "", birthDate: birthDay ?? "", cpf: cpf ?? "", rg: rg ?? "", email: email ?? "", occupation: occupation ?? "", income: income ?? "", cellphoneNumber: cellphone ?? "", street: street ?? "", number: number ?? "", neighborhood: neighborhood ?? "", city: city ?? "", state: state ?? "", password: password, vc: self)
             }
         }
-        
-        let alert = UIAlertController(title: "Cadastrado", message: "Cliente cadastrado com sucesso!", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-            
-            self.performSegue(withIdentifier: "RegScreen4ToMain", sender: self)
-        }
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func backButton(_ sender: UIButton) {
