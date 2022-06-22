@@ -37,7 +37,7 @@ class Network {
     func registerUser(name: String, birthDate: String, cpf: String, rg: String, email: String, occupation: String, income: String, cellphoneNumber: String, street: String, number: String, neighborhood: String, city: String, state: String, password:String) {
         
         let params = [
-            "account": "369874-5",
+            "account": "896874-99",
             "agency": "2040",
             "bank": "Fourbank",
             "cellphoneNumber": cellphoneNumber,
@@ -52,7 +52,10 @@ class Network {
             "accountBalance": 5000,
             "password": password,
             "birthDate": birthDate,
-            "number": number
+            "number": number,
+            "cpfPix": cpf,
+            "emailPix": email,
+            "cellphonePix": cellphoneNumber
         ] as [String : Any]
         
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2") else {
