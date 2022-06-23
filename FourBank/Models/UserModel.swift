@@ -40,6 +40,12 @@ struct Transfer: Codable {
     var transferType: String
 }
 
+struct TransferPutModel: Codable {
+
+    var accountBalance: Int
+    var transfers: [Transfer]
+}
+
 //==================
 
 struct CurrentUser {

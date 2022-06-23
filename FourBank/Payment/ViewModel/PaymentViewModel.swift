@@ -64,7 +64,11 @@ class PaymentViewModel {
                         
                             if amountD <= Double(user.accountBalance) {
                                 
-                                self.network.trasnferAmount(accountBalance: user.accountBalance - Int(amountD), id: user.id)
+                                var transfers = user.transfers
+                                
+                                let currentTransfer = Transfer(amount: -amountD, transferType: "Pagamento")
+                                transfers.append(currentTransfer)
+                                self.network.addTransfer(id: user.id, transferData: TransferPutModel(accountBalance: user.accountBalance - Int(amountD), transfers: transfers))
                             }
                             
                             DispatchQueue.main.async {
