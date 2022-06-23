@@ -31,7 +31,17 @@ struct UserModel: Codable {
     var cellphonePix: String
     var id: String
     var transfers: [Transfer]
-//    var pixContatos: [String]
+    var pixContacts: [PixContact]
+}
+
+struct PixContact: Codable {
+    var name: String
+    var keyType: String
+    var pixKey: String
+}
+
+struct PixContactModel: Codable {
+    var pixContacts: [PixContact]
 }
 
 struct Transfer: Codable {

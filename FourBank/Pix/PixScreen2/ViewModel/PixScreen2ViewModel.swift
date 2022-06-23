@@ -12,7 +12,7 @@ class PixScreen2ViewModel {
     
     let network = Network()
     
-    func validatePixKey(pixKey: String, vc: PixScreen2) {
+    func validatePixKey(pixKey: String, pixType: String, vc: PixScreen2) {
         
         if pixKey == "" {
             
@@ -32,13 +32,6 @@ class PixScreen2ViewModel {
                         if pixKey == user.emailPix || pixKey == user.cellphonePix || pixKey == user.cpfPix {
                             
                             pixKeyOk = true
-                            //                            DispatchQueue.main.async {
-                            //
-                            //                                let alert = UIAlertController(title: "Atenção", message: "Chave Pix inválida", preferredStyle: .alert)
-                            //                                let ok = UIAlertAction(title: "Ok", style: .default)
-                            //                                alert.addAction(ok)
-                            //                                vc.present(alert, animated: true, completion: nil)
-                            //                            }
                         }
                         
                     }
@@ -84,6 +77,32 @@ class PixScreen2ViewModel {
             }
         }
     }
+    
+    func addContact(pixKey: String, pixType: String, vc: PixScreen2) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        DispatchQueue.main.async {
+                            
+                            var pixArray = user.pixContacts
+                            let newPixContact = PixContact(name: user.name, keyType: pixType, pixKey: pixKey)
+                            pixArray.append(newPixContact)
+                            self.network.addPixContact(id: user.id, contactData: PixContactModel(pixContacts: pixArray))
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    
     
     func keyType(keyType: String, vc: PixScreen2) {
         
