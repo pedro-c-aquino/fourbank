@@ -29,9 +29,10 @@ extension StatementScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        let balanceCell: BalanceCell? = balanceTableView.dequeueReusableCell(withIdentifier: "BalanceCell") as? BalanceCell
-        
-        statementeVM.countTransfer(cell: balanceCell, vc: self)
+        10
+//        let balanceCell: BalanceCell? = balanceTableView.dequeueReusableCell(withIdentifier: "BalanceCell") as? BalanceCell
+//
+//        statementeVM.countTransfer(cell: balanceCell, vc: self)
         
     }
     

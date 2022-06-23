@@ -94,6 +94,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="amountLabel" destination="cGF-ft-hpC" id="puc-fr-sJM"/>
+                <outlet property="realSignLabel" destination="Ltw-Ei-pPL" id="cxU-X8-064"/>
                 <outlet property="transferIconImageView" destination="lIP-MO-cGw" id="bVr-Lp-04o"/>
                 <outlet property="typeTransfer2Label" destination="TRx-N9-Dtc" id="1YA-RC-Qur"/>
                 <outlet property="typeTransferLabel" destination="vBd-bW-umr" id="NxE-gm-YVG"/>

@@ -46,6 +46,21 @@ class StatementScreenViewModel {
                                 cell?.typeTransferLabel.text = transfer.transferType
                                 cell?.typeTransfer2Label.text = transfer.transferType
                                 cell?.amountLabel.text = String(transfer.amount)
+                                
+                                if transfer.amount > 0 {
+                                    
+                                    cell?.typeTransfer2Label.textColor = .green
+                                    cell?.realSignLabel.textColor = .green
+                                    cell?.amountLabel.textColor = .green
+                                    cell?.transferIconImageView.tintColor = .green
+                                }
+                                else {
+                                    
+                                    cell?.typeTransfer2Label.textColor = .red
+                                    cell?.realSignLabel.textColor = .red
+                                    cell?.amountLabel.textColor = .red
+                                    cell?.transferIconImageView.tintColor = .red
+                                }
                             }
                         }
                     }
