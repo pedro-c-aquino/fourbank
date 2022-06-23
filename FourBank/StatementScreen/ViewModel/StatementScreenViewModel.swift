@@ -12,7 +12,7 @@ class StatementScreenViewModel {
     
     let network = Network()
     
-    func countTransfer(cell: BalanceCell?, vc: StatementScreen) {
+    func countTransfer(vc: StatementScreen) {
         
         network.networkUser { userArray, error in
             
@@ -21,8 +21,9 @@ class StatementScreenViewModel {
                 for user in userArray {
                 
                     if CurrentUser.currentUserEmail == user.email {
-                        
-                       user.transfers.count
+                        vc.tableView(vc.balanceTableView, numberOfRowsInSection: user.transfers.count)
+                        vc.c = user.transfers.count
+                        print(user.transfers.count)
                     }
                 }
             }
