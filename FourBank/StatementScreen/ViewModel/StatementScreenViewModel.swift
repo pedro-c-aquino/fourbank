@@ -76,7 +76,6 @@ class StatementScreenViewModel {
                                     cell?.transferIconImageView.tintColor = .red
                                 }
                             }
-                        
                     }
                 }
             }

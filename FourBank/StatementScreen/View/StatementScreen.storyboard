@@ -77,6 +77,7 @@
                     <connections>
                         <outlet property="balanceLabel" destination="7I4-Ha-31A" id="j4t-wa-QYM"/>
                         <outlet property="balanceTableView" destination="ZmL-Fj-ZeM" id="65s-bv-TjO"/>
+                        <segue destination="KLv-ue-OSf" kind="presentation" identifier="StatementScreenToHome" modalPresentationStyle="fullScreen" id="DX5-hb-XV7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -91,7 +92,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BI9-ko-gIB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="-158"/>
+            <point key="canvasLocation" x="1582" y="-46"/>
         </scene>
         <!--Extrato-->
         <scene sceneID="G3h-ey-onu">
@@ -117,6 +118,9 @@
             <point key="canvasLocation" x="-23.188405797101453" y="96.428571428571431"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="DX5-hb-XV7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="list.bullet" catalog="system" width="128" height="88"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
