@@ -66,15 +66,13 @@ class TransferScreen3ViewModel {
                                     var loggedUserTransfers = loggedUser.transfers
                                     let currentLoggedUserTransfer = Transfer(amount: -amount, transferType: "Transferência enviada")
                                     loggedUserTransfers.append(currentLoggedUserTransfer)
-                                    self.network.addTransfer(id: loggedUser.id, transfers: loggedUserTransfers)
-                                    self.network.trasnferAmount(accountBalance: loggedUser.accountBalance - Int(amount), id: loggedUser.id)
+                                    self.network.addTransfer(id: loggedUser.id, transferData: TransferPutModel(accountBalance: loggedUser.accountBalance - Int(amount), transfers: loggedUserTransfers))
                                     
                                     var receivingUserTransfers = receivingUser.transfers
                                     
                                     let currentReceivingUserTransfer = Transfer(amount: amount, transferType: "Transferência recebida")
                                     receivingUserTransfers.append(currentReceivingUserTransfer)
-                                    self.network.addTransfer(id: receivingUser.id, transfers: receivingUserTransfers)
-                                    self.network.trasnferAmount(accountBalance: receivingUser.accountBalance + Int(amount), id: receivingUser.id)
+                                    self.network.addTransfer(id: receivingUser.id, transferData: TransferPutModel(accountBalance: receivingUser.accountBalance + Int(amount), transfers: receivingUserTransfers))
                                     DispatchQueue.main.async {
                                         
                                         let alert = UIAlertController(title: "Confirmação", message: "Transferência efetuada com sucesso!", preferredStyle: .alert)

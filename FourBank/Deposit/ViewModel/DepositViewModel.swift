@@ -66,8 +66,7 @@ class DepositViewModel {
                                     
                                     let currentTransfer = Transfer(amount: amountD, transferType: "Depósito")
                                     transfers.append(currentTransfer)
-                                    self.network.addTransfer(id: user.id, transfers: transfers)
-                                    self.network.trasnferAmount(accountBalance: user.accountBalance + Int(amountD), id: user.id)
+                                self.network.addTransfer(id: user.id, transferData: TransferPutModel(accountBalance: user.accountBalance + Int(amountD), transfers: transfers))
                             }
                             
                             DispatchQueue.main.async {

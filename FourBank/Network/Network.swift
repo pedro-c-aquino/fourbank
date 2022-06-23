@@ -127,11 +127,8 @@ class Network {
         }.resume()
     }
     
-    func addTransfer(id: String, transfers: [Transfer]) {
+    func addTransfer(id: String, transferData: TransferPutModel) {
         
-        let params = [
-            "transfers": transfers
-        ]
         
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2/\(id)") else {
             fatalError("typicode URL not working")
@@ -139,7 +136,7 @@ class Network {
         var request = URLRequest(url: url)
         request.httpMethod = "PUT"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try? JSONEncoder().encode(params)
+        request.httpBody = try? JSONEncoder().encode(transferData)
         
         let session = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
