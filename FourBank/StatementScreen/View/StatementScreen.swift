@@ -9,6 +9,9 @@ import UIKit
 
 class StatementScreen: UIViewController {
     
+    let network = Network()
+    var transferArray: [Transfer] = []
+    
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var balanceTableView: UITableView!
     
@@ -26,13 +29,17 @@ extension StatementScreen: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        3
+        transferArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let balanceCell: BalanceCell? = balanceTableView.dequeueReusableCell(withIdentifier: "BalanceCell", for: indexPath) as? BalanceCell
         return balanceCell ?? UITableViewCell ()
+        
+        balanceCell?.typeTransferLabel.text = transferArray.
+        balanceCell?.typeTransfer2Label.text =
+        balanceCell?.amountLabel.text =
     }
     
 }
