@@ -437,9 +437,9 @@
 		13BB52A9285222F9002A5769 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09247BBD285387E800FC3606 /* Cell */,
 				CF0669942847EBAB00C3FB50 /* StatementScreen.swift */,
 				13BB52C728522B15002A5769 /* StatementScreen.storyboard */,
+				09247BBD285387E800FC3606 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
