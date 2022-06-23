@@ -12,7 +12,7 @@ class PixScreen2ViewModel {
     
     let network = Network()
     
-    func validatePixKey(pixKey: String, vc: PixScreen2) {
+    func validatePixKey(pixKey: String, pixType: String, vc: PixScreen2) {
         
         if pixKey == "" {
             
@@ -32,22 +32,15 @@ class PixScreen2ViewModel {
                         if pixKey == user.emailPix || pixKey == user.cellphonePix || pixKey == user.cpfPix {
                             
                             pixKeyOk = true
-                            //                            DispatchQueue.main.async {
-                            //
-                            //                                let alert = UIAlertController(title: "Atenção", message: "Chave Pix inválida", preferredStyle: .alert)
-                            //                                let ok = UIAlertAction(title: "Ok", style: .default)
-                            //                                alert.addAction(ok)
-                            //                                vc.present(alert, animated: true, completion: nil)
-                            //                            }
                         }
                         
                     }
                     if pixKeyOk {
                         
-                            DispatchQueue.main.async {
-                                
-                                vc.pixKey = pixKey
-                                vc.performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
+                        DispatchQueue.main.async {
+                            
+                            vc.pixKey = pixKey
+                            vc.performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
                         }
                     } else {
                         

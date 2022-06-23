@@ -12,6 +12,26 @@ class StatementScreenViewModel {
     
     let network = Network()
     
+    func formatBalance(balance: String?, vc: StatementScreen) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        DispatchQueue.main.async {
+                            
+                            vc.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     func countTransfer()  -> Int {
         
         network.networkUserArray()

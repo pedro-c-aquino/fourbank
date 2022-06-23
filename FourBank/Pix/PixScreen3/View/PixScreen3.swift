@@ -11,6 +11,7 @@ class PixScreen3: UIViewController {
     
     let pixScreen3VM = PixScreen3ViewModel()
     
+    var selectedKeyType = ""
     var pixKey: String = ""
     var transferAmount: Double = 0.00
     var cpfPix: String = ""
@@ -28,6 +29,7 @@ class PixScreen3: UIViewController {
     @IBAction func confirmButton(_ sender: UIButton) {
         
         pixScreen3VM.pixTransfer(amount: transferAmount, pixKey: pixKey, vc: self)
+        pixScreen3VM.addPixContact(pixKey: pixKey, pixType: selectedKeyType, vc: self)
     }
 
 }
