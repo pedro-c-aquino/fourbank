@@ -33,26 +33,17 @@ class LoginViewModel {
                                 vc.performSegue(withIdentifier: "toHome", sender: nil)
                             }
                             
-                        } else {
-                            
-                            DispatchQueue.main.async {
-                                
-                                let alert = UIAlertController(title: "Senha inválida", message: "A senha digitada não confere com a senha cadastrada para este usuário.", preferredStyle: .alert)
-                                let ok = UIAlertAction(title: "Ok", style: .default)
-                                alert.addAction(ok)
-                                vc.present(alert, animated: true, completion: nil)
-                            }
-                        }
-                    } else {
-                        
-                        DispatchQueue.main.async {
-                            
-                            let alert = UIAlertController(title: "Usuário não cadastrado.", message: "Este usuário não foi encontrado no sistema, cadastre-se para acessar o app.", preferredStyle: .alert)
-                            let ok = UIAlertAction(title: "Ok", style: .default)
-                            alert.addAction(ok)
-                            vc.present(alert, animated: true, completion: nil)
                         }
                     }
+                }
+            } else {
+                
+                DispatchQueue.main.async {
+                    
+                    let alert = UIAlertController(title: "Usuário ou senha incorreto", message: "Revise seus dados para efetuar o login", preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "Ok", style: .default)
+                    alert.addAction(ok)
+                    vc.present(alert, animated: true, completion: nil)
                 }
             }
         }
