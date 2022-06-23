@@ -14,6 +14,8 @@ class StatementScreenViewModel {
     
     func countTransfer()  -> Int {
         
+        network.networkUserArray()
+        
         if let userArray = CurrentUser.userArray {
             for user in userArray {
                 if CurrentUser.currentUserEmail == user.email {
@@ -26,11 +28,9 @@ class StatementScreenViewModel {
     
     func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen, indexPath: IndexPath) {
         
-        network.networkUser { userArray, error in
+        if let userArray = CurrentUser.userArray {
             
-            if let userArray = userArray {
-                
-                for user in userArray {
+            for user in userArray {
                 
                     if CurrentUser.currentUserEmail == user.email {
                         
@@ -56,8 +56,6 @@ class StatementScreenViewModel {
                                     cell?.transferIconImageView.tintColor = .red
                                 }
                             }
-                        
-                    }
                 }
             }
         }
