@@ -12,25 +12,19 @@ class StatementScreenViewModel {
     
     let network = Network()
     
-    func countTransfer(tableView: UITableView, vc: StatementScreen) {
+    func countTransfer()  -> Int {
         
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                
-                    if CurrentUser.currentUserEmail == user.email {
-                        vc.tableView(vc.balanceTableView, numberOfRowsInSection: 0)
-                        vc.c = user.transfers.count
-                        print(user.transfers.count)
-                    }
+        if let userArray = CurrentUser.userArray {
+            for user in userArray {
+                if CurrentUser.currentUserEmail == user.email {
+                    return user.transfers.count
                 }
             }
         }
+        return 0
     }
     
-    func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen) {
+    func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen, indexPath: IndexPath) {
         
         network.networkUser { userArray, error in
             
@@ -40,17 +34,14 @@ class StatementScreenViewModel {
                 
                     if CurrentUser.currentUserEmail == user.email {
                         
-//                        for transfer in user.transfers {
-                        
                             DispatchQueue.main.async {
+                            
                                 
-                                tableView.insertRows(at: <#T##[IndexPath]#>, with: <#T##UITableView.RowAnimation#>)
+                                cell?.typeTransferLabel.text = user.transfers[indexPath.row].transferType
+                                cell?.typeTransfer2Label.text = user.transfers[indexPath.row].transferType
+                                cell?.amountLabel.text = String(user.transfers[indexPath.row].amount)
                                 
-                                cell?.typeTransferLabel.text = transfer.transferType
-                                cell?.typeTransfer2Label.text = transfer.transferType
-                                cell?.amountLabel.text = String(transfer.amount)
-                                
-                                if transfer.amount > 0 {
+                                if user.transfers[indexPath.row].amount > 0 {
                                     
                                     cell?.typeTransfer2Label.textColor = .green
                                     cell?.realSignLabel.textColor = .green

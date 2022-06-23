@@ -19,6 +19,7 @@ class LoginViewModel {
             CurrentUser.currentUserEmail = email
         }
         
+        network.networkUserArray()
         network.networkUser { userArray, error in
             
             if let userArray = userArray {
