@@ -30,25 +30,17 @@ class PixScreen3ViewModel: UIViewController {
             if let userArray = userArray {
                 
                 var transferOk = false
+                var loggedUser: UserModel? = nil
                 for user in userArray {
                     
                     if CurrentUser.currentUserEmail == user.email {
                         
                         if amount <= Double(user.accountBalance) {
                             
-                            self.network.trasnferAmount(accountBalance: user.accountBalance - Int(amount), id: user.id)
+                            loggedUser = user
                             transferOk = true
                             
-                            DispatchQueue.main.async {
-                            
-                                let alert = UIAlertController(title: "Confirmação", message: "Transferência via Pix concluída com sucesso.", preferredStyle: .alert)
-                                let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-                                                vc.performSegue(withIdentifier: "PixScreenToHome", sender: self)
-                                            }
-                                alert.addAction(ok)
-                                vc.present(alert, animated: true, completion: nil)
-                            
-                            }
+                           
                         } else {
                             DispatchQueue.main.async {
                                 
@@ -67,12 +59,33 @@ class PixScreen3ViewModel: UIViewController {
                         
                         if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber{
                             
-                            self.network.trasnferAmount(accountBalance: receivingUser.accountBalance + Int(amount), id: receivingUser.id)
+                            if let loggedUser = loggedUser {
+                                
+                                var loggedUserTransfers = loggedUser.transfers
+                                let currentLoggedUserTransfer = Transfer(amount: -amount, transferType: "Pix enviado")
+                                loggedUserTransfers.append(currentLoggedUserTransfer)
+                                self.network.addTransfer(id: loggedUser.id, transferData: TransferPutModel(accountBalance: loggedUser.accountBalance - Int(amount), transfers: loggedUserTransfers))
+                                var receivingUserTransfers = receivingUser.transfers
+                                let currentReceivingUserTransfer = Transfer(amount: amount, transferType: "Pix recebido")
+                                receivingUserTransfers.append(currentReceivingUserTransfer)
+                                self.network.addTransfer(id: receivingUser.id, transferData: TransferPutModel(accountBalance: receivingUser.accountBalance + Int(amount), transfers: receivingUserTransfers))
+                            
+                            DispatchQueue.main.async {
+                            
+                                let alert = UIAlertController(title: "Confirmação", message: "Transferência via Pix concluída com sucesso.", preferredStyle: .alert)
+                                let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
+                                                vc.performSegue(withIdentifier: "PixScreenToHome", sender: self)
+                                            }
+                                alert.addAction(ok)
+                                vc.present(alert, animated: true, completion: nil)
+                            
+                            }
                         }
                     }
                     
                 }
             }
+        }
         }
     }
     
