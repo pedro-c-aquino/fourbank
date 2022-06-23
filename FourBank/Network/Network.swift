@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class Network {
     
@@ -24,7 +25,7 @@ class Network {
                 do {
                     
                     let jsonArray: [UserModel] = try JSONDecoder().decode([UserModel].self, from: data)
-                    print(jsonArray)
+//                    print(jsonArray)
                     completionHandler(jsonArray, nil)
                     
                 } catch {
@@ -120,31 +121,25 @@ class Network {
                 let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
                 print("Response json is: \(jsonRes)")
             }
+            
         }.resume()
+       
     }
     
-    func addPixContact(id: String, contactData: PixContactModel) {
-        
-        
-        guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2/\(id)") else {
-            fatalError("typicode URL not working")
-        }
-        var request = URLRequest(url: url)
-        request.httpMethod = "PUT"
-        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try? JSONEncoder().encode(contactData)
-        
-        let session = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
-                print("The error was: \(error.localizedDescription)")
-            } else {
-                print(response)
-                print(url)
-                let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
-                print("Response json is: \(jsonRes)")
+    func networkUserArray() {
+        AF.request("https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2").responseJSON { response in
+            if let data = response.data {
+                do {
+                    let result: [UserModel] = try JSONDecoder().decode([UserModel].self, from: data)
+                    CurrentUser.userArray = result
+                    
+                } catch {
+                    print(error)
+                }
             }
-        }.resume()
+        }
     }
+    
     
  
 }
