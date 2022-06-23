@@ -12,7 +12,7 @@ class StatementScreenViewModel {
     
     let network = Network()
     
-    func countTransfer(vc: StatementScreen) {
+    func countTransfer(tableView: UITableView, vc: StatementScreen) {
         
         network.networkUser { userArray, error in
             
@@ -21,7 +21,7 @@ class StatementScreenViewModel {
                 for user in userArray {
                 
                     if CurrentUser.currentUserEmail == user.email {
-                        vc.tableView(vc.balanceTableView, numberOfRowsInSection: user.transfers.count)
+                        vc.tableView(vc.balanceTableView, numberOfRowsInSection: 0)
                         vc.c = user.transfers.count
                         print(user.transfers.count)
                     }
@@ -30,7 +30,7 @@ class StatementScreenViewModel {
         }
     }
     
-    func saveTransfers(cell: BalanceCell?, vc: StatementScreen) {
+    func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen) {
         
         network.networkUser { userArray, error in
             
@@ -40,9 +40,11 @@ class StatementScreenViewModel {
                 
                     if CurrentUser.currentUserEmail == user.email {
                         
-                        for transfer in user.transfers {
+//                        for transfer in user.transfers {
                         
                             DispatchQueue.main.async {
+                                
+                                tableView.insertRows(at: <#T##[IndexPath]#>, with: <#T##UITableView.RowAnimation#>)
                                 
                                 cell?.typeTransferLabel.text = transfer.transferType
                                 cell?.typeTransfer2Label.text = transfer.transferType
@@ -63,7 +65,7 @@ class StatementScreenViewModel {
                                     cell?.transferIconImageView.tintColor = .red
                                 }
                             }
-                        }
+                        
                     }
                 }
             }

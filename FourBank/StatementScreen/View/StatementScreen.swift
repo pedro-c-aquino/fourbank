@@ -22,7 +22,7 @@ class StatementScreen: UIViewController {
         self.balanceTableView.dataSource = self
         self.balanceTableView.register(UINib(nibName: "BalanceCell", bundle: nil), forCellReuseIdentifier: "BalanceCell")
         
-        statementeVM.countTransfer(vc: self)
+        statementeVM.countTransfer(tableView: balanceTableView, vc: self)
         print(c)
     }
     
@@ -43,7 +43,7 @@ extension StatementScreen: UITableViewDelegate, UITableViewDataSource {
         
         let balanceCell: BalanceCell? = balanceTableView.dequeueReusableCell(withIdentifier: "BalanceCell", for: indexPath) as? BalanceCell
         
-        statementeVM.saveTransfers(cell: balanceCell, vc: self)
+        statementeVM.saveTransfers(tableView: balanceTableView, cell: balanceCell, vc: self)
         
         return balanceCell ?? UITableViewCell ()
         
