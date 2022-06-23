@@ -30,6 +30,14 @@ struct UserModel: Codable {
     var emailPix: String
     var cellphonePix: String
     var id: String
+    var transfers: [Transfer]
+//    var pixContatos: [String]
+}
+
+struct Transfer: Codable {
+    
+    var amount: Double
+    var transferType: String
 }
 
 //==================

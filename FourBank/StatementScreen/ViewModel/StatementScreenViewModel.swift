@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
 class StatementScreenViewModel {
     
+//    func showTransfers(balanceCell: BalanceCell, vc: UIViewController)
 }

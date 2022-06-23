@@ -62,7 +62,12 @@ class DepositViewModel {
                         
                             if amountD <= Double(user.accountBalance) {
                                 
-                                self.network.trasnferAmount(accountBalance: user.accountBalance + Int(amountD), id: user.id)
+                                    var transfers = user.transfers
+                                    
+                                    let currentTransfer = Transfer(amount: amountD, transferType: "Depósito")
+                                    transfers.append(currentTransfer)
+                                    self.network.addTransfer(id: user.id, transfers: transfers)
+                                    self.network.trasnferAmount(accountBalance: user.accountBalance + Int(amountD), id: user.id)
                             }
                             
                             DispatchQueue.main.async {

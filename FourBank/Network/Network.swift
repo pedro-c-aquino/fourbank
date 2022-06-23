@@ -24,10 +24,11 @@ class Network {
                 do {
                     
                     let jsonArray: [UserModel] = try JSONDecoder().decode([UserModel].self, from: data)
-                    self.userModel = jsonArray
+                    print(jsonArray)
                     completionHandler(jsonArray, nil)
                     
                 } catch {
+                    print(error)
                     completionHandler(nil, error)
                 }
             }
@@ -103,6 +104,7 @@ class Network {
         
         let params = [
             "accountBalance": accountBalance,
+            
         ] as [String : Any]
         
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2/\(id)") else {
@@ -112,6 +114,32 @@ class Network {
         request.httpMethod = "PUT"
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         request.httpBody = try? JSONSerialization.data(withJSONObject: params, options: [])
+        
+        let session = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                print("The error was: \(error.localizedDescription)")
+            } else {
+                print(response)
+                print(url)
+                let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
+                print("Response json is: \(jsonRes)")
+            }
+        }.resume()
+    }
+    
+    func addTransfer(id: String, transfers: [Transfer]) {
+        
+        let params = [
+            "transfers": transfers
+        ]
+        
+        guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2/\(id)") else {
+            fatalError("typicode URL not working")
+        }
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT"
+        request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONEncoder().encode(params)
         
         let session = URLSession.shared.dataTask(with: request) { data, response, error in
             if let error = error {
