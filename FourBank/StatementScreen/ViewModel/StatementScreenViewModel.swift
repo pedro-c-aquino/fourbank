@@ -34,9 +34,8 @@ class StatementScreenViewModel {
     
     func countTransfer()  -> Int {
         
-        network.networkUserArray()
-        
         if let userArray = CurrentUser.userArray {
+            
             for user in userArray {
                 if CurrentUser.currentUserEmail == user.email {
                     return user.transfers.count
@@ -47,35 +46,40 @@ class StatementScreenViewModel {
     }
     
     func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen, indexPath: IndexPath) {
+
         
         if let userArray = CurrentUser.userArray {
             
-            for user in userArray {
+            
+            
+            for var user in userArray {
                 
-                    if CurrentUser.currentUserEmail == user.email {
+                if CurrentUser.currentUserEmail == user.email {
+                    
+                    user.transfers.reverse()
+                    
+                    DispatchQueue.main.async {
                         
-                            DispatchQueue.main.async {
+                        
+                        cell?.typeTransferLabel.text = user.transfers[indexPath.row].transferType
+                        cell?.typeTransfer2Label.text = user.transfers[indexPath.row].transferType
+                        cell?.amountLabel.text = String(user.transfers[indexPath.row].amount)
+                        
+                        if user.transfers[indexPath.row].amount > 0 {
                             
-                                
-                                cell?.typeTransferLabel.text = user.transfers[indexPath.row].transferType
-                                cell?.typeTransfer2Label.text = user.transfers[indexPath.row].transferType
-                                cell?.amountLabel.text = String(user.transfers[indexPath.row].amount)
-                                
-                                if user.transfers[indexPath.row].amount > 0 {
-                                    
-                                    cell?.typeTransfer2Label.textColor = .green
-                                    cell?.realSignLabel.textColor = .green
-                                    cell?.amountLabel.textColor = .green
-                                    cell?.transferIconImageView.tintColor = .green
-                                }
-                                else {
-                                    
-                                    cell?.typeTransfer2Label.textColor = .red
-                                    cell?.realSignLabel.textColor = .red
-                                    cell?.amountLabel.textColor = .red
-                                    cell?.transferIconImageView.tintColor = .red
-                                }
-                            }
+                            cell?.typeTransfer2Label.textColor = .green
+                            cell?.realSignLabel.textColor = .green
+                            cell?.amountLabel.textColor = .green
+                            cell?.transferIconImageView.tintColor = .green
+                        }
+                        else {
+                            
+                            cell?.typeTransfer2Label.textColor = .red
+                            cell?.realSignLabel.textColor = .red
+                            cell?.amountLabel.textColor = .red
+                            cell?.transferIconImageView.tintColor = .red
+                        }
+                    }
                 }
             }
         }
