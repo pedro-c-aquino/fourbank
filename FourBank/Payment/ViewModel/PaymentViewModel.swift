@@ -64,6 +64,11 @@ class PaymentViewModel {
                         
                             if amountD <= Double(user.accountBalance) {
                                 
+                                var transfers = user.transfers
+                                
+                                let currentTransfer = Transfer(amount: -amountD, transferType: "Pagamento")
+                                transfers.append(currentTransfer)
+                                self.network.addTransfer(id: user.id, transfers: transfers)
                                 self.network.trasnferAmount(accountBalance: user.accountBalance - Int(amountD), id: user.id)
                             }
                             
