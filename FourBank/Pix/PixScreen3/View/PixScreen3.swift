@@ -28,7 +28,6 @@ class PixScreen3: UIViewController {
     @IBAction func confirmButton(_ sender: UIButton) {
         
         pixScreen3VM.pixTransfer(amount: transferAmount, pixKey: pixKey, vc: self)
-            
     }
 
 }
