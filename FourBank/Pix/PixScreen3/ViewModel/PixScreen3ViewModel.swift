@@ -97,8 +97,8 @@ class PixScreen3ViewModel: UIViewController {
                 
                 for receivingUser in userArray {
                     
-                    if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber {
-                        
+                    switch pixKey {
+                    case receivingUser.email:
                         DispatchQueue.main.async {
                             
                             cell?.nameLabel.text = receivingUser.name
@@ -107,6 +107,26 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
+                    case receivingUser.cpf :
+                        DispatchQueue.main.async {
+                            
+                            cell?.nameLabel.text = receivingUser.name
+                            cell?.cpfLabel.text = receivingUser.cpf
+                            cell?.accountLabel.text = receivingUser.account
+                            cell?.bankOfficeLabel.text = receivingUser.agency
+                            cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
+                        }
+                    case receivingUser.cellphoneNumber:
+                        DispatchQueue.main.async {
+                            
+                            cell?.nameLabel.text = receivingUser.name
+                            cell?.cpfLabel.text = receivingUser.cellphoneNumber
+                            cell?.accountLabel.text = receivingUser.account
+                            cell?.bankOfficeLabel.text = receivingUser.agency
+                            cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
+                        }
+                    default:
+                        print("Erro na pixKey")
                     }
                 }
             }
