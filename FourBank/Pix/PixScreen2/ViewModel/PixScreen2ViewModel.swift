@@ -37,10 +37,10 @@ class PixScreen2ViewModel {
                     }
                     if pixKeyOk {
                         
-                            DispatchQueue.main.async {
-                                
-                                vc.pixKey = pixKey
-                                vc.performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
+                        DispatchQueue.main.async {
+                            
+                            vc.pixKey = pixKey
+                            vc.performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
                         }
                     } else {
                         
@@ -77,32 +77,6 @@ class PixScreen2ViewModel {
             }
         }
     }
-    
-    func addContact(pixKey: String, pixType: String, vc: PixScreen2) {
-        
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        DispatchQueue.main.async {
-                            
-                            var pixArray = user.pixContacts
-                            let newPixContact = PixContact(name: user.name, keyType: pixType, pixKey: pixKey)
-                            pixArray.append(newPixContact)
-                            self.network.addPixContact(id: user.id, contactData: PixContactModel(pixContacts: pixArray))
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-    
     
     func keyType(keyType: String, vc: PixScreen2) {
         

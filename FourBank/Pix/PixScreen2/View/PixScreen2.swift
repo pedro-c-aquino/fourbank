@@ -24,7 +24,6 @@ class PixScreen2: UIViewController {
         
         super.viewDidLoad()
         
-        pixScreen2VM.addContact(pixKey: pixKey, pixType: selectedKeyType, vc: self)
         pixScreen2VM.showBalance(vc: self)
         pixScreen2VM.keyType(keyType: selectedKeyType, vc: self)
         contactsTableView.delegate = self
@@ -42,6 +41,7 @@ class PixScreen2: UIViewController {
         let vc = segue.destination as? PixScreen3
         vc?.transferAmount = transferAmount
         vc?.pixKey = pixKey
+        vc?.selectedKeyType = selectedKeyType
     }
     
 }
