@@ -12,6 +12,26 @@ class StatementScreenViewModel {
     
     let network = Network()
     
+    func formatBalance(balance: String?, vc: StatementScreen) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        DispatchQueue.main.async {
+                            
+                            vc.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     func countTransfer(tableView: UITableView, vc: StatementScreen) {
         
         network.networkUser { userArray, error in
@@ -44,28 +64,28 @@ class StatementScreenViewModel {
                         
                             DispatchQueue.main.async {
                                 
-                                tableView.insertRows(at: <#T##[IndexPath]#>, with: <#T##UITableView.RowAnimation#>)
+//                                tableView.insertRows(at: <#T##[IndexPath]#>, with: <#T##UITableView.RowAnimation#>)
+//
+//                                cell?.typeTransferLabel.text = transfer.transferType
+//                                cell?.typeTransfer2Label.text = transfer.transferType
+//                                cell?.amountLabel.text = String(transfer.amount)
                                 
-                                cell?.typeTransferLabel.text = transfer.transferType
-                                cell?.typeTransfer2Label.text = transfer.transferType
-                                cell?.amountLabel.text = String(transfer.amount)
-                                
-                                if transfer.amount > 0 {
-                                    
-                                    cell?.typeTransfer2Label.textColor = .green
-                                    cell?.realSignLabel.textColor = .green
-                                    cell?.amountLabel.textColor = .green
-                                    cell?.transferIconImageView.tintColor = .green
-                                }
-                                else {
-                                    
-                                    cell?.typeTransfer2Label.textColor = .red
-                                    cell?.realSignLabel.textColor = .red
-                                    cell?.amountLabel.textColor = .red
-                                    cell?.transferIconImageView.tintColor = .red
-                                }
+//                                if transfer.amount > 0 {
+//
+//                                    cell?.typeTransfer2Label.textColor = .green
+//                                    cell?.realSignLabel.textColor = .green
+//                                    cell?.amountLabel.textColor = .green
+//                                    cell?.transferIconImageView.tintColor = .green
+//                                }
+//                                else {
+//
+//                                    cell?.typeTransfer2Label.textColor = .red
+//                                    cell?.realSignLabel.textColor = .red
+//                                    cell?.amountLabel.textColor = .red
+//                                    cell?.transferIconImageView.tintColor = .red
+//                                }
                             }
-                        
+//                        }
                     }
                 }
             }

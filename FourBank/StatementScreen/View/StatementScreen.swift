@@ -22,6 +22,8 @@ class StatementScreen: UIViewController {
         self.balanceTableView.dataSource = self
         self.balanceTableView.register(UINib(nibName: "BalanceCell", bundle: nil), forCellReuseIdentifier: "BalanceCell")
         
+        statementeVM.formatBalance(balance: balanceLabel.text ?? "", vc: self)
+        
         statementeVM.countTransfer(tableView: balanceTableView, vc: self)
         print(c)
     }
