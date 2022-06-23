@@ -66,6 +66,8 @@ struct CurrentUser {
     
     static var userArray: [UserModel]?
     
+    static var userPixContactsArray: [UserModel]?
+    
     static func getUser(users: [User], email: String) -> User? {
         for user in users {
             if user.email == email {

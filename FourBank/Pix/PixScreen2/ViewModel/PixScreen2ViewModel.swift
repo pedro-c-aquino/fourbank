@@ -12,6 +12,21 @@ class PixScreen2ViewModel {
     
     let network = Network()
     
+    func pixContactCount() -> Int {
+        
+        if let userArray = CurrentUser.userArray {
+            
+            for user in userArray {
+                
+                if CurrentUser.currentUserEmail == user.email {
+                    
+                    return user.pixContacts.count
+                }
+            }
+        }
+        return 0
+    }
+    
     func validatePixKey(pixKey: String, pixType: String, vc: PixScreen2) {
         
         if pixKey == "" {

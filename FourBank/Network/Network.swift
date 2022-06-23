@@ -140,6 +140,20 @@ class Network {
         }
     }
     
+    func networkPixContactsArray() {
+        AF.request("https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2").responseJSON { response in
+            if let data = response.data {
+                do {
+                    let result: [UserModel] = try JSONDecoder().decode([UserModel].self, from: data)
+                    CurrentUser.userPixContactsArray = result
+                    
+                } catch {
+                    print(error)
+                }
+            }
+        }
+    }
+    
     func addPixContact(id: String, contactData: PixContactModel) {
         
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2/\(id)") else {
