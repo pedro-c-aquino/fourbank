@@ -27,6 +27,40 @@ class PixScreen2ViewModel {
         return 0
     }
     
+    func showPixContacts(tableView: UITableView, cell: UITableViewCell, vc: PixScreen2, indexPath: IndexPath) {
+
+        
+        if let userArray = CurrentUser.userArray {
+            
+            for user in userArray {
+                
+                if CurrentUser.currentUserEmail == user.email {
+                   
+                    DispatchQueue.main.async {
+                        
+                        cell.textLabel?.text = user.pixContacts[indexPath.row].name
+                    }
+                }
+            }
+        }
+    }
+    
+    func selectedKey(vc: PixScreen2, indexPath: IndexPath) {
+        
+        if let userArray = CurrentUser.userArray {
+            
+            for user in userArray {
+                
+                if CurrentUser.currentUserEmail == user.email {
+                   
+                    vc.pixKey = user.pixContacts[indexPath.row].pixKey
+                    
+                }
+            }
+        }
+
+    }
+    
     func validatePixKey(pixKey: String, pixType: String, vc: PixScreen2) {
         
         if pixKey == "" {
