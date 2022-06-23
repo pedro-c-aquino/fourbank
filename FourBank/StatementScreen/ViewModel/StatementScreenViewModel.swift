@@ -12,27 +12,19 @@ class StatementScreenViewModel {
     
     let network = Network()
     
-    func formatBalance(balance: String?, vc: StatementScreen) {
+    func countTransfer()  -> Int {
         
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                    
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-                        DispatchQueue.main.async {
-                            
-                            vc.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
-                        }
-                    }
+        if let userArray = CurrentUser.userArray {
+            for user in userArray {
+                if CurrentUser.currentUserEmail == user.email {
+                    return user.transfers.count
                 }
             }
         }
+        return 0
     }
     
-    func countTransfer(tableView: UITableView, vc: StatementScreen) {
+    func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen, indexPath: IndexPath) {
         
         network.networkUser { userArray, error in
             
@@ -41,51 +33,30 @@ class StatementScreenViewModel {
                 for user in userArray {
                 
                     if CurrentUser.currentUserEmail == user.email {
-                        vc.tableView(vc.balanceTableView, numberOfRowsInSection: 0)
-                        vc.c = user.transfers.count
-                        print(user.transfers.count)
-                    }
-                }
-            }
-        }
-    }
-    
-    func saveTransfers(tableView: UITableView, cell: BalanceCell?, vc: StatementScreen) {
-        
-        network.networkUser { userArray, error in
-            
-            if let userArray = userArray {
-                
-                for user in userArray {
-                
-                    if CurrentUser.currentUserEmail == user.email {
-                        
-//                        for transfer in user.transfers {
                         
                             DispatchQueue.main.async {
+                            
                                 
-//                                tableView.insertRows(at: <#T##[IndexPath]#>, with: <#T##UITableView.RowAnimation#>)
-//
-//                                cell?.typeTransferLabel.text = transfer.transferType
-//                                cell?.typeTransfer2Label.text = transfer.transferType
-//                                cell?.amountLabel.text = String(transfer.amount)
+                                cell?.typeTransferLabel.text = user.transfers[indexPath.row].transferType
+                                cell?.typeTransfer2Label.text = user.transfers[indexPath.row].transferType
+                                cell?.amountLabel.text = String(user.transfers[indexPath.row].amount)
                                 
-//                                if transfer.amount > 0 {
-//
-//                                    cell?.typeTransfer2Label.textColor = .green
-//                                    cell?.realSignLabel.textColor = .green
-//                                    cell?.amountLabel.textColor = .green
-//                                    cell?.transferIconImageView.tintColor = .green
-//                                }
-//                                else {
-//
-//                                    cell?.typeTransfer2Label.textColor = .red
-//                                    cell?.realSignLabel.textColor = .red
-//                                    cell?.amountLabel.textColor = .red
-//                                    cell?.transferIconImageView.tintColor = .red
-//                                }
+                                if user.transfers[indexPath.row].amount > 0 {
+                                    
+                                    cell?.typeTransfer2Label.textColor = .green
+                                    cell?.realSignLabel.textColor = .green
+                                    cell?.amountLabel.textColor = .green
+                                    cell?.transferIconImageView.tintColor = .green
+                                }
+                                else {
+                                    
+                                    cell?.typeTransfer2Label.textColor = .red
+                                    cell?.realSignLabel.textColor = .red
+                                    cell?.amountLabel.textColor = .red
+                                    cell?.transferIconImageView.tintColor = .red
+                                }
                             }
-//                        }
+                        
                     }
                 }
             }
