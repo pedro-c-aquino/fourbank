@@ -50,8 +50,6 @@ class StatementScreenViewModel {
         
         if let userArray = CurrentUser.userArray {
             
-            
-            
             for var user in userArray {
                 
                 if CurrentUser.currentUserEmail == user.email {

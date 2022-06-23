@@ -50,19 +50,22 @@ extension PixScreen2: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        contatos.count
+        pixScreen2VM.pixContactCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = contactsTableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
-        cell.textLabel?.text = contatos[indexPath.row]
+        pixScreen2VM.showPixContacts(tableView: contactsTableView, cell: cell, vc: self, indexPath: indexPath)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        pixScreen2VM.selectedKey(vc: self, indexPath: indexPath)
         performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
     }
+    
+    
     
 }
