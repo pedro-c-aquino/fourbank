@@ -20,6 +20,7 @@ class HomeViewModel: UIViewController {
     }
     
     func showBalance(vc: Home) {
+        network.networkUserArray()
         
         network.networkUser { userArray, error in
             

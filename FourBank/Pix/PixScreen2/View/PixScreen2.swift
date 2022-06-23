@@ -23,6 +23,7 @@ class PixScreen2: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
         pixScreen2VM.showBalance(vc: self)
         pixScreen2VM.keyType(keyType: selectedKeyType, vc: self)
         contactsTableView.delegate = self
@@ -31,7 +32,7 @@ class PixScreen2: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        pixScreen2VM.validatePixKey(pixKey: pixKeyTextField.text ?? "", vc: self)
+        pixScreen2VM.validatePixKey(pixKey: pixKeyTextField.text ?? "", pixType: selectedKeyType, vc: self)
         
     }
     
@@ -40,6 +41,7 @@ class PixScreen2: UIViewController {
         let vc = segue.destination as? PixScreen3
         vc?.transferAmount = transferAmount
         vc?.pixKey = pixKey
+        vc?.selectedKeyType = selectedKeyType
     }
     
 }

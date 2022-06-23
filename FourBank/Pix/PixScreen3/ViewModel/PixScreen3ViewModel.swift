@@ -97,8 +97,8 @@ class PixScreen3ViewModel: UIViewController {
                 
                 for receivingUser in userArray {
                     
-                    if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber {
-                        
+                    switch pixKey {
+                    case receivingUser.email:
                         DispatchQueue.main.async {
                             
                             cell?.nameLabel.text = receivingUser.name
@@ -106,6 +106,65 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.accountLabel.text = receivingUser.account
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
+                        }
+                    case receivingUser.cpf :
+                        DispatchQueue.main.async {
+                            
+                            cell?.nameLabel.text = receivingUser.name
+                            cell?.cpfLabel.text = receivingUser.cpf
+                            cell?.accountLabel.text = receivingUser.account
+                            cell?.bankOfficeLabel.text = receivingUser.agency
+                            cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
+                        }
+                    case receivingUser.cellphoneNumber:
+                        DispatchQueue.main.async {
+                            
+                            cell?.nameLabel.text = receivingUser.name
+                            cell?.cpfLabel.text = receivingUser.cellphoneNumber
+                            cell?.accountLabel.text = receivingUser.account
+                            cell?.bankOfficeLabel.text = receivingUser.agency
+                            cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
+                        }
+                    default:
+                        print("Erro na pixKey")
+                    }
+                }
+            }
+        }
+    }
+    
+    func addPixContact(pixKey: String, pixType: String, vc: PixScreen3) {
+        
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                var userOk = false
+                
+                var loggedUser: UserModel? = nil
+                
+                for user in userArray {
+                    
+                    if CurrentUser.currentUserEmail == user.email {
+                        
+                        userOk = true
+                        loggedUser = user
+                    }
+                }
+                if userOk {
+                    
+                    for receivingUser in userArray {
+                        
+                        
+                        if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber  {
+                            
+                            if let loggedUser = loggedUser {
+                                
+                                var pixArray = loggedUser.pixContacts
+                                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
+                                pixArray.append(newPixContact)
+                                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: pixArray))
+                            }
                         }
                     }
                 }
