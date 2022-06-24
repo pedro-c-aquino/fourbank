@@ -107,7 +107,7 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
-//                        break
+                        //                        break
                     case receivingUser.cpf :
                         DispatchQueue.main.async {
                             
@@ -117,7 +117,7 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
-//                        break
+                        //                        break
                     case receivingUser.cellphoneNumber:
                         DispatchQueue.main.async {
                             
@@ -127,7 +127,7 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
-//                        break
+                        //                        break
                     default:
                         print("Erro ao mostrar contatos")
                     }
@@ -158,25 +158,29 @@ class PixScreen3ViewModel: UIViewController {
                     
                     for receivingUser in userArray {
                         
-                        print(pixKey)
                         if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber  {
                             
                             if let loggedUser = loggedUser {
                                 
                                 for pixArray in loggedUser.pixContacts {
                                     
-                                    if pixArray.name == receivingUser.name  {
-                                        
-                                        if pixArray.pixKey != receivingUser.cellphonePix {
+                                    if pixArray.name == receivingUser.name {
                                             
+                                        if pixArray.keyType != pixType {
+                                            
+                                            var contactArray = loggedUser.pixContacts
+                                            let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
+                                            contactArray.append(newPixContact)
+                                            self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
+                                        }
+                                    } else {
+                                        
                                         var contactArray = loggedUser.pixContacts
                                         let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
                                         contactArray.append(newPixContact)
                                         self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-                                        } else {
-                                            print("Chave pix já cadastrada")
-                                        }
-                                  }
+
+                                    }
                                 }
                             }
                         }
@@ -186,54 +190,3 @@ class PixScreen3ViewModel: UIViewController {
         }
     }
 }
-
-//
-//switch pixKey {
-//case receivingUser.email:
-//
-//    if let loggedUser = loggedUser {
-//
-//        for pixArray in loggedUser.pixContacts {
-//
-//            if pixArray.name == receivingUser.name && pixArray.pixKey != receivingUser.emailPix {
-//                var contactArray = loggedUser.pixContacts
-//                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-//                contactArray.append(newPixContact)
-//                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-//            }
-//        }
-//    }
-//break
-//case receivingUser.cpf:
-//
-//    if let loggedUser = loggedUser {
-//
-//        for pixArray in loggedUser.pixContacts {
-//
-//            if pixArray.name == receivingUser.name && pixArray.pixKey != receivingUser.cpfPix {
-//                var contactArray = loggedUser.pixContacts
-//                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-//                contactArray.append(newPixContact)
-//                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-//            }
-//        }                            }
-//break
-//case receivingUser.cellphoneNumber:
-//
-//    if let loggedUser = loggedUser {
-//
-//        for pixArray in loggedUser.pixContacts {
-//
-//            if pixArray.name == receivingUser.name && pixArray.pixKey != receivingUser.cellphonePix {
-//                var contactArray = loggedUser.pixContacts
-//                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-//                contactArray.append(newPixContact)
-//                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-//            }
-//        }
-//
-//    }
-//break
-//default:
-//    print("Erro no pixKey")
-//}
