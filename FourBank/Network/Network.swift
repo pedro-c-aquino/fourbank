@@ -40,7 +40,7 @@ class Network {
     func registerUser(name: String, birthDate: String, cpf: String, rg: String, email: String, occupation: String, income: String, cellphoneNumber: String, street: String, number: String, neighborhood: String, city: String, state: String, password:String, vc: UIViewController) {
         
         let params = [
-            "account": "896874-99",
+            "account": "122265-19",
             "agency": "2040",
             "bank": "Fourbank",
             "cellphoneNumber": cellphoneNumber,
@@ -58,7 +58,10 @@ class Network {
             "number": number,
             "cpfPix": cpf,
             "emailPix": email,
-            "cellphonePix": cellphoneNumber
+            "cellphonePix": cellphoneNumber,
+            "transfers": [["amount": 5000,"transferType": "Deposito"]],
+            "pixContacts": [["name": "Joana", "keyType": "email", "pixKey": "joana@"]]
+                        
         ] as [String : Any]
         
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2") else {
@@ -116,8 +119,7 @@ class Network {
             if let error = error {
                 print("The error was: \(error.localizedDescription)")
             } else {
-                print(response)
-                print(url)
+             
                 let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
                 print("Response json is: \(jsonRes)")
             }
@@ -168,8 +170,7 @@ class Network {
             if let error = error {
                 print("The error was: \(error.localizedDescription)")
             } else {
-                print(response)
-                print(url)
+                
                 let jsonRes = try? JSONSerialization.jsonObject(with: data!, options: [])
                 print("Response json is: \(jsonRes)")
             }
