@@ -1,20 +1,45 @@
-//
-//  LoginViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/6/22.
-//
-
 import Foundation
+import UIKit
 
 class LoginViewModel {
     
-    func validateLoginData(email: String?, password: String?) -> (email: String, password: String, validation: Bool) {
+    let network = Network()
+    
+    
+    func validateLoginData(email: String?, password: String?, vc: UIViewController) {
         
-        if let email = email, let password = password {
-            return (email: email, password: password, validation: true)
-        } else {
-            return (email: "", password: "", validation: false)
+        if let email = email {
+            
+            CurrentUser.currentUserEmail = email
+        }
+        network.networkUserArray()
+        network.networkUser { userArray, error in
+            
+            if let userArray = userArray {
+                
+                for user in userArray {
+                    
+                    if email == user.email {
+                        
+                        if password == user.password {
+                            
+                            DispatchQueue.main.async {
+                                
+                                vc.performSegue(withIdentifier: "toHome", sender: nil)
+                            }
+                        }
+                    }
+                }
+            } else {
+                
+                DispatchQueue.main.async {
+                    
+                    let alert = UIAlertController(title: "Usuário ou senha incorreto", message: "Revise seus dados para efetuar o login", preferredStyle: .alert)
+                    let ok = UIAlertAction(title: "Ok", style: .default)
+                    alert.addAction(ok)
+                    vc.present(alert, animated: true, completion: nil)
+                }
+            }
         }
     }
 }

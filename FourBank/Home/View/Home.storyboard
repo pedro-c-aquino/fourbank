@@ -130,14 +130,14 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-Kx-vCA" customClass="IconButton" customModule="FourBank" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLS-Kx-vCA" customClass="IconButton" customModule="FourBank" customModuleProvider="target">
                                                                 <rect key="frame" x="13" y="8" width="105" height="105"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" image="list.bullet.rectangle.fill" catalog="system" title=""/>
                                                                 <connections>
-                                                                    <segue destination="2f8-YP-Oua" kind="presentation" modalPresentationStyle="fullScreen" id="VHX-GO-c7v"/>
+                                                                    <segue destination="2f8-YP-Oua" kind="presentation" modalPresentationStyle="fullScreen" id="Tyl-3Y-bom"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -285,6 +285,7 @@
                         <outlet property="balanceLabel" destination="Gf2-Ao-jOe" id="8HV-n6-j9k"/>
                         <outlet property="hiddenBalanceLabel" destination="POb-k4-JIU" id="auY-I0-jR4"/>
                         <outlet property="hideBalanceButton" destination="Zul-HT-jKC" id="4e7-Tf-GuM"/>
+                        <outlet property="nameLabel" destination="0qx-ep-ica" id="gMJ-iD-BWD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bJ-zx-bH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

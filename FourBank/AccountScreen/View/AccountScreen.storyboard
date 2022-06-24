@@ -82,21 +82,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFj-4x-28M">
-                                <rect key="frame" x="183" y="155.5" width="35" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFj-4x-28M">
+                                <rect key="frame" x="183" y="155.5" width="45" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="1s1-v3-0R3"/>
-                                    <constraint firstAttribute="width" constant="35" id="3XJ-4r-TLX"/>
+                                    <constraint firstAttribute="width" constant="45" id="3XJ-4r-TLX"/>
                                     <constraint firstAttribute="height" constant="22" id="Vqf-ee-ENh"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="0001">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="AppleSymbols"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haK-8f-niV">
@@ -116,20 +110,14 @@
                                     <constraint firstAttribute="width" constant="77" id="x8Y-kQ-W58"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-Ac-55k">
-                                <rect key="frame" x="288.5" y="155.5" width="52" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000001" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-Ac-55k">
+                                <rect key="frame" x="288.5" y="155.5" width="59" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="Ocb-ub-qhj"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="vQe-cL-Q5q"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="000001">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="AppleSymbols"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -141,16 +129,16 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bib-Gd-wyP" secondAttribute="trailing" id="6E5-L7-7iC"/>
                             <constraint firstItem="cqb-bG-eMK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="AMg-dB-Uyl"/>
                             <constraint firstItem="cqb-bG-eMK" firstAttribute="leading" secondItem="g4g-SC-SPR" secondAttribute="trailing" constant="15" id="Keb-I6-dNX"/>
-                            <constraint firstItem="haK-8f-niV" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="MpE-L9-x6q"/>
+                            <constraint firstItem="EFj-4x-28M" firstAttribute="bottom" secondItem="ru5-Nj-y4d" secondAttribute="bottom" id="Q7O-cp-AQ1"/>
+                            <constraint firstItem="haK-8f-niV" firstAttribute="bottom" secondItem="EFj-4x-28M" secondAttribute="bottom" id="Sne-kL-wpx"/>
                             <constraint firstItem="Bib-Gd-wyP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="TRn-YX-cWR"/>
                             <constraint firstItem="ru5-Nj-y4d" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="UsC-Gh-pmt"/>
                             <constraint firstItem="Bib-Gd-wyP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Vmr-Vv-mEv"/>
                             <constraint firstItem="ru5-Nj-y4d" firstAttribute="leading" secondItem="cqb-bG-eMK" secondAttribute="leading" id="X6I-JF-QOI"/>
                             <constraint firstItem="g4g-SC-SPR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="dM1-fn-J1I"/>
-                            <constraint firstItem="YQA-Ac-55k" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="ehh-ko-8GV"/>
-                            <constraint firstItem="EFj-4x-28M" firstAttribute="top" secondItem="cqb-bG-eMK" secondAttribute="bottom" constant="10" id="pgO-NT-K6q"/>
                             <constraint firstItem="g4g-SC-SPR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qBO-VH-veW"/>
-                            <constraint firstItem="haK-8f-niV" firstAttribute="leading" secondItem="EFj-4x-28M" secondAttribute="trailing" constant="15" id="sMY-vc-TvR"/>
+                            <constraint firstItem="haK-8f-niV" firstAttribute="leading" secondItem="EFj-4x-28M" secondAttribute="trailing" constant="5" id="sMY-vc-TvR"/>
+                            <constraint firstItem="YQA-Ac-55k" firstAttribute="bottom" secondItem="haK-8f-niV" secondAttribute="bottom" id="vL1-FZ-eir"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Bib-Gd-wyP" secondAttribute="bottom" id="wJa-NL-i8U"/>
                             <constraint firstItem="YQA-Ac-55k" firstAttribute="leading" secondItem="haK-8f-niV" secondAttribute="trailing" constant="5" id="zVu-fa-iGY"/>
                         </constraints>
