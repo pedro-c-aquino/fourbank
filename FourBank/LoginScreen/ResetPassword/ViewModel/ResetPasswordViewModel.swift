@@ -35,6 +35,8 @@ class ResetPasswordViewModel {
                             }
                         } else {
                             
+                            self.network.resetPassword(password: password!, id: user.id)
+                            
                             DispatchQueue.main.async {
                                 
                                 let alert = UIAlertController(title: "Confirmação", message: "Senha alterada com sucesso!", preferredStyle: .alert)
