@@ -1,15 +1,9 @@
-//
-//  HomeViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/6/22.
-//
-
 import UIKit
 
 class HomeViewModel: UIViewController {
     
     let network = Network()
+    
     
     func getAmount(amountDouble: Double?) -> String {
         
@@ -19,7 +13,9 @@ class HomeViewModel: UIViewController {
         return amount
     }
     
+    
     func showBalance(vc: Home) {
+        
         network.networkUserArray()
         
         network.networkUser { userArray, error in
@@ -31,6 +27,7 @@ class HomeViewModel: UIViewController {
                     if CurrentUser.currentUserEmail == user.email {
                         
                         DispatchQueue.main.async {
+                            
                             vc.nameLabel.text = "Olá, \(user.name)"
                             vc.balanceLabel.text = "R$ \(String(format: "%.2f", Double(user.accountBalance)))".replacingOccurrences(of: ".", with: ",")
                         }
@@ -39,6 +36,7 @@ class HomeViewModel: UIViewController {
             }
         }
     }
+    
     
     func hideButtonTapped(vc: Home) {
         
@@ -54,5 +52,4 @@ class HomeViewModel: UIViewController {
             vc.hideBalanceButton.image = UIImage(systemName: "eye.fill")
         }
     }
-    
 }
