@@ -20,7 +20,7 @@ class AccountScreen: UIViewController {
     
     
     @IBAction func logoutButton(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "Main", sender: nil)
     }
 }
 
