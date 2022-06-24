@@ -1,10 +1,3 @@
-//
-//  UserModel.swift
-//  FourBank
-//
-//  Created by user208023 on 6/6/22.
-//
-
 import Foundation
 
 struct UserModel: Codable {
@@ -35,12 +28,14 @@ struct UserModel: Codable {
 }
 
 struct PixContact: Codable {
+    
     var name: String
     var keyType: String
     var pixKey: String
 }
 
 struct PixContactModel: Codable {
+    
     var pixContacts: [PixContact]
 }
 
@@ -51,7 +46,7 @@ struct Transfer: Codable {
 }
 
 struct TransferPutModel: Codable {
-
+    
     var accountBalance: Int
     var transfers: [Transfer]
 }
@@ -61,11 +56,6 @@ struct TransferPutModel: Codable {
 struct CurrentUser {
     
     static var currentUserEmail = ""
-    
     static var receivedData: Data?
-    
     static var userArray: [UserModel]?
-    
-    static var userPixContactsArray: [UserModel]?
-    
 }

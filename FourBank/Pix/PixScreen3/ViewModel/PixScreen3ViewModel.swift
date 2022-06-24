@@ -107,7 +107,7 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
-                        break
+//                        break
                     case receivingUser.cpf :
                         DispatchQueue.main.async {
                             
@@ -117,7 +117,7 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
-                        break
+//                        break
                     case receivingUser.cellphoneNumber:
                         DispatchQueue.main.async {
                             
@@ -127,7 +127,7 @@ class PixScreen3ViewModel: UIViewController {
                             cell?.bankOfficeLabel.text = receivingUser.agency
                             cell?.paymentValueLabel.text = vc.pixScreen3VM.getAmount(amountValue: vc.transferAmount)
                         }
-                        break
+//                        break
                     default:
                         print("Erro ao mostrar contatos")
                     }
