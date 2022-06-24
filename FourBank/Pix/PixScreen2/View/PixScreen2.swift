@@ -40,7 +40,7 @@ class PixScreen2: UIViewController {
         
         let vc = segue.destination as? PixScreen3
         vc?.transferAmount = transferAmount
-        vc?.pixKey = pixKey
+        vc?.pixKey = pixKeyTextField.text ?? ""
         vc?.selectedKeyType = selectedKeyType
     }
     

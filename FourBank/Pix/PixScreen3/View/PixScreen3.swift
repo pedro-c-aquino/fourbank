@@ -30,6 +30,7 @@ class PixScreen3: UIViewController {
         
         pixScreen3VM.pixTransfer(amount: transferAmount, pixKey: pixKey, vc: self)
         pixScreen3VM.addPixContact(pixKey: pixKey, pixType: selectedKeyType, vc: self)
+        print(pixKey)
     }
 
 }
