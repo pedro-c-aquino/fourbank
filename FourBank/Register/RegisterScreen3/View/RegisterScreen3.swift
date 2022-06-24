@@ -1,10 +1,3 @@
-//
-//  RegisterScreen2.swift
-//  FourBank
-//
-//  Created by kauekaj on 6/1/22.
-//
-
 import UIKit
 
 class RegisterScreen3: UIViewController {
@@ -24,20 +17,24 @@ class RegisterScreen3: UIViewController {
     @IBOutlet weak var neighborhoodTextField: UITextField!
     @IBOutlet weak var numberTextField: UITextField!
     
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
     }
     
+    
     @IBAction func proceedButton(_ sender: UIButton) {
-
+        
         performSegue(withIdentifier: "RegScreen3ToRegScreen4", sender: self)
     }
+    
     
     @IBAction func goBackButton(_ sender: UIButton) {
         
         performSegue(withIdentifier: "RegScreen3ToRegScreen2", sender: self)
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -57,8 +54,6 @@ class RegisterScreen3: UIViewController {
             vc?.neighborhood = neighborhoodTextField.text
             vc?.city = cityTextField.text
             vc?.state = stateTextField.text
-            
         }
     }
-
 }

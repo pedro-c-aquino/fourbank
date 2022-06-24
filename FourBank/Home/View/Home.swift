@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  FourBank
-//
-//  Created by user220237 on 6/1/22.
-//
-
 import UIKit
 
 class Home: UIViewController {
@@ -16,13 +9,12 @@ class Home: UIViewController {
     @IBOutlet weak var hiddenBalanceLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
         balanceLabel.isHidden = true
         hiddenBalanceLabel.isHidden = false
-        
         homeVM.showBalance(vc: self)
     }
     
@@ -31,5 +23,4 @@ class Home: UIViewController {
         
         homeVM.hideButtonTapped(vc: self)
     }
-    
 }

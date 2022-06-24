@@ -1,10 +1,3 @@
-//
-//  TransferScreen2.swift
-//  FourBank
-//
-//  Created by user220237 on 6/15/22.
-//
-
 import UIKit
 
 class TransferScreen2: UIViewController {
@@ -18,10 +11,12 @@ class TransferScreen2: UIViewController {
     @IBOutlet weak var bankOfficeTextField: UITextField!
     @IBOutlet weak var bankAccountTextField: UITextField!
     
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
     }
+    
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
@@ -31,6 +26,7 @@ class TransferScreen2: UIViewController {
         performSegue(withIdentifier: "TrScreen2ToTrScreen3", sender: self)
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let vc = segue.destination as? TransferScreen3
@@ -39,5 +35,4 @@ class TransferScreen2: UIViewController {
         vc?.bankAccount = bankAccount
         vc?.transferAmount = transferAmount
     }
-    
 }

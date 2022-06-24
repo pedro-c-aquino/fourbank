@@ -1,15 +1,9 @@
-//
-//  TransferScreen1ViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/15/22.
-//
-
 import Foundation
 
 class TransferScreen1ViewModel {
     
     let network = Network()
+    
     
     func getAmount(amountText: String?) -> Double {
         
@@ -18,6 +12,7 @@ class TransferScreen1ViewModel {
         let amount = Double(convertedString)
         return amount ?? 0.00
     }
+    
     
     func changeBalance(vc: TransferScreen1) {
         
@@ -38,5 +33,4 @@ class TransferScreen1ViewModel {
             }
         }
     }
-    
 }

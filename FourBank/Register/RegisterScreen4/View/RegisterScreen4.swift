@@ -1,10 +1,3 @@
-//
-//  RegisterScreen4.swift
-//  FourBank
-//
-//  Created by user220237 on 6/15/22.
-//
-
 import UIKit
 
 class RegisterScreen4: UIViewController{
@@ -25,28 +18,31 @@ class RegisterScreen4: UIViewController{
     var city: String? = nil
     var state: String? = nil
     var password: String? = nil
-
+    
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
+    
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
     }
-
+    
+    
     @IBAction func registerButton(_ sender: UIButton) {
         
         if let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text {
             
             if registerScreen4VM.checkPassword(password: password, confirmPassword: confirmPassword) {
+                
                 network.registerUser(name: name ?? "", birthDate: birthDay ?? "", cpf: cpf ?? "", rg: rg ?? "", email: email ?? "", occupation: occupation ?? "", income: income ?? "", cellphoneNumber: cellphone ?? "", street: street ?? "", number: number ?? "", neighborhood: neighborhood ?? "", city: city ?? "", state: state ?? "", password: password, vc: self)
             }
         }
     }
     
+    
     @IBAction func backButton(_ sender: UIButton) {
         
         performSegue(withIdentifier: "RegScreen4ToRegScreen3", sender: self)
     }
-    
 }
