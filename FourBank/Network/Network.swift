@@ -59,8 +59,8 @@ class Network {
             "cpfPix": cpf,
             "emailPix": email,
             "cellphonePix": cellphoneNumber,
-            "transfers": [[]],
-            "pixContacts": [[]]
+            "transfers": [["amount": 5000,"transferType": "Deposito"]],
+            "pixContacts": [["name": "Joana", "keyType": "email", "pixKey": "joana@"]]
                         
         ] as [String : Any]
         
