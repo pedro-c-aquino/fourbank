@@ -56,7 +56,10 @@ class Network {
             "number": number,
             "cpfPix": cpf,
             "emailPix": email,
-            "cellphonePix": cellphoneNumber
+            "cellphonePix": cellphoneNumber,
+            "transfers": [["amount": 5000,"transferType": "Deposito"]],
+            "pixContacts": [["name": "Joana", "keyType": "email", "pixKey": "joana@"]]
+                        
         ] as [String : Any]
         guard let url = URL(string: "https://62ad2075402135c7acbce26b.mockapi.io/api/v1/account2") else {
             
