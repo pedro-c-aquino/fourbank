@@ -23,7 +23,7 @@ class PixScreen3: UIViewController {
     @IBAction func confirmButton(_ sender: UIButton) {
         
         pixScreen3VM.pixTransfer(amount: transferAmount, pixKey: pixKey, vc: self)
-        pixScreen3VM.addPixContact(pixKey: pixKey, pixType: selectedKeyType, vc: self)
+        
     }
 }
 
@@ -40,6 +40,7 @@ extension PixScreen3: UITableViewDelegate, UITableViewDataSource {
         
         let cell: TransferDataCell? = transferDataTableView.dequeueReusableCell(withIdentifier: "TransferDataCell", for: indexPath) as? TransferDataCell
         pixScreen3VM.setTransferData(pixKey: pixKey, cell: cell, vc: self)
+        pixScreen3VM.addPixContact(pixKey: pixKey, pixType: selectedKeyType, vc: self)
         return cell ?? UITableViewCell()
     }
 }

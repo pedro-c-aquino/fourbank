@@ -1,17 +1,10 @@
-//
-//  TransferScreen3ViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/6/22.
-//
-
 import Foundation
 import UIKit
-
 
 class PixScreen3ViewModel: UIViewController {
     
     let network = Network()
+    
     
     func getAmount(amountValue: Double?) -> String {
         
@@ -20,8 +13,8 @@ class PixScreen3ViewModel: UIViewController {
         let convertedString = amountString.replacingOccurrences(of: ",", with: ".")
         let amount = "R$ \(convertedString)"
         return amount
-        
     }
+    
     
     func pixTransfer(amount: Double, pixKey: String, vc: UIViewController) {
         
@@ -39,9 +32,8 @@ class PixScreen3ViewModel: UIViewController {
                             
                             loggedUser = user
                             transferOk = true
-                            
-                            
                         } else {
+                            
                             DispatchQueue.main.async {
                                 
                                 let alert = UIAlertController(title: "Saldo Insuficiente", message: "Não existe saldo suficiente para realizar a transferência.", preferredStyle: .alert)
@@ -52,7 +44,6 @@ class PixScreen3ViewModel: UIViewController {
                         }
                     }
                 }
-                
                 if transferOk {
                     
                     for receivingUser in userArray {
@@ -69,7 +60,6 @@ class PixScreen3ViewModel: UIViewController {
                                 let currentReceivingUserTransfer = Transfer(amount: amount, transferType: "Pix recebido")
                                 receivingUserTransfers.append(currentReceivingUserTransfer)
                                 self.network.addTransfer(id: receivingUser.id, transferData: TransferPutModel(accountBalance: receivingUser.accountBalance + Int(amount), transfers: receivingUserTransfers))
-                                
                                 DispatchQueue.main.async {
                                     
                                     let alert = UIAlertController(title: "Confirmação", message: "Transferência via Pix concluída com sucesso.", preferredStyle: .alert)
@@ -78,16 +68,15 @@ class PixScreen3ViewModel: UIViewController {
                                     }
                                     alert.addAction(ok)
                                     vc.present(alert, animated: true, completion: nil)
-                                    
                                 }
                             }
                         }
-                        
                     }
                 }
             }
         }
     }
+    
     
     func setTransferData(pixKey: String?, cell: TransferDataCell?, vc: PixScreen3 ) {
         
@@ -136,6 +125,7 @@ class PixScreen3ViewModel: UIViewController {
         }
     }
     
+    
     func addPixContact(pixKey: String, pixType: String, vc: PixScreen3) {
         
         network.networkUser { userArray, error in
@@ -160,25 +150,23 @@ class PixScreen3ViewModel: UIViewController {
                             
                             if let loggedUser = loggedUser {
                                 
+                                var contactExists = false
                                 for pixArray in loggedUser.pixContacts {
                                     
                                     if pixArray.name == receivingUser.name {
-                                            
-                                        if pixArray.keyType != pixType {
-                                            
-                                            var contactArray = loggedUser.pixContacts
-                                            let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-                                            contactArray.append(newPixContact)
-                                            self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-                                        }
-                                    } else {
                                         
-                                        var contactArray = loggedUser.pixContacts
-                                        let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-                                        contactArray.append(newPixContact)
-                                        self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-
+                                        if pixArray.keyType.uppercased() == pixType.uppercased() {
+                                            
+                                            contactExists = true
+                                        }
                                     }
+                                }
+                                if !contactExists {
+                                    
+                                    var contactArray = loggedUser.pixContacts
+                                    let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
+                                    contactArray.append(newPixContact)
+                                    self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
                                 }
                             }
                         }
