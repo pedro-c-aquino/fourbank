@@ -60,7 +60,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="confirmButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cwo-ka-eVY"/>
-                                    <segue destination="0Nn-Bu-Gb1" kind="presentation" identifier="PixScreenToHome" modalPresentationStyle="fullScreen" id="wCE-yt-D4B"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g6z-5x-quU">
@@ -86,11 +85,12 @@
                     <navigationItem key="navigationItem" title="Pix" id="3Tu-pk-RIA"/>
                     <connections>
                         <outlet property="transferDataTableView" destination="g6z-5x-quU" id="0Mp-l7-nKP"/>
+                        <segue destination="0Nn-Bu-Gb1" kind="presentation" identifier="PixScreenToHome" modalPresentationStyle="fullScreen" id="8Jg-gj-0G9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="79.6875"/>
+            <point key="canvasLocation" x="1022" y="49"/>
         </scene>
         <!--HomeTabBar-->
         <scene sceneID="gDU-rH-OI3">
@@ -125,7 +125,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wCE-yt-D4B"/>
+        <segue reference="8Jg-gj-0G9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

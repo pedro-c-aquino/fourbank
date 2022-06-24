@@ -110,7 +110,6 @@
                         <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" id="nIu-YJ-MJ7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="closeButton:" destination="Y6W-OH-hqX" id="Dhf-uE-s7T"/>
                                 <segue destination="cvh-Fc-bRt" kind="presentation" modalPresentationStyle="fullScreen" id="oti-y9-g29"/>
                             </connections>
                         </barButtonItem>

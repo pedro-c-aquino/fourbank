@@ -1,30 +1,25 @@
-//
-//  Deposit1.swift
-//  FourBank
-//
-//  Created by user220237 on 6/15/22.
-//
-
 import UIKit
 
 class Deposit: UIViewController {
     
+    var depVM = DepositViewModel()
+    var depositAmount: Double = 0.0
+    var bankAccount: String = ""
+    var bankOffice: String = ""
+    
     @IBOutlet weak var balanceLabel: UILabel!
-    @IBOutlet weak var amountLabel: UITextField!
+    @IBOutlet weak var amountTextField: UITextField!
+    
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
+        depVM.formatBalance(balance: balanceLabel.text ?? "", vc: self)
     }
+    
     
     @IBAction func confirmButton(_ sender: UIButton) {
         
-        let alert = UIAlertController(title: "Confirmação", message: "Depósito efetuado com sucesso!", preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default) { (action) -> Void in
-            self.performSegue(withIdentifier: "DepositScreenToHome", sender: self)
-        }
-        alert.addAction(ok)
-        self.present(alert, animated: true, completion: nil)
+        depVM.makeDeposit(amount: amountTextField.text ?? "", vc: self)
     }
-    
 }
