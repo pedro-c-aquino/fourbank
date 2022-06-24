@@ -10,13 +10,10 @@ import UIKit
 
 class StatementScreenViewModel {
     
-    let network = Network()
-    
     func formatBalance(balance: String?, vc: StatementScreen) {
         
-        network.networkUser { userArray, error in
             
-            if let userArray = userArray {
+        if let userArray = CurrentUser.userArray {
                 
                 for user in userArray {
                     
@@ -28,7 +25,6 @@ class StatementScreenViewModel {
                         }
                     }
                 }
-            }
         }
     }
     
