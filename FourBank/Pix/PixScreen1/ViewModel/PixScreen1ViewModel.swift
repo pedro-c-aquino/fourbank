@@ -1,16 +1,10 @@
-//
-//  TransferScreen1ViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/6/22.
-//
-
 import Foundation
 import UIKit
 
 class PixScreen1ViewModel {
     
     let network = Network()
+    
     
     func getAmount(amountText: String?) -> Double {
         
@@ -19,6 +13,7 @@ class PixScreen1ViewModel {
         let amount = Double(convertedString)
         return amount ?? 0.00
     }
+    
     
     func validateAmount(amount: String, vc: PixScreen1) {
         
@@ -34,6 +29,7 @@ class PixScreen1ViewModel {
             vc.present(alert, animated: true, completion: nil)
         }
     }
+    
     
     func showBalance(vc: PixScreen1) {
         

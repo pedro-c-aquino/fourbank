@@ -1,10 +1,3 @@
-//
-//  LoginViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/6/22.
-//
-
 import Foundation
 import UIKit
 
@@ -12,13 +5,13 @@ class LoginViewModel {
     
     let network = Network()
     
+    
     func validateLoginData(email: String?, password: String?, vc: UIViewController) {
         
         if let email = email {
             
             CurrentUser.currentUserEmail = email
         }
-        
         network.networkUserArray()
         network.networkUser { userArray, error in
             
@@ -27,13 +20,13 @@ class LoginViewModel {
                 for user in userArray {
                     
                     if email == user.email {
+                        
                         if password == user.password {
                             
                             DispatchQueue.main.async {
                                 
                                 vc.performSegue(withIdentifier: "toHome", sender: nil)
                             }
-                            
                         }
                     }
                 }

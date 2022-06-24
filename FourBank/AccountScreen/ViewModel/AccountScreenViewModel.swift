@@ -1,16 +1,10 @@
-//
-//  AccountScreenViewModel.swift
-//  FourBank
-//
-//  Created by user220210 on 6/13/22.
-//
-
 import Foundation
 import UIKit
 
 class AccountScreenViewModel {
     
     let network = Network()
+    
     
     func showUser(dataCell: DataCell?, vc: AccountScreen) {
         
@@ -38,8 +32,7 @@ class AccountScreenViewModel {
                         }
                     }
                 }
-    }
-}
-
+            }
+        }
     }
 }

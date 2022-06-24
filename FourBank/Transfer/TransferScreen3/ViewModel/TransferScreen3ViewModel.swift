@@ -1,22 +1,17 @@
-//
-//  TransferScreen3ViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/15/22.
-//
-
 import UIKit
 
 class TransferScreen3ViewModel {
     
     let network = Network()
     
+    
     func getAmountString(amount: Double) -> String {
+        
         let amountConverted = String(format: "%.2f", amount)
         let amountString = "R$ " + amountConverted.replacingOccurrences(of: ".", with: ",")
-        
         return amountString
     }
+    
     
     func showTransferData(cell: TransferDataCell?, amount: Double, name: String, bankAccount: String, bankOffice: String) {
         
@@ -28,6 +23,7 @@ class TransferScreen3ViewModel {
         cell?.bankOfficeLabel.text = bankOffice
     }
     
+    
     func makeTransfer(amount: Double, agency: String, account: String, vc: UIViewController) {
         
         self.network.networkUser { userArray, error in
@@ -35,11 +31,8 @@ class TransferScreen3ViewModel {
             if let userArray = userArray {
                 
                 var transferOk = false
-                
                 var accountDataMatch = false
-                
                 var loggedUser: UserModel? = nil
-                
                 for user in userArray {
                     
                     if CurrentUser.currentUserEmail == user.email {
@@ -67,9 +60,7 @@ class TransferScreen3ViewModel {
                                     let currentLoggedUserTransfer = Transfer(amount: -amount, transferType: "Transferência enviada")
                                     loggedUserTransfers.append(currentLoggedUserTransfer)
                                     self.network.addTransfer(id: loggedUser.id, transferData: TransferPutModel(accountBalance: loggedUser.accountBalance - Int(amount), transfers: loggedUserTransfers))
-                                    
                                     var receivingUserTransfers = receivingUser.transfers
-                                    
                                     let currentReceivingUserTransfer = Transfer(amount: amount, transferType: "Transferência recebida")
                                     receivingUserTransfers.append(currentReceivingUserTransfer)
                                     self.network.addTransfer(id: receivingUser.id, transferData: TransferPutModel(accountBalance: receivingUser.accountBalance + Int(amount), transfers: receivingUserTransfers))
@@ -96,7 +87,6 @@ class TransferScreen3ViewModel {
                         vc.present(alert, animated: true, completion: nil)
                     }
                 }
-                
                 if !accountDataMatch {
                     
                     DispatchQueue.main.async {

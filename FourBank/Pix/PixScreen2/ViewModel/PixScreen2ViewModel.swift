@@ -1,16 +1,10 @@
-//
-//  TransferScreen2ViewModel.swift
-//  FourBank
-//
-//  Created by user220237 on 6/6/22.
-//
-
 import Foundation
 import UIKit
 
 class PixScreen2ViewModel {
     
     let network = Network()
+    
     
     func pixContactCount() -> Int {
         
@@ -27,15 +21,15 @@ class PixScreen2ViewModel {
         return 0
     }
     
+    
     func showPixContacts(tableView: UITableView, cell: UITableViewCell, vc: PixScreen2, indexPath: IndexPath) {
-
         
         if let userArray = CurrentUser.userArray {
             
             for user in userArray {
                 
                 if CurrentUser.currentUserEmail == user.email {
-                   
+                    
                     DispatchQueue.main.async {
                         
                         cell.textLabel?.text = user.pixContacts[indexPath.row].name
@@ -45,6 +39,7 @@ class PixScreen2ViewModel {
         }
     }
     
+    
     func selectedKey(vc: PixScreen2, indexPath: IndexPath) {
         
         if let userArray = CurrentUser.userArray {
@@ -52,14 +47,13 @@ class PixScreen2ViewModel {
             for user in userArray {
                 
                 if CurrentUser.currentUserEmail == user.email {
-                   
-                    vc.pixKey = user.pixContacts[indexPath.row].pixKey
                     
+                    vc.pixKey = user.pixContacts[indexPath.row].pixKey
                 }
             }
         }
-
     }
+    
     
     func validatePixKey(pixKey: String, pixType: String, vc: PixScreen2) {
         
@@ -127,9 +121,11 @@ class PixScreen2ViewModel {
         }
     }
     
+    
     func keyType(keyType: String, vc: PixScreen2) {
         
         switch keyType {
+            
         case "CPF":
             vc.pixKeyTextField.placeholder = "Digite a chave Pix CPF"
         case "Email":
@@ -140,5 +136,4 @@ class PixScreen2ViewModel {
             print("Erro no keyType")
         }
     }
-    
 }

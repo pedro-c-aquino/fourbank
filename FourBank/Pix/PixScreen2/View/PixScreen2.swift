@@ -1,10 +1,3 @@
-//
-//  TransferScreen2.swift
-//  FourBank
-//
-//  Created by user220237 on 6/1/22.
-//
-
 import UIKit
 
 class PixScreen2: UIViewController {
@@ -20,6 +13,7 @@ class PixScreen2: UIViewController {
     @IBOutlet weak var pixKeyTextField: UITextField!
     @IBOutlet weak var contactsTableView: UITableView!
     
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -28,30 +22,33 @@ class PixScreen2: UIViewController {
         pixScreen2VM.keyType(keyType: selectedKeyType, vc: self)
         contactsTableView.delegate = self
         contactsTableView.dataSource = self
+        pixKey = pixKeyTextField.text ?? ""
     }
+    
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
         pixScreen2VM.validatePixKey(pixKey: pixKeyTextField.text ?? "", pixType: selectedKeyType, vc: self)
-        
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let vc = segue.destination as? PixScreen3
         vc?.transferAmount = transferAmount
-        vc?.pixKey = pixKeyTextField.text ?? ""
+        vc?.pixKey = pixKey
         vc?.selectedKeyType = selectedKeyType
     }
-    
 }
 
 extension PixScreen2: UITableViewDelegate, UITableViewDataSource {
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         pixScreen2VM.pixContactCount()
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -60,12 +57,10 @@ extension PixScreen2: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         pixScreen2VM.selectedKey(vc: self, indexPath: indexPath)
         performSegue(withIdentifier: "PixScreen2ToPixScreen3", sender: self)
     }
-    
-    
-    
 }

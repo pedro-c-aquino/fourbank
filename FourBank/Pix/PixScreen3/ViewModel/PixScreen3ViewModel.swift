@@ -143,9 +143,7 @@ class PixScreen3ViewModel: UIViewController {
             if let userArray = userArray {
                 
                 var userOk = false
-                
                 var loggedUser: UserModel? = nil
-                
                 for user in userArray {
                     
                     if CurrentUser.currentUserEmail == user.email {
@@ -158,7 +156,6 @@ class PixScreen3ViewModel: UIViewController {
                     
                     for receivingUser in userArray {
                         
-                        print(pixKey)
                         if pixKey == receivingUser.email || pixKey == receivingUser.cpf || pixKey == receivingUser.cellphoneNumber  {
                             
                             if let loggedUser = loggedUser {
@@ -174,6 +171,7 @@ class PixScreen3ViewModel: UIViewController {
                                         contactArray.append(newPixContact)
                                         self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
                                         } else {
+                                            
                                             print("Chave pix já cadastrada")
                                         }
                                   }
@@ -186,54 +184,3 @@ class PixScreen3ViewModel: UIViewController {
         }
     }
 }
-
-//
-//switch pixKey {
-//case receivingUser.email:
-//
-//    if let loggedUser = loggedUser {
-//
-//        for pixArray in loggedUser.pixContacts {
-//
-//            if pixArray.name == receivingUser.name && pixArray.pixKey != receivingUser.emailPix {
-//                var contactArray = loggedUser.pixContacts
-//                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-//                contactArray.append(newPixContact)
-//                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-//            }
-//        }
-//    }
-//break
-//case receivingUser.cpf:
-//
-//    if let loggedUser = loggedUser {
-//
-//        for pixArray in loggedUser.pixContacts {
-//
-//            if pixArray.name == receivingUser.name && pixArray.pixKey != receivingUser.cpfPix {
-//                var contactArray = loggedUser.pixContacts
-//                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-//                contactArray.append(newPixContact)
-//                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-//            }
-//        }                            }
-//break
-//case receivingUser.cellphoneNumber:
-//
-//    if let loggedUser = loggedUser {
-//
-//        for pixArray in loggedUser.pixContacts {
-//
-//            if pixArray.name == receivingUser.name && pixArray.pixKey != receivingUser.cellphonePix {
-//                var contactArray = loggedUser.pixContacts
-//                let newPixContact = PixContact(name: receivingUser.name, keyType: pixType, pixKey: pixKey)
-//                contactArray.append(newPixContact)
-//                self.network.addPixContact(id: loggedUser.id, contactData: PixContactModel(pixContacts: contactArray))
-//            }
-//        }
-//
-//    }
-//break
-//default:
-//    print("Erro no pixKey")
-//}
