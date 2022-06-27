@@ -33,7 +33,7 @@ class RegisterScreen4: UIViewController{
         
         if let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text {
             
-            if registerScreen4VM.checkPassword(password: password, confirmPassword: confirmPassword) {
+            if registerScreen4VM.checkPassword(password: password, confirmPassword: confirmPassword, vc: self) {
                 
                 network.registerUser(name: name ?? "", birthDate: birthDay ?? "", cpf: cpf ?? "", rg: rg ?? "", email: email ?? "", occupation: occupation ?? "", income: income ?? "", cellphoneNumber: cellphone ?? "", street: street ?? "", number: number ?? "", neighborhood: neighborhood ?? "", city: city ?? "", state: state ?? "", password: password, vc: self)
             }
