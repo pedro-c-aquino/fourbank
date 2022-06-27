@@ -2,6 +2,8 @@ import UIKit
 
 class RegisterScreen2: UIViewController {
     
+    let registerScreen2VM = RegisterScreen2ViewModel()
+    
     var name: String? = nil
     var birthDay: String? = nil
     var cpf: String? = nil
@@ -21,7 +23,7 @@ class RegisterScreen2: UIViewController {
     
     @IBAction func registerButton(_ sender: UIButton) {
         
-        self.performSegue(withIdentifier: "RegScreen2ToRegScreen3", sender: self)
+        registerScreen2VM.validatFilledData(email: emailTextField.text ?? "", occupation: occupationTextField.text ?? "", income: incomeTextField.text ?? "", cellphone: cellphoneTextField.text ?? "", vc: self)
     }
     
     

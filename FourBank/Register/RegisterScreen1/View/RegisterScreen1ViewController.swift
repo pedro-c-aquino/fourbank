@@ -1,6 +1,10 @@
 import UIKit
 
+
+
 class RegisterScreen1ViewController: UIViewController {
+    
+    let registerScreen1VM = RegisterScreen1ViewModel()
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var birthdayTextField: UITextField!
@@ -16,7 +20,7 @@ class RegisterScreen1ViewController: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        self.performSegue(withIdentifier: "RegScreen1ToRegScreen2", sender: self)
+        registerScreen1VM.validatFilledData(name: nameTextField.text ?? "", birthday: birthdayTextField.text ?? "", cpf: cpfTextField.text ?? "", rg: rgTextField.text ?? "", vc: self)
     }
     
     
