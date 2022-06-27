@@ -2,6 +2,8 @@ import UIKit
 
 class RegisterScreen3: UIViewController {
     
+    let registerScreen3VM = RegisterScreen3ViewModel()
+    
     var name: String? = nil
     var birthDay: String? = nil
     var cpf: String? = nil
@@ -26,7 +28,7 @@ class RegisterScreen3: UIViewController {
     
     @IBAction func proceedButton(_ sender: UIButton) {
         
-        performSegue(withIdentifier: "RegScreen3ToRegScreen4", sender: self)
+        registerScreen3VM.validatFilledData(street: streetTextField.text ?? "", city: cityTextField.text ?? "", state: stateTextField.text ?? "", neighborhood: neighborhoodTextField.text ?? "", number: numberTextField.text ?? "", vc: self)
     }
     
     
